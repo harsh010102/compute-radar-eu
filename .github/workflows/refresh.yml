@@ -10,7 +10,12 @@ name: Weekly refresh
 on:
   schedule:
     - cron: "17 6 * * 1"  # Mondays ~06:17 UTC - off the hour, per cron best practice
-  workflow_dispatch: {}     # lets you trigger a run manually from the Actions tab
+  workflow_dispatch:        # lets you trigger a run manually from the Actions tab
+    inputs:
+      incubator:
+        description: "Single incubator id to test (leave blank to run --all)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -34,7 +39,13 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'deepseek/deepseek-chat-v3.1:free' }}
-        run: python -m compute_radar.pipeline --all
+          INCUBATOR_INPUT: ${{ github.event.inputs.incubator }}
+        run: |
+          if [ -n "$INCUBATOR_INPUT" ]; then
+            python -m compute_radar.pipeline --incubator "$INCUBATOR_INPUT"
+          else
+            python -m compute_radar.pipeline --all
+          fi
 
       - name: Commit updated data
         run: |
