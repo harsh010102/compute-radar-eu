@@ -1,0 +1,23 @@
+{
+  "cdl-ngc": {"name": "CDL Next Gen Computing", "country": "Germany (Berlin)"},
+  "fraunhofer-ahead": {"name": "Fraunhofer AHEAD", "country": "Germany"},
+  "helmholtz-enterprise": {"name": "Helmholtz Enterprise", "country": "Germany"},
+  "imec-istart": {"name": "imec.istart", "country": "Belgium"},
+  "imec-xpand": {"name": "imec.xpand", "country": "Belgium"},
+  "cea-leti": {"name": "CEA-Leti", "country": "France"},
+  "inria-startup-studio": {"name": "Inria Startup Studio", "country": "France"},
+  "cern-bic": {"name": "CERN BIC / Venture Connect", "country": "multi-country"},
+  "eth-pioneer": {"name": "ETH Pioneer Fellowship", "country": "Switzerland"},
+  "tum-venture-lab-quantum": {"name": "TUM Venture Lab Quantum/Semicon", "country": "Germany"},
+  "qutech-qdnl": {"name": "QuTech / Quantum Delta NL", "country": "Netherlands"},
+  "yes-delft": {"name": "YES!Delft", "country": "Netherlands"},
+  "ista-xista": {"name": "ISTA / XISTA science ventures", "country": "Austria"},
+  "tyndall-ic3": {"name": "Tyndall National Institute / I-C3", "country": "Ireland"},
+  "chalmers-ventures": {"name": "Chalmers Ventures", "country": "Sweden"},
+  "icfo-launchpad": {"name": "ICFO Launchpad", "country": "Spain"},
+  "bsc-deep-tech-node": {"name": "Barcelona Supercomputing Center / Deep Tech Node", "country": "Spain"},
+  "ideas-ncbr": {"name": "IDEAS NCBR", "country": "Poland"},
+  "hightech-startbahn": {"name": "HighTech Startbahn / Silicon Saxony", "country": "Germany"},
+  "unternehmertum-xpreneurs": {"name": "UnternehmerTUM / XPRENEURS", "country": "Germany"},
+  "independent": {"name": "Independently sourced", "country": "various"}
+}

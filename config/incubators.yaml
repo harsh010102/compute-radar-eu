@@ -1,0 +1,221 @@
+# The ~20 European compute-relevant deep-tech incubators/accelerators this pipeline tracks.
+# Seeded from prior manual research (Aug 2026). Add a new program by adding a row here —
+# the pipeline picks it up on the next run. `portfolio_url` is where the Scout agent looks
+# first for current cohort/portfolio companies; falls back to `url` if not set.
+#
+# compute_focus:
+#   high    - compute/semiconductors/quantum is the program's explicit mandate
+#   medium  - general deep tech with compute regularly in scope
+# eligibility: internal | external | hybrid  (internal = own researchers only)
+
+- id: cdl-ngc
+  name: "CDL Next Gen Computing"
+  country: "Germany (Berlin, hosted by ESMT/DEEP)"
+  type: "startup accelerator (mentor-driven cohort)"
+  compute_focus: high
+  eligibility: external
+  url: "https://creativedestructionlab.com/streams/next-gen-computing/"
+  portfolio_url: "https://creativedestructionlab.com/streams/next-gen-computing/"
+  notes: "The stream this project was originally built to support. Track separately as ground truth."
+
+- id: fraunhofer-ahead
+  name: "Fraunhofer AHEAD"
+  country: "Germany (Munich HQ, all 76 institutes)"
+  type: "research-institute incubator"
+  compute_focus: medium
+  eligibility: hybrid
+  url: "https://ahead.fraunhofer.de/en"
+  portfolio_url: "https://ahead.fraunhofer.de/en"
+  notes: "HHI institute adds photonics/AI/quantum. See also Silicon Allee Deep Tech Venture Lab."
+
+- id: helmholtz-enterprise
+  name: "Helmholtz Enterprise"
+  country: "Germany (18 centres incl. Jülich, KIT, DLR)"
+  type: "research-institute spin-off program"
+  compute_focus: medium
+  eligibility: internal
+  url: "https://www.helmholtz.de/en/transfer"
+  portfolio_url: "https://www.helmholtz.de/en/transfer"
+  notes: "Jülich Supercomputing Centre and DLR are the compute-relevant centres."
+
+- id: imec-istart
+  name: "imec.istart"
+  country: "Belgium (Ghent HQ)"
+  type: "open accelerator"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.imecistart.com/en"
+  portfolio_url: "https://www.imecistart.com/en/portfolio"
+  notes: "Nanoelectronics/semiconductor R&D hub. Cleanroom/prototyping access."
+
+- id: imec-xpand
+  name: "imec.xpand"
+  country: "Belgium (Leuven)"
+  type: "affiliated VC fund"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.imecxpand.com"
+  portfolio_url: "https://www.imecxpand.com/portfolio"
+  notes: "EUR 300M fund, EU Chips Act aligned. Known portfolio: Swave Photonics, Celestial AI, PsiQuantum."
+
+- id: cea-leti
+  name: "CEA-Leti startup program"
+  country: "France (Grenoble)"
+  type: "research-institute spinout program"
+  compute_focus: high
+  eligibility: internal
+  url: "https://www.leti-cea.com"
+  portfolio_url: "https://www.leti-cea.com"
+  notes: "68-74 spinoffs to date. Known: Quobly (silicon spin qubits, EUR 115M Series A Jun 2026)."
+
+- id: inria-startup-studio
+  name: "Inria Startup Studio"
+  country: "France (9 centres)"
+  type: "research-institute digital deep-tech studio"
+  compute_focus: medium
+  eligibility: hybrid
+  url: "https://inria.fr/en/inria-startup-studio"
+  portfolio_url: "https://inria.fr/en/inria-startup-studio"
+  notes: "Broadest eligibility of the French programs - external project leaders allowed."
+
+- id: cern-bic
+  name: "CERN BIC Network & Venture Connect"
+  country: "10 CERN Member States"
+  type: "research-institute BIC network + venture program"
+  compute_focus: medium
+  eligibility: external
+  url: "https://ventureconnect.cern"
+  portfolio_url: "https://kt.cern/entrepreneurship/bic-network"
+  notes: "Dedicated Quantum and Digital applications portfolio."
+
+- id: eth-pioneer
+  name: "ETH Pioneer Fellowship"
+  country: "Switzerland (Zurich, non-EU)"
+  type: "university deep-tech incubation fellowship"
+  compute_focus: medium
+  eligibility: internal
+  url: "https://entrepreneurship.ethz.ch"
+  portfolio_url: "https://entrepreneurship.ethz.ch"
+  notes: "5-6 Deep-Tech fellowships per call, two rounds/year."
+
+- id: tum-venture-lab-quantum
+  name: "TUM Venture Lab Quantum/Semicon + Munich Quantum Valley"
+  country: "Germany (Garching/Munich)"
+  type: "university venture lab + state research initiative"
+  compute_focus: high
+  eligibility: hybrid
+  url: "https://tum-venture-labs.de/labs/quantum"
+  portfolio_url: "https://tum-venture-labs.de/labs/quantum"
+  notes: "Known: planqc, Quantum Diamonds, Peak Quantum. Quantum Landing Pad for international relocation."
+
+- id: qutech-qdnl
+  name: "QuTech / Quantum Delta NL / QDNL Participations"
+  country: "Netherlands (Delft, national)"
+  type: "research-institute + national program + venture fund"
+  compute_focus: high
+  eligibility: hybrid
+  url: "https://quantumdelta.nl"
+  portfolio_url: "https://qdnlparticipations.nl"
+  notes: "Known: Qblox, QuantWare, Q*Bird, QphoX, Orange Quantum Systems, Single Quantum, Delft Circuits."
+
+- id: yes-delft
+  name: "YES!Delft"
+  country: "Netherlands (Delft)"
+  type: "university incubator"
+  compute_focus: medium
+  eligibility: external
+  url: "https://yesdelft.com"
+  portfolio_url: "https://yesdelft.com/startups"
+  notes: "Part of the Quantum Delta ecosystem; AI/robotics/quantum hardware."
+
+- id: ista-xista
+  name: "ISTA / XISTA science ventures"
+  country: "Austria (Klosterneuburg)"
+  type: "research-institute ecosystem + seed fund"
+  compute_focus: medium
+  eligibility: external
+  url: "https://xista.vc"
+  portfolio_url: "https://xista.vc"
+  notes: "Fund I EUR 45M / 21 spin-offs. Open beyond ISTA - 'any scientific founder'."
+
+- id: tyndall-ic3
+  name: "Tyndall National Institute / I-C3"
+  country: "Ireland (Cork)"
+  type: "research institute + national competence centre"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.tyndall.ie"
+  portfolio_url: "https://www.tyndall.ie"
+  notes: "I-C3 launched Feb 2026, part of Chips JU + 'Silicon Island' national strategy."
+
+- id: chalmers-ventures
+  name: "Chalmers Ventures"
+  country: "Sweden (Gothenburg)"
+  type: "university incubator + seed fund"
+  compute_focus: medium
+  eligibility: internal
+  url: "https://chalmersventures.com"
+  portfolio_url: "https://chalmersventures.com/startups"
+  notes: "Quantum program links (Atlantic Quantum - acquired by Alphabet Oct 2025)."
+
+- id: icfo-launchpad
+  name: "ICFO Launchpad"
+  country: "Spain (Barcelona/Castelldefels)"
+  type: "research-institute (photonics) spinoff program"
+  compute_focus: high
+  eligibility: internal
+  url: "https://icfo.eu/innovation/spin-offs/launchpad"
+  portfolio_url: "https://icfo.eu/innovation/spin-offs/launchpad"
+  notes: "Known: LuxQuanta, Quside, Shinephi."
+
+- id: bsc-deep-tech-node
+  name: "Barcelona Supercomputing Center / Barcelona Deep Tech Node"
+  country: "Spain (Barcelona)"
+  type: "research-institute (HPC) + city deep-tech program"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.bsc.es"
+  portfolio_url: "https://barcelonactiva.cat/en/deeptechnode"
+  notes: "MareNostrum HPC. DARE project lead (RISC-V, EUR 240M). Openchip spun from BSC+GTD."
+
+- id: ideas-ncbr
+  name: "IDEAS NCBR"
+  country: "Poland (Warsaw)"
+  type: "national research/incubation centre (AI)"
+  compute_focus: high
+  eligibility: internal
+  url: "https://ideas-ncbr.pl/en"
+  portfolio_url: "https://ideas-ncbr.pl/en"
+  notes: "STATUS FLAG: leadership turbulence in 2024, national AI-institute reorganization for 2025. Verify current form before relying on it."
+
+- id: hightech-startbahn
+  name: "HighTech Startbahn / Silicon Saxony"
+  country: "Germany (Dresden)"
+  type: "company-building/advisory + ecosystem body"
+  compute_focus: high
+  eligibility: external
+  url: "https://htsb.eu"
+  portfolio_url: "https://htsb.eu"
+  notes: "Not a cash-for-equity accelerator - services/venture-building firm and event organizer."
+
+- id: independent
+  name: "Independently sourced / not incubator-affiliated"
+  country: "various"
+  type: "n/a - market-context bucket"
+  compute_focus: high
+  eligibility: external
+  url: ""
+  portfolio_url: null
+  notes: "Sentinel entry for national champions, IPCEI/state-backed spinouts, and direct
+    university spinouts tracked for market context that aren't tied to one of the
+    programs above (e.g. SiPearl, Axelera AI). Not a real incubator - don't scrape this one."
+
+- id: unternehmertum-xpreneurs
+  name: "UnternehmerTUM / XPRENEURS"
+  country: "Germany (Munich)"
+  type: "accelerator"
+  compute_focus: medium
+  eligibility: external
+  url: "https://xpreneurs.io"
+  portfolio_url: "https://xpreneurs.io"
+  notes: "Europe's largest entrepreneurship centre. Known: Proxima Fusion, Quantum Diamonds."

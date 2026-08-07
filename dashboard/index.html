@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Compute Radar EU</title>
+<style>
+  :root{
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page:           #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --text-muted:     #898781;
+    --gridline:       #e1e0d9;
+    --border:         rgba(11,11,11,0.10);
+    --card-bg:        #ffffff;
+
+    --layer-1: #2a78d6; /* physics_substrate */
+    --layer-2: #eb6834; /* new_architecture */
+    --layer-3: #1baf7a; /* codesign_eda */
+    --layer-4: #eda100; /* chiplet_interconnect */
+    --layer-5: #e87ba4; /* advanced_packaging */
+    --layer-6: #008300; /* power_thermal */
+    --layer-7: #4a3aa7; /* sovereign_cloud */
+    --layer-8: #e34948; /* sovereign_edge_onprem */
+  }
+  @media (prefers-color-scheme: dark){
+    :root:where(:not([data-theme="light"])){
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page:           #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --text-muted:     #898781;
+      --gridline:       #2c2c2a;
+      --border:         rgba(255,255,255,0.10);
+      --card-bg:        #201f1d;
+
+      --layer-1: #3987e5; --layer-2: #d95926; --layer-3: #199e70; --layer-4: #c98500;
+      --layer-5: #d55181; --layer-6: #008300; --layer-7: #9085e9; --layer-8: #e66767;
+    }
+  }
+  :root[data-theme="dark"]{
+    color-scheme: dark;
+    --surface-1: #1a1a19; --page:#0d0d0d; --text-primary:#ffffff; --text-secondary:#c3c2b7;
+    --text-muted:#898781; --gridline:#2c2c2a; --border:rgba(255,255,255,0.10); --card-bg:#201f1d;
+    --layer-1:#3987e5; --layer-2:#d95926; --layer-3:#199e70; --layer-4:#c98500;
+    --layer-5:#d55181; --layer-6:#008300; --layer-7:#9085e9; --layer-8:#e66767;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--page); color:var(--text-primary);
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    line-height:1.5;
+  }
+  .wrap{max-width:1180px; margin:0 auto; padding:2.5rem 1.5rem 5rem;}
+  @media (max-width:640px){ .wrap{padding:1.5rem 1rem 3rem;} }
+
+  header.top{margin-bottom:2rem;}
+  .eyebrow{font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--text-muted); font-weight:600;}
+  h1{font-size:1.7rem; margin:.3rem 0 .35rem; text-wrap:balance;}
+  .lede{color:var(--text-secondary); max-width:62ch; margin:0;}
+  .freshness{font-size:.78rem; color:var(--text-muted); margin-top:.6rem;}
+
+  /* stat tiles */
+  .tiles{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--gridline);
+         border:1px solid var(--gridline); border-radius:10px; overflow:hidden; margin:1.8rem 0 2.2rem;}
+  @media (max-width:760px){ .tiles{grid-template-columns:repeat(2,1fr);} }
+  .tile{background:var(--surface-1); padding:1rem 1.1rem;}
+  .tile .val{font-size:1.5rem; font-weight:700; font-variant-numeric:tabular-nums;}
+  .tile .lbl{font-size:.74rem; color:var(--text-muted); margin-top:.15rem;}
+
+  /* bar chart */
+  .chart-card{background:var(--surface-1); border:1px solid var(--gridline); border-radius:10px;
+              padding:1.3rem 1.4rem 1.1rem; margin-bottom:2.2rem;}
+  .chart-card h2{font-size:.95rem; margin:0 0 1rem; font-weight:650;}
+  .bar-row{display:grid; grid-template-columns:170px 1fr 34px; align-items:center; gap:.6rem; margin:.5rem 0;}
+  .bar-row .lbl{font-size:.8rem; color:var(--text-secondary);}
+  .bar-track{background:var(--gridline); border-radius:4px; height:14px; overflow:hidden;}
+  .bar-fill{height:100%; border-radius:4px 0 0 4px; transition:width .25s ease;}
+  .bar-row .n{font-size:.78rem; font-variant-numeric:tabular-nums; color:var(--text-muted); text-align:right;}
+
+  /* filters */
+  .filters{display:flex; flex-wrap:wrap; gap:.5rem; align-items:center; margin-bottom:1.4rem;}
+  .chip{
+    font-size:.76rem; padding:.35rem .7rem; border-radius:999px; border:1px solid var(--gridline);
+    background:var(--surface-1); color:var(--text-secondary); cursor:pointer; user-select:none;
+    display:inline-flex; align-items:center; gap:.4rem;
+  }
+  .chip .dot{width:8px; height:8px; border-radius:50%; display:inline-block;}
+  .chip[aria-pressed="true"]{border-color:var(--text-primary); color:var(--text-primary); font-weight:600;}
+  .search{
+    font-size:.82rem; padding:.4rem .7rem; border-radius:8px; border:1px solid var(--gridline);
+    background:var(--surface-1); color:var(--text-primary); min-width:200px;
+  }
+  .viewtoggle{margin-left:auto; display:flex; gap:.3rem;}
+  .viewtoggle button{
+    font-size:.76rem; padding:.35rem .7rem; border-radius:7px; border:1px solid var(--gridline);
+    background:var(--surface-1); color:var(--text-secondary); cursor:pointer;
+  }
+  .viewtoggle button[aria-pressed="true"]{background:var(--text-primary); color:var(--page); border-color:var(--text-primary);}
+
+  .count-line{font-size:.8rem; color:var(--text-muted); margin:0 0 1rem;}
+
+  /* cards */
+  .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1rem;}
+  .card{background:var(--card-bg); border:1px solid var(--gridline); border-radius:10px; padding:1.1rem 1.2rem;}
+  .card h3{margin:0 0 .25rem; font-size:1.02rem;}
+  .card .meta{font-size:.76rem; color:var(--text-muted); margin-bottom:.5rem;}
+  .card .oneliner{font-size:.87rem; color:var(--text-secondary); margin:.4rem 0;}
+  .card .note{font-size:.78rem; color:var(--text-secondary); margin:.5rem 0; border-left:2px solid var(--gridline); padding-left:.6rem;}
+  .tags{display:flex; flex-wrap:wrap; gap:.35rem; margin:.55rem 0;}
+  .tag{
+    font-size:.68rem; padding:.18rem .5rem; border-radius:5px; font-weight:600;
+    color:#fff; letter-spacing:.02em;
+  }
+  .card .foot{display:flex; justify-content:space-between; align-items:center; margin-top:.7rem; font-size:.76rem;}
+  .card .foot a{color:var(--text-secondary);}
+  .stagepill{font-size:.7rem; color:var(--text-muted); font-family:ui-monospace,monospace;}
+
+  /* table */
+  table{width:100%; border-collapse:collapse; font-size:.83rem;}
+  th,td{text-align:left; padding:.55rem .6rem; border-bottom:1px solid var(--gridline); vertical-align:top;}
+  th{font-size:.68rem; letter-spacing:.05em; text-transform:uppercase; color:var(--text-muted); font-weight:600;}
+  td.num{font-variant-numeric:tabular-nums;}
+  .tablewrap{overflow-x:auto; border:1px solid var(--gridline); border-radius:10px; background:var(--surface-1);}
+
+  footer{margin-top:3rem; font-size:.78rem; color:var(--text-muted); border-top:1px solid var(--gridline); padding-top:1.2rem;}
+  a{color:inherit;}
+  .hidden{display:none !important;}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="eyebrow">Compute Radar EU</div>
+    <h1>European compute incubators &amp; the startups moving through them</h1>
+    <p class="lede">A live market map across the 8-layer compute-stack taxonomy — from physics/substrate through sovereign deployment. Reads directly from <code>data/startups.json</code>.</p>
+    <div class="freshness" id="freshness"></div>
+  </header>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="chart-card">
+    <h2>Startups by stack layer</h2>
+    <div id="barchart"></div>
+  </section>
+
+  <div class="filters" id="filters">
+    <input class="search" id="search" type="search" placeholder="Search name or description…">
+    <div class="viewtoggle" role="group" aria-label="View">
+      <button id="view-cards" aria-pressed="true">Cards</button>
+      <button id="view-table" aria-pressed="false">Table</button>
+    </div>
+  </div>
+  <div class="filters" id="layer-chips"></div>
+  <div class="filters" id="sov-chips"></div>
+
+  <p class="count-line" id="count-line"></p>
+
+  <div id="grid" class="grid"></div>
+  <div id="tablewrap" class="tablewrap hidden">
+    <table>
+      <thead>
+        <tr><th>Name</th><th>Incubator</th><th>Country</th><th>Layers</th><th>Stage</th><th>Funding (€M)</th><th>Sovereignty</th></tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+
+  <footer>
+    Seed data hand-researched Aug 2026 — see <code>source_urls</code> on each record. Run <code>python -m compute_radar.pipeline --all</code> to refresh live, or let the weekly GitHub Actions workflow do it. Not investment advice.
+  </footer>
+</div>
+
+<script>
+const TAXONOMY = [
+  {key:"physics_substrate",     label:"Physics & substrate",        slot:1},
+  {key:"new_architecture",      label:"New architectures",          slot:2},
+  {key:"codesign_eda",          label:"Co-design / EDA",            slot:3},
+  {key:"chiplet_interconnect",  label:"Chiplet & interconnect",     slot:4},
+  {key:"advanced_packaging",    label:"Advanced packaging",         slot:5},
+  {key:"power_thermal",         label:"Power & thermal",            slot:6},
+  {key:"sovereign_cloud",       label:"Sovereign cloud",            slot:7},
+  {key:"sovereign_edge_onprem", label:"Sovereign edge / on-prem",   slot:8},
+];
+const layerColor = key => `var(--layer-${TAXONOMY.find(t=>t.key===key)?.slot ?? 1})`;
+const layerLabel = key => TAXONOMY.find(t=>t.key===key)?.label ?? key;
+// Slots 3/4/5 (aqua/yellow/magenta) are light-mode contrast WARNs against white surface per
+// the dataviz palette validator - use dark text on those fills, white on the rest.
+const LIGHT_TEXT_SLOTS = new Set([3,4,5]);
+const layerTextColor = key => {
+  const slot = TAXONOMY.find(t=>t.key===key)?.slot ?? 1;
+  return LIGHT_TEXT_SLOTS.has(slot) ? "#0b0b0b" : "#ffffff";
+};
+
+const SOV_BASES = ["EU/EEA","UK","Switzerland","Norway","other-Europe","unclear"];
+
+let DATA = {startups: []};
+let activeLayers = new Set();
+let activeSov = new Set();
+let view = "cards";
+
+async function load(){
+  const [res, incRes] = await Promise.all([
+    fetch("../data/startups.json"),
+    fetch("../data/incubators.json"),
+  ]);
+  DATA = await res.json();
+  const incubators = await incRes.json();
+  window.INCUBATOR_NAMES = Object.fromEntries(Object.entries(incubators).map(([id,v])=>[id,v.name]));
+  document.getElementById("freshness").textContent =
+    `Data generated ${new Date(DATA.generated_at).toLocaleDateString(undefined,{year:"numeric",month:"long",day:"numeric"})} · ${DATA.startups.length} companies tracked`;
+  renderTiles();
+  renderChart();
+  renderChips();
+  render();
+}
+
+function renderTiles(){
+  const s = DATA.startups;
+  const totalFunding = s.reduce((a,x)=>a+(x.funding_eur_m||0),0);
+  const incubators = new Set(s.map(x=>x.incubator_id)).size;
+  const euCount = s.filter(x=>x.sovereignty_basis==="EU/EEA").length;
+  const tiles = [
+    {val:s.length, lbl:"Startups tracked"},
+    {val:incubators, lbl:"Programs represented"},
+    {val:`€${totalFunding.toFixed(0)}M`, lbl:"Disclosed funding (sum)"},
+    {val:`${euCount}/${s.length}`, lbl:"EU/EEA sovereignty basis"},
+  ];
+  document.getElementById("tiles").innerHTML = tiles.map(t=>
+    `<div class="tile"><div class="val">${t.val}</div><div class="lbl">${t.lbl}</div></div>`
+  ).join("");
+}
+
+function renderChart(){
+  const counts = TAXONOMY.map(t => ({
+    ...t, n: DATA.startups.filter(s => s.layers.includes(t.key)).length
+  }));
+  const max = Math.max(...counts.map(c=>c.n), 1);
+  document.getElementById("barchart").innerHTML = counts.map(c => `
+    <div class="bar-row">
+      <span class="lbl">${c.label}</span>
+      <span class="bar-track"><span class="bar-fill" style="width:${(c.n/max*100).toFixed(0)}%; background:var(--layer-${c.slot})"></span></span>
+      <span class="n">${c.n}</span>
+    </div>
+  `).join("");
+}
+
+function renderChips(){
+  document.getElementById("layer-chips").innerHTML =
+    `<span class="stagepill" style="align-self:center;">Layer:</span>` +
+    TAXONOMY.map(t => `
+      <button class="chip" data-layer="${t.key}" aria-pressed="false">
+        <span class="dot" style="background:var(--layer-${t.slot})"></span>${t.label}
+      </button>
+    `).join("");
+  document.getElementById("sov-chips").innerHTML =
+    `<span class="stagepill" style="align-self:center;">Sovereignty:</span>` +
+    SOV_BASES.map(b => `<button class="chip" data-sov="${b}" aria-pressed="false">${b}</button>`).join("");
+
+  document.querySelectorAll("[data-layer]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const k = btn.dataset.layer;
+      activeLayers.has(k) ? activeLayers.delete(k) : activeLayers.add(k);
+      btn.setAttribute("aria-pressed", activeLayers.has(k));
+      render();
+    });
+  });
+  document.querySelectorAll("[data-sov]").forEach(btn=>{
+    btn.addEventListener("click", ()=>{
+      const k = btn.dataset.sov;
+      activeSov.has(k) ? activeSov.delete(k) : activeSov.add(k);
+      btn.setAttribute("aria-pressed", activeSov.has(k));
+      render();
+    });
+  });
+  document.getElementById("search").addEventListener("input", render);
+  document.getElementById("view-cards").addEventListener("click", ()=>setView("cards"));
+  document.getElementById("view-table").addEventListener("click", ()=>setView("table"));
+}
+
+function setView(v){
+  view = v;
+  document.getElementById("view-cards").setAttribute("aria-pressed", v==="cards");
+  document.getElementById("view-table").setAttribute("aria-pressed", v==="table");
+  document.getElementById("grid").classList.toggle("hidden", v!=="cards");
+  document.getElementById("tablewrap").classList.toggle("hidden", v!=="table");
+}
+
+function filtered(){
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  return DATA.startups.filter(s=>{
+    if (activeLayers.size && ![...activeLayers].some(l=>s.layers.includes(l))) return false;
+    if (activeSov.size && !activeSov.has(s.sovereignty_basis)) return false;
+    if (q && !(s.name.toLowerCase().includes(q) || s.one_liner.toLowerCase().includes(q))) return false;
+    return true;
+  });
+}
+
+function incubatorName(id){
+  const row = (window.INCUBATOR_NAMES||{})[id];
+  return row || id;
+}
+
+function render(){
+  const list = filtered();
+  document.getElementById("count-line").textContent = `Showing ${list.length} of ${DATA.startups.length}`;
+
+  document.getElementById("grid").innerHTML = list.map(s => `
+    <div class="card">
+      <h3>${s.name}</h3>
+      <div class="meta">${incubatorName(s.incubator_id)} · ${s.country}</div>
+      <p class="oneliner">${s.one_liner}</p>
+      <div class="tags">
+        ${s.layers.map(l=>`<span class="tag" style="background:${layerColor(l)}; color:${layerTextColor(l)}">${layerLabel(l)}</span>`).join("")}
+      </div>
+      ${s.architectural_differentiation_note ? `<p class="note">${s.architectural_differentiation_note}</p>` : ""}
+      <div class="foot">
+        <span class="stagepill">${s.stage||"stage n/a"} ${s.funding_eur_m ? "· €"+s.funding_eur_m+"M" : ""}</span>
+        <span>${s.sovereignty_basis}</span>
+      </div>
+    </div>
+  `).join("") || `<p style="color:var(--text-muted)">No companies match these filters.</p>`;
+
+  document.getElementById("table-body").innerHTML = list.map(s => `
+    <tr>
+      <td>${s.name}</td>
+      <td>${incubatorName(s.incubator_id)}</td>
+      <td>${s.country}</td>
+      <td>${s.layers.map(layerLabel).join(", ")}</td>
+      <td>${s.stage||"—"}</td>
+      <td class="num">${s.funding_eur_m ?? "—"}</td>
+      <td>${s.sovereignty_basis}</td>
+    </tr>
+  `).join("");
+}
+
+load();
+</script>
+</body>
+</html>
