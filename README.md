@@ -70,6 +70,8 @@ python -m http.server 8080
 - **Synthesis**: OpenRouter, defaulting to a free-tier model (`OPENROUTER_MODEL` in `.env`, currently `openai/gpt-oss-20b:free` — check [openrouter.ai/models](https://openrouter.ai/models?max_price=0) or `curl https://openrouter.ai/api/v1/models` for the current free roster, it rotates and past defaults do get retired without notice). Swap in a paid model for higher accuracy at any time; nothing else in the pipeline changes.
 - **Scheduling**: `.github/workflows/refresh.yml` runs the pipeline on a weekly cron via GitHub Actions and commits the updated `data/startups.json` — free on a public repo, no server to maintain.
 
+**Known limit**: OpenRouter's free-model tier caps a new account at **50 requests/day** (`X-RateLimit-Limit: 50`, resets daily). Each incubator run costs several LLM calls (agentic tool-use loop + structured-output pass), so `--all` across 20 incubators can burn the daily quota in a single run. A one-time top-up of $10 in OpenRouter credits raises this to 1000 free-model requests/day — cheap and worth doing before relying on the weekly Actions job. Until then, prefer `--incubator <id>` runs spread across days, or a paid model for a full run.
+
 ## Project status
 
 Seed data in `data/startups.json` was hand-researched (see `sources` field on each record) and covers the four CDL-NGC example ventures, ~15 companies found across the incubator network, and the candidates sourced independently for the CDL-NGC cohort task. Everything past that point is designed to be filled in by running the pipeline live.

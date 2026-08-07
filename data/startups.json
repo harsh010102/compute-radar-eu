@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T18:13:05.135604+00:00",
+  "generated_at": "2026-08-07T18:23:47.595444+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -264,6 +264,93 @@
       "architectural_differentiation_note": "Infrastructure/hosting layer rather than a trust layer - complementary to enclaive rather than competing with it. Focused explicitly on EU public-entity customers.",
       "source_urls": [
         "https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"
+      ],
+      "last_verified": "2026-08-07"
+    },
+    {
+      "name": "Arkeon",
+      "one_liner": "Post-fabrication precision tuning of superconducting quantum chip qubit frequencies to improve yield.",
+      "incubator_id": "chalmers-ventures",
+      "country": "Sweden",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.594,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Founded 2025 (Peter Horstedt, Andreas Nylander, Marcus Rommel). Addresses a real manufacturing bottleneck in superconducting quantum chips (qubit frequency variance from fabrication) rather than building a new compute paradigm from scratch - narrower, more defensible claim than a lot of quantum hardware pitches.",
+      "source_urls": [
+        "https://www.eu-startups.com/2026/06/gothenburgs-arkeon-closes-e594-2k-seed-round-to-boost-precision-in-quantum-chip-production/"
+      ],
+      "last_verified": "2026-08-07"
+    },
+    {
+      "name": "FrostByte",
+      "one_liner": "Cryogenic control electronics that operate alongside quantum processors at ultra-low temperatures.",
+      "incubator_id": "qutech-qdnl",
+      "country": "Netherlands",
+      "layers": [
+        "codesign_eda",
+        "physics_substrate"
+      ],
+      "stage": "pre-seed",
+      "funding_eur_m": 1.3,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "QuTech/TU Delft spinout addressing the 'trusted control' / cryo-electronics bottleneck the live CDL-NGC site names explicitly - a scaling constraint for every quantum hardware company, not just one architecture. Raised May 2026, led by InnovationQuarter Capital.",
+      "source_urls": [
+        "referenced via quantum-hardware funding research Aug 2026; verify current terms directly before citing"
+      ],
+      "last_verified": "2026-08-07"
+    },
+    {
+      "name": "Vivid Photonics",
+      "one_liner": "Horizontal Cavity Surface Emitting Super Luminescent Diode (SLD) technology for AR/VR image quality.",
+      "incubator_id": "tyndall-ic3",
+      "country": "Ireland",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "early (2025 spinout, ChipStart EU cohort 1)",
+      "funding_eur_m": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Genuine photonic device innovation (claimed first-of-its-kind SLD geometry), but the application is AR/VR display rather than general compute - same borderline-fit caveat as Swave Photonics. Tyndall spinout, selected for ChipStart EU (Europe's first semiconductor-specific incubator).",
+      "source_urls": [
+        "https://www.tyndall.ie/news/vivid-photonics-launch/"
+      ],
+      "last_verified": "2026-08-07"
+    },
+    {
+      "name": "PulpoSemi",
+      "one_liner": "Integrated voltage regulators (IVRs) with high current density for AI system power management.",
+      "incubator_id": "tyndall-ic3",
+      "country": "Ireland",
+      "layers": [
+        "power_thermal"
+      ],
+      "stage": "early (2025 spinout, ChipStart EU cohort 1)",
+      "funding_eur_m": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Directly addresses the power-delivery layer this project's taxonomy elevates beyond the written CDL-NGC thesis's packaging footnote - power management silicon for high-density AI compute, not a downstream software layer.",
+      "source_urls": [
+        "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
+      ],
+      "last_verified": "2026-08-07"
+    },
+    {
+      "name": "Endurance Semiconductors",
+      "one_liner": "Wide-bandgap power semiconductors cutting switching losses up to 50% for AI data centers, EVs, and grids.",
+      "incubator_id": "tyndall-ic3",
+      "country": "Ireland",
+      "layers": [
+        "power_thermal",
+        "physics_substrate"
+      ],
+      "stage": "early (2025 spinout, ChipStart EU cohort 1)",
+      "funding_eur_m": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Wide-bandgap is a compound-semiconductor substrate approach (named directly in the physics_substrate layer definition), applied to the power-delivery problem - one of the cleanest double-layer fits in this dataset.",
+      "source_urls": [
+        "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
       "last_verified": "2026-08-07"
     }
