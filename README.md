@@ -2,6 +2,8 @@
 
 **A living market map of Europe's compute-focused deep-tech incubators and the startups moving through them.**
 
+**[Live dashboard →](https://harsh010102.github.io/compute-radar-eu/dashboard/)** · [repo](https://github.com/harsh010102/compute-radar-eu) · hosted free on GitHub Pages, data refreshed by the pipeline below.
+
 Compute Radar EU tracks the ~20 European research institutes, university venture labs, and national programs that source and fund next-generation compute startups — semiconductors, quantum, photonics, neuromorphic hardware, chiplet/packaging, sovereign cloud/edge infrastructure, and the power/cooling layer underneath all of it — and keeps a structured, current picture of which startups are moving through each one.
 
 It exists because this information is scattered across ~20 institutional websites, none of which publish a machine-readable feed, and all of which change quarterly (new cohorts, new funding rounds, program restructures). Anyone doing venture sourcing, corporate scouting, or ecosystem analysis in this space is currently doing this by hand, from scratch, every time.
