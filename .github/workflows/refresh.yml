@@ -10,6 +10,10 @@ name: Weekly refresh
 on:
   schedule:
     - cron: "17 6 * * 1"  # Mondays ~06:17 UTC - off the hour, per cron best practice
+    - cron: "11 6 8 8 *"  # ONE-SHOT: 2026-08-08 ~06:11 UTC, safely after the OpenRouter
+      # free-tier daily quota resets (00:00 UTC). Added to run --all once quota is fresh
+      # without waiting for the next Monday. Fires again on Aug 8 next year unless removed
+      # first - safe to delete this line once it's done its job.
   workflow_dispatch:        # lets you trigger a run manually from the Actions tab
     inputs:
       incubator:
