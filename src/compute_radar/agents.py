@@ -48,9 +48,11 @@ def build_scout_agent() -> Agent:
         llm=get_llm(),
         verbose=True,
         allow_delegation=False,
-        max_iter=6,  # bound the tool-call loop - a free-tier model with a small context
+        max_iter=10,  # bound the tool-call loop - a free-tier model with a small context
         # window degrades badly on long agentic loops; better to return a partial answer
-        # from a few calls than run until the context silently overflows.
+        # from a bounded number of calls than run until the context silently overflows.
+        # 6 proved crash-safe but under-covers a large portfolio page; 10 is the next step
+        # up now that per-call output is capped small (see scraper_tool.py).
         respect_context_window=True,
     )
 
