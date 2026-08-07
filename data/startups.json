@@ -1,17 +1,21 @@
 {
-  "generated_at": "2026-08-07T00:00:00+00:00",
+  "generated_at": "2026-08-07T17:56:57.975247+00:00",
   "startups": [
     {
       "name": "SilTest",
       "one_liner": "AI-powered semiconductor test-program generation and yield analytics for ATE platforms.",
       "incubator_id": "cdl-ngc",
       "country": "Qatar (QSTP-incubated); serves European automotive IDMs",
-      "layers": ["codesign_eda"],
+      "layers": [
+        "codesign_eda"
+      ],
       "stage": "commercial",
       "funding_eur_m": null,
       "sovereignty_basis": "unclear",
       "architectural_differentiation_note": "Software/AI layer on top of existing ATE infrastructure (Advantest, Teradyne) for test-program generation and yield analytics - not a new physical or architectural approach. Doesn't map cleanly onto co-design, chiplet, or packaging as written in the thesis.",
-      "source_urls": ["https://siltest.com/"],
+      "source_urls": [
+        "https://siltest.com/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -19,12 +23,16 @@
       "one_liner": "Direct-to-chip liquid cooling claiming ~50% energy savings over microchannel/jet-impingement cooling.",
       "incubator_id": "cdl-ngc",
       "country": "Spain",
-      "layers": ["power_thermal"],
+      "layers": [
+        "power_thermal"
+      ],
       "stage": "seed / pilot (Try & Buy program)",
       "funding_eur_m": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Evolutionary efficiency gain rather than a new physical principle; academic roots (Universitat de Lleida) and EU public co-funding (NextGenerationEU/CDTI) are the strongest sovereignty signal of any venture in this set. Differentiation depends on IP defensibility vs. incumbents (Vertiv/Eaton/Schneider all bought into this niche in 2025).",
-      "source_urls": ["https://uniscool.tech/"],
+      "source_urls": [
+        "https://uniscool.tech/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -32,12 +40,16 @@
       "one_liner": "Fully-passive optical network switch for data centers - no electronics in the switch fabric.",
       "incubator_id": "cdl-ngc",
       "country": "United Kingdom",
-      "layers": ["chiplet_interconnect"],
+      "layers": [
+        "chiplet_interconnect"
+      ],
       "stage": "pre-seed",
       "funding_eur_m": null,
       "sovereignty_basis": "UK",
       "architectural_differentiation_note": "Genuine physics-level differentiation: 26-53x power reduction vs conventional switches, 40ns port-to-port latency. UK-based, so outside EU Chips Act/IPCEI/EuroHPC instruments - sovereign path would run through Innovate UK and direct hyperscaler contracts.",
-      "source_urls": ["https://finchetto.com/"],
+      "source_urls": [
+        "https://finchetto.com/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -45,12 +57,18 @@
       "one_liner": "Photonic neuromorphic AI processor embedding learning dynamics into hardware physics.",
       "incubator_id": "cdl-ngc",
       "country": "United Kingdom (Imperial College London; EPFL support)",
-      "layers": ["physics_substrate", "new_architecture", "sovereign_edge_onprem"],
+      "layers": [
+        "physics_substrate",
+        "new_architecture",
+        "sovereign_edge_onprem"
+      ],
       "stage": "pre-seed",
       "funding_eur_m": null,
       "sovereignty_basis": "UK",
       "architectural_differentiation_note": "Combines a new substrate (photonics) and a new architecture (neuromorphic) simultaneously - the strongest architectural story in this dataset. >100x fewer parameters claimed for on-device, low-data inference. Same UK/Swiss sovereignty caveat as Finchetto.",
-      "source_urls": ["https://www.rayd.tech/"],
+      "source_urls": [
+        "https://www.rayd.tech/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -58,12 +76,16 @@
       "one_liner": "Silicon spin-qubit quantum computing, CMOS-compatible manufacturing path.",
       "incubator_id": "cea-leti",
       "country": "France",
-      "layers": ["physics_substrate"],
+      "layers": [
+        "physics_substrate"
+      ],
       "stage": "Series A",
-      "funding_eur_m": 115,
+      "funding_eur_m": 115.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "CEA-Leti/CNRS spinout; STMicroelectronics involvement gives a credible CMOS-compatible manufacturing story, not just lab-scale physics. Already past cohort stage - useful as a market-validation reference, not a sourcing target.",
-      "source_urls": ["referenced in prior incubator research (compass_artifact doc); verify directly before citing funding figure"],
+      "source_urls": [
+        "referenced in prior incubator research (compass_artifact doc); verify directly before citing funding figure"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -71,12 +93,17 @@
       "one_liner": "Neutral-atom quantum computing hardware.",
       "incubator_id": "tum-venture-lab-quantum",
       "country": "Germany",
-      "layers": ["physics_substrate"],
+      "layers": [
+        "physics_substrate"
+      ],
       "stage": "growth (undisclosed round size)",
       "funding_eur_m": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Strong investor signal - Amadeus APEX Technology Fund invested with Hermann Hauser (ARM co-founder) taking a board seat. Funding amount not independently verified here.",
-      "source_urls": ["https://sifted.eu/articles/hermann-hauser-planqc-quantum-computing-news", "https://apexventures.substack.com/p/planqc-raises-from-the-amadeus-apex"],
+      "source_urls": [
+        "https://sifted.eu/articles/hermann-hauser-planqc-quantum-computing-news",
+        "https://apexventures.substack.com/p/planqc-raises-from-the-amadeus-apex"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -84,12 +111,17 @@
       "one_liner": "Photonic holographic/XR spatial light modulator chip.",
       "incubator_id": "imec-xpand",
       "country": "Belgium",
-      "layers": ["physics_substrate"],
+      "layers": [
+        "physics_substrate"
+      ],
       "stage": "Series A (+ follow-on)",
-      "funding_eur_m": 40,
+      "funding_eur_m": 40.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Genuine photonic hardware innovation, but the application is holographic AR/VR display, not general compute - borderline fit for a compute thesis specifically. Included for completeness; flag this distinction if citing it.",
-      "source_urls": ["https://www.imec-int.com/en/press/swave-photonics-raises-eu27m-2827m-series-funding-introduction-dynamic-3d-holographic-display", "https://www.imec-int.com/en/press/swave-photonics-raises-additional-series-funding-eu6m-69m-follow-investment-iag-capital"],
+      "source_urls": [
+        "https://www.imec-int.com/en/press/swave-photonics-raises-eu27m-2827m-series-funding-introduction-dynamic-3d-holographic-display",
+        "https://www.imec-int.com/en/press/swave-photonics-raises-additional-series-funding-eu6m-69m-follow-investment-iag-capital"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -97,12 +129,17 @@
       "one_liner": "Superconducting quantum processor manufacturer building an industrial-scale fab (KiloFab).",
       "incubator_id": "qutech-qdnl",
       "country": "Netherlands",
-      "layers": ["physics_substrate"],
+      "layers": [
+        "physics_substrate"
+      ],
       "stage": "Series B",
-      "funding_eur_m": 152,
+      "funding_eur_m": 152.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Largest private round yet for a dedicated quantum-processor company; led by Intel Capital, In-Q-Tel, ETF Partners. Too large/late for a cohort - market-validation reference for the physics_substrate layer.",
-      "source_urls": ["https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/", "https://nltimes.nl/2026/05/05/dutch-quantum-firm-quantware-secures-eu152m-major-delft-facility"],
+      "source_urls": [
+        "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
+        "https://nltimes.nl/2026/05/05/dutch-quantum-firm-quantware-secures-eu152m-major-delft-facility"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -110,12 +147,16 @@
       "one_liner": "Quantum control electronics - the hardware layer that operates qubits.",
       "incubator_id": "qutech-qdnl",
       "country": "Netherlands",
-      "layers": ["codesign_eda"],
+      "layers": [
+        "codesign_eda"
+      ],
       "stage": "unknown (Project HAVIK participant, EUR 1M KvW-funded consortium)",
       "funding_eur_m": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Maps directly onto the 'trusted control' bottleneck the live CDL-NGC site names but the written thesis annex doesn't. Funding stage not independently verified beyond the shared consortium grant.",
-      "source_urls": ["https://yesdelft.com/news/qblox-joins-forces-with-quantware-and-delft-circuits-in-project-havik/"],
+      "source_urls": [
+        "https://yesdelft.com/news/qblox-joins-forces-with-quantware-and-delft-circuits-in-project-havik/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -123,12 +164,17 @@
       "one_liner": "Quantum random-number generation hardware for encryption and quantum-safe security.",
       "incubator_id": "icfo-launchpad",
       "country": "Spain",
-      "layers": ["physics_substrate", "sovereign_edge_onprem"],
+      "layers": [
+        "physics_substrate",
+        "sovereign_edge_onprem"
+      ],
       "stage": "Series A (extended)",
-      "funding_eur_m": 10,
+      "funding_eur_m": 10.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "ICFO spinout with genuine device-physics IP. Quantum-safe hardware roots of trust is a real, near-term EU procurement line, not speculative science.",
-      "source_urls": ["https://thequantuminsider.com/2023/07/04/quside-extends-series-a-to-raise-more-than-e10-million-in-funding/"],
+      "source_urls": [
+        "https://thequantuminsider.com/2023/07/04/quside-extends-series-a-to-raise-more-than-e10-million-in-funding/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -136,12 +182,18 @@
       "one_liner": "RISC-V processors and accelerators for data centers and HPC, spun from BSC and GTD.",
       "incubator_id": "bsc-deep-tech-node",
       "country": "Spain",
-      "layers": ["new_architecture", "sovereign_cloud"],
+      "layers": [
+        "new_architecture",
+        "sovereign_cloud"
+      ],
       "stage": "state-backed growth (~300 employees)",
       "funding_eur_m": 115.77,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "IPCEI-backed national champion status via Spain's SETT vehicle (Recovery Plan). Real proof the RISC-V sovereignty thesis is fundable in 2026, but too mature and state-anchored to be a cohort candidate.",
-      "source_urls": ["https://www.eu-startups.com/2026/06/spains-openchip-lands-e115-million-sett-investment-to-strengthen-europes-semiconductor-capabilities/", "https://www.hpcwire.com/off-the-wire/openchip-receives-e115m-financial-backing-from-sett/"],
+      "source_urls": [
+        "https://www.eu-startups.com/2026/06/spains-openchip-lands-e115-million-sett-investment-to-strengthen-europes-semiconductor-capabilities/",
+        "https://www.hpcwire.com/off-the-wire/openchip-receives-e115m-financial-backing-from-sett/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -149,12 +201,18 @@
       "one_liner": "Sovereign European HPC processor (Rhea1, 80-core Arm Neoverse V1) for the JUPITER exascale system.",
       "incubator_id": "independent",
       "country": "France",
-      "layers": ["new_architecture", "sovereign_cloud"],
+      "layers": [
+        "new_architecture",
+        "sovereign_cloud"
+      ],
       "stage": "Series A",
-      "funding_eur_m": 130,
+      "funding_eur_m": 130.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "The clearest single proof-point that European sovereign silicon is fundable at scale in 2026 - backed partly by the EIC Fund. Not incubator-affiliated in the tracked network; included as market context.",
-      "source_urls": ["https://www.hpcwire.com/off-the-wire/sipearl-closes-e130m-series-a-to-advance-sovereign-european-supercomputing-processors/", "https://www.tomshardware.com/pc-components/cpus/sipearls-long-awaited-rhea-cpu-finally-gets-in-the-lab-opening-the-door-for-europes-first-sovereign-hpc-cpu-availability-of-rhea1-is-scheduled-for-end-of-2026-sipearl-vp-says-following-long-development-process"],
+      "source_urls": [
+        "https://www.hpcwire.com/off-the-wire/sipearl-closes-e130m-series-a-to-advance-sovereign-european-supercomputing-processors/",
+        "https://www.tomshardware.com/pc-components/cpus/sipearls-long-awaited-rhea-cpu-finally-gets-in-the-lab-opening-the-door-for-europes-first-sovereign-hpc-cpu-availability-of-rhea1-is-scheduled-for-end-of-2026-sipearl-vp-says-following-long-development-process"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -162,12 +220,17 @@
       "one_liner": "Chiplet-based AI inference accelerator for scale deployment.",
       "incubator_id": "independent",
       "country": "Netherlands",
-      "layers": ["chiplet_interconnect", "new_architecture"],
+      "layers": [
+        "chiplet_interconnect",
+        "new_architecture"
+      ],
       "stage": "growth",
-      "funding_eur_m": 250,
+      "funding_eur_m": 250.0,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Part of the EUR 240M DARE project (EU chiplet-based HPC stack, led by BSC). $250M+ raised led by Innovation Industries with BlackRock participation - too late-stage for a cohort, validates the chiplet/AI-accelerator thesis.",
-      "source_urls": ["semiengineering.com Q1 2026 startup funding roundup - verify directly before citing"],
+      "source_urls": [
+        "semiengineering.com Q1 2026 startup funding roundup - verify directly before citing"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -175,12 +238,16 @@
       "one_liner": "Zero-code-change confidential computing across clouds via a secure-enclave platform.",
       "incubator_id": "independent",
       "country": "Germany",
-      "layers": ["sovereign_cloud"],
+      "layers": [
+        "sovereign_cloud"
+      ],
       "stage": "seed",
       "funding_eur_m": 4.1,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Maps closely to the thesis's own 'attested inference, confidential compute' language. Differentiation is in the trust/attestation layer rather than new silicon - probe this at diligence. Amadeus APEX Technology Fund (Hermann Hauser's fund) co-led the round.",
-      "source_urls": ["https://www.amadeuscapital.com/enclaive-4-1m-seed-confidential-computing-multi-cloud/"],
+      "source_urls": [
+        "https://www.amadeuscapital.com/enclaive-4-1m-seed-confidential-computing-multi-cloud/"
+      ],
       "last_verified": "2026-08-07"
     },
     {
@@ -188,12 +255,16 @@
       "one_liner": "Sovereign HPC cloud infrastructure for European public-sector buyers.",
       "incubator_id": "independent",
       "country": "France",
-      "layers": ["sovereign_cloud"],
+      "layers": [
+        "sovereign_cloud"
+      ],
       "stage": "seed",
       "funding_eur_m": 7.5,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Infrastructure/hosting layer rather than a trust layer - complementary to enclaive rather than competing with it. Focused explicitly on EU public-entity customers.",
-      "source_urls": ["https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"],
+      "source_urls": [
+        "https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"
+      ],
       "last_verified": "2026-08-07"
     }
   ]
