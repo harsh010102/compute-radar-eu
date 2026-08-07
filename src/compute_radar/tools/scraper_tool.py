@@ -65,7 +65,11 @@ class FetchPageTool(BaseTool):
         text = soup.get_text(separator="\n", strip=True)
         # Collapse excessive blank lines
         lines = [ln for ln in text.splitlines() if ln.strip()]
-        text = "\n".join(lines)[:12000]  # cap so a single page can't blow the context window
+        # Capped hard: free-tier OpenRouter endpoints often carry a much smaller context
+        # window than their paid counterparts, and this pipeline is designed to run
+        # multiple tool calls per task - keep each one cheap so they don't compound into
+        # an overflow that silently comes back as an empty LLM response.
+        text = "\n".join(lines)[:4000]
 
         links = []
         for a in soup.find_all("a", href=True):
@@ -73,6 +77,6 @@ class FetchPageTool(BaseTool):
             href = a["href"]
             if label and href and not href.startswith(("javascript:", "mailto:", "#")):
                 links.append(f"{label} -> {href}")
-        links_block = "\n".join(links[:150])
+        links_block = "\n".join(links[:40])
 
         return f"PAGE TEXT ({url}):\n{text}\n\nLINKS ON PAGE:\n{links_block}"

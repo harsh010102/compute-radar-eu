@@ -48,6 +48,10 @@ def build_scout_agent() -> Agent:
         llm=get_llm(),
         verbose=True,
         allow_delegation=False,
+        max_iter=6,  # bound the tool-call loop - a free-tier model with a small context
+        # window degrades badly on long agentic loops; better to return a partial answer
+        # from a few calls than run until the context silently overflows.
+        respect_context_window=True,
     )
 
 
@@ -72,4 +76,5 @@ def build_analyst_agent() -> Agent:
         llm=get_llm(),
         verbose=True,
         allow_delegation=False,
+        respect_context_window=True,
     )
