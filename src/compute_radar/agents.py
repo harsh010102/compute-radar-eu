@@ -15,7 +15,7 @@ from compute_radar.tools.search_tool import FreeWebSearchTool
 
 
 def get_llm() -> LLM:
-    model = os.getenv("OPENROUTER_MODEL", "deepseek/deepseek-chat-v3.1:free")
+    model = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-20b:free")
     api_key = os.getenv("OPENROUTER_API_KEY")
     if not api_key:
         raise RuntimeError(

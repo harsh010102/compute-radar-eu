@@ -67,7 +67,7 @@ python -m http.server 8080
 ## Cost
 
 - **Scraping**: direct HTTP requests + BeautifulSoup against public pages. No paid search API required. A best-effort free web-search fallback (DuckDuckGo HTML) is used only for discovering startups not already listed on a program's own site — see `tools/search_tool.py` for its limits.
-- **Synthesis**: OpenRouter, defaulting to a free-tier model (`OPENROUTER_MODEL` in `.env`, e.g. `deepseek/deepseek-chat-v3.1:free` — check [openrouter.ai/models](https://openrouter.ai/models?max_price=0) for the current free roster, it rotates). Swap in a paid model for higher accuracy at any time; nothing else in the pipeline changes.
+- **Synthesis**: OpenRouter, defaulting to a free-tier model (`OPENROUTER_MODEL` in `.env`, currently `openai/gpt-oss-20b:free` — check [openrouter.ai/models](https://openrouter.ai/models?max_price=0) or `curl https://openrouter.ai/api/v1/models` for the current free roster, it rotates and past defaults do get retired without notice). Swap in a paid model for higher accuracy at any time; nothing else in the pipeline changes.
 - **Scheduling**: `.github/workflows/refresh.yml` runs the pipeline on a weekly cron via GitHub Actions and commits the updated `data/startups.json` — free on a public repo, no server to maintain.
 
 ## Project status
