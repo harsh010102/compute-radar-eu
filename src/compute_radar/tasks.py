@@ -17,7 +17,7 @@ def build_scout_task(agent: Agent, incubator: dict) -> Task:
             f"Start at {portfolio_url} using fetch_page. Follow links that look like "
             "individual startup/portfolio/cohort pages. If the page doesn't list current "
             "companies, use free_web_search with a query like "
-            f"'{incubator[\"name\"]} 2026 cohort portfolio companies' as a fallback.\n\n"
+            f"'{incubator['name']} 2026 cohort portfolio companies' as a fallback.\n\n"
             "List every current or recent (last ~18 months) compute-relevant company you "
             "find: name, one-line description, country if stated, funding/stage if stated, "
             "and the exact URL you found it on. Do not invent companies or URLs - if you "
