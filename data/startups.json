@@ -16,7 +16,19 @@
       "source_urls": [
         "https://siltest.com/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "unclear",
+      "founders": [
+        {
+          "name": "Sameer S.",
+          "role": "Founder, Managing Director",
+          "linkedin_url": "https://de.linkedin.com/in/sameer-s-5aa7794",
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Semiconductor industry background across product architecture; based in Germany."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "UniSCool",
@@ -33,7 +45,43 @@
       "source_urls": [
         "https://uniscool.tech/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "non_dilutive_grant",
+      "founders": [
+        {
+          "name": "Ramón Jiménez",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": null
+        },
+        {
+          "name": "Montse Vilarrubí",
+          "role": "COO, Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/montse-vilarrub%C3%AD-porta-a4b855a2/",
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Researcher at Universitat de Lleida."
+        },
+        {
+          "name": "Jérôme Barrau",
+          "role": "CTO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Professor at Universitat de Lleida, thermal/energy systems."
+        },
+        {
+          "name": "Luc Fréchette",
+          "role": "Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Professor at Université de Sherbrooke, Canada (MEMS/microsystems)."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "Finchetto",
@@ -50,7 +98,27 @@
       "source_urls": [
         "https://finchetto.com/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "unclear",
+      "founders": [
+        {
+          "name": "Mark Rushworth",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": null
+        },
+        {
+          "name": "Michael Pearcey",
+          "role": "CTO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": null
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "Rayd Technologies",
@@ -69,7 +137,43 @@
       "source_urls": [
         "https://www.rayd.tech/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "unclear",
+      "founders": [
+        {
+          "name": "Kilian Stenning",
+          "role": "CEO, Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/kilian-stenning/",
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Imperial College London."
+        },
+        {
+          "name": "Riccardo Sapienza",
+          "role": "CTO, Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/riccardosapienza/",
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Professor of Physics, Imperial College London."
+        },
+        {
+          "name": "Kirsten Moselund",
+          "role": "CTO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Head of Laboratory, Paul Scherrer Institut (Switzerland)."
+        },
+        {
+          "name": "Jack Gartside",
+          "role": "CSO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Associate Professor of Physics, Imperial College London."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "Quobly",
@@ -86,7 +190,10 @@
       "source_urls": [
         "referenced in prior incubator research (compass_artifact doc); verify directly before citing funding figure"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "planqc",
@@ -104,7 +211,10 @@
         "https://sifted.eu/articles/hermann-hauser-planqc-quantum-computing-news",
         "https://apexventures.substack.com/p/planqc-raises-from-the-amadeus-apex"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Swave Photonics",
@@ -122,7 +232,10 @@
         "https://www.imec-int.com/en/press/swave-photonics-raises-eu27m-2827m-series-funding-introduction-dynamic-3d-holographic-display",
         "https://www.imec-int.com/en/press/swave-photonics-raises-additional-series-funding-eu6m-69m-follow-investment-iag-capital"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "QuantWare",
@@ -140,7 +253,10 @@
         "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
         "https://nltimes.nl/2026/05/05/dutch-quantum-firm-quantware-secures-eu152m-major-delft-facility"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Qblox",
@@ -157,7 +273,10 @@
       "source_urls": [
         "https://yesdelft.com/news/qblox-joins-forces-with-quantware-and-delft-circuits-in-project-havik/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "non_dilutive_grant",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Quside",
@@ -175,7 +294,19 @@
       "source_urls": [
         "https://thequantuminsider.com/2023/07/04/quside-extends-series-a-to-raise-more-than-e10-million-in-funding/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [
+        {
+          "name": "Carlos Abellan",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "PhD Photonics, ICFO (quantum cryptography/QRNG); 15+ scientific papers; MIT Innovators Under 35 Europe."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "Openchip & Software Technologies",
@@ -194,7 +325,10 @@
         "https://www.eu-startups.com/2026/06/spains-openchip-lands-e115-million-sett-investment-to-strengthen-europes-semiconductor-capabilities/",
         "https://www.hpcwire.com/off-the-wire/openchip-receives-e115m-financial-backing-from-sett/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "unclear",
+      "founders": [],
+      "team_size_estimate": "~300 employees (per UCC/Tyndall reporting)"
     },
     {
       "name": "SiPearl",
@@ -213,7 +347,10 @@
         "https://www.hpcwire.com/off-the-wire/sipearl-closes-e130m-series-a-to-advance-sovereign-european-supercomputing-processors/",
         "https://www.tomshardware.com/pc-components/cpus/sipearls-long-awaited-rhea-cpu-finally-gets-in-the-lab-opening-the-door-for-europes-first-sovereign-hpc-cpu-availability-of-rhea1-is-scheduled-for-end-of-2026-sipearl-vp-says-following-long-development-process"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Axelera AI",
@@ -231,7 +368,10 @@
       "source_urls": [
         "semiengineering.com Q1 2026 startup funding roundup - verify directly before citing"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "enclaive",
@@ -248,7 +388,27 @@
       "source_urls": [
         "https://www.amadeuscapital.com/enclaive-4-1m-seed-confidential-computing-multi-cloud/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [
+        {
+          "name": "Andreas Walbrodt",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "University of Cambridge; 15+ years in cloud/utility business models."
+        },
+        {
+          "name": "Sebastian Gajek",
+          "role": "CTO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Prof. Dr., cryptography/security academic background."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "PoliCloud",
@@ -265,7 +425,19 @@
       "source_urls": [
         "https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [
+        {
+          "name": "David Gurlé",
+          "role": "CEO, Founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Former Microsoft executive; founder of Symphony (enterprise messaging, prior large exit) - serial entrepreneur, not a first-time founder."
+        }
+      ],
+      "team_size_estimate": null
     },
     {
       "name": "Arkeon",
@@ -282,7 +454,10 @@
       "source_urls": [
         "https://www.eu-startups.com/2026/06/gothenburgs-arkeon-closes-e594-2k-seed-round-to-boost-precision-in-quantum-chip-production/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "FrostByte",
@@ -300,7 +475,10 @@
       "source_urls": [
         "referenced via quantum-hardware funding research Aug 2026; verify current terms directly before citing"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "equity_priced_round",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Vivid Photonics",
@@ -317,7 +495,10 @@
       "source_urls": [
         "https://www.tyndall.ie/news/vivid-photonics-launch/"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "non_dilutive_grant",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "PulpoSemi",
@@ -334,7 +515,10 @@
       "source_urls": [
         "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
-      "last_verified": "2026-08-07"
+      "last_verified": "2026-08-07",
+      "funding_type": "non_dilutive_grant",
+      "founders": [],
+      "team_size_estimate": null
     },
     {
       "name": "Endurance Semiconductors",
@@ -352,92 +536,10 @@
       "source_urls": [
         "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
-      "last_verified": "2026-08-07"
-    },
-    {
-      "name": "AEROLYTICS",
-      "one_liner": "Indoor autonomous drones that monitor greenhouse crops, reducing pesticide use while boosting yield and crop health.",
-      "incubator_id": "imec-istart",
-      "country": "Belgium",
-      "layers": [
-        "new_architecture"
-      ],
-      "stage": "Early‑stage, pre‑seed",
-      "funding_eur_m": 0.1,
-      "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "AEROLYTICS builds autonomous drones with integrated sensors and AI, but it does not introduce a new compute architecture or substrate; it is a hardware platform that applies existing compute technology to a new application domain.",
-      "source_urls": [
-        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
-      ],
-      "last_verified": "2026-08-08"
-    },
-    {
-      "name": "AETECH",
-      "one_liner": "Innovative medical device that integrates with ECMO systems to provide intelligent, real‑time therapy adjustments.",
-      "incubator_id": "imec-istart",
-      "country": "Belgium",
-      "layers": [
-        "new_architecture"
-      ],
-      "stage": "Early‑stage, pre‑seed",
-      "funding_eur_m": 0.1,
-      "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "AETECH delivers a medical device that embeds AI for real‑time therapy adjustments; it is a hardware solution but does not represent a new compute architecture or substrate beyond conventional silicon.",
-      "source_urls": [
-        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
-      ],
-      "last_verified": "2026-08-08"
-    },
-    {
-      "name": "COMMON SENSE ROBOTICS",
-      "one_liner": "AI‑driven digitisation, integration and automation of manual touch‑labour in manufacturing, streamlining task management.",
-      "incubator_id": "imec-istart",
-      "country": "Belgium",
-      "layers": [
-        "new_architecture"
-      ],
-      "stage": "Early‑stage, pre‑seed",
-      "funding_eur_m": 0.1,
-      "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "COMMON SENSE ROBOTICS provides robotic hardware with embedded AI for automation; it does not introduce a new compute architecture or substrate, merely applying existing technology to a new domain.",
-      "source_urls": [
-        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
-      ],
-      "last_verified": "2026-08-08"
-    },
-    {
-      "name": "LYNQO",
-      "one_liner": "Technology that improves surgical‑instrument management in hospitals, reducing workload, cost and environmental impact.",
-      "incubator_id": "imec-istart",
-      "country": "Belgium",
-      "layers": [
-        "new_architecture"
-      ],
-      "stage": "Early‑stage, pre‑seed",
-      "funding_eur_m": 0.1,
-      "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "LYNQO offers a hardware‑centric solution for surgical‑instrument tracking; it does not present a new compute architecture or substrate, but rather adapts existing technology to a medical workflow.",
-      "source_urls": [
-        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
-      ],
-      "last_verified": "2026-08-08"
-    },
-    {
-      "name": "STIMALIA",
-      "one_liner": "Miniaturised, injectable bio‑electronic implant that provides continuous, drug‑free PTSD therapy via long‑lasting nerve stimulation.",
-      "incubator_id": "imec-istart",
-      "country": "Belgium",
-      "layers": [
-        "new_architecture"
-      ],
-      "stage": "Early‑stage, pre‑seed",
-      "funding_eur_m": 0.1,
-      "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "STIMALIA develops a bio‑electronic implant; while it is a novel hardware device, it does not introduce a new compute architecture or substrate beyond conventional silicon, but rather applies existing electronics to a medical application.",
-      "source_urls": [
-        "https://www.imecistart.com/en/news/meet-the-imec-istart-autumn-2025-cohort"
-      ],
-      "last_verified": "2026-08-08"
+      "last_verified": "2026-08-07",
+      "funding_type": "non_dilutive_grant",
+      "founders": [],
+      "team_size_estimate": null
     }
   ]
 }
