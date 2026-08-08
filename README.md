@@ -27,7 +27,7 @@ config/incubators.yaml   →  the ~20 programs to track (seeded from prior resea
    data/startups.json    →  structured, versioned output (the single source of truth)
         │
         ▼
-   dashboard/             →  static HTML/JS market map reading that JSON directly
+   dashboard/             →  static HTML/JS market map (Leaflet + OpenStreetMap) reading that JSON directly
 ```
 
 ## The taxonomy
@@ -91,7 +91,7 @@ src/compute_radar/
   pipeline.py                  CLI entrypoint, writes data/startups.json
 data/startups.json             the single source of truth the dashboard reads
 data/incubators.json           id -> name/country lookup, hand-derived from incubators.yaml
-dashboard/                     static HTML/JS market map (no build step)
+dashboard/                     static HTML/JS market map: interactive Leaflet map + filterable card/table view (no build step)
 .github/workflows/refresh.yml  weekly scheduled re-run
 ```
 
