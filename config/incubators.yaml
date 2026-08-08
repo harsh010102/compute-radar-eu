@@ -28,6 +28,16 @@
   portfolio_url: "https://ahead.fraunhofer.de/en"
   notes: "HHI institute adds photonics/AI/quantum. See also Silicon Allee Deep Tech Venture Lab."
 
+- id: fraunhofer-hhi-silicon-allee
+  name: "Silicon Allee Deep Tech Venture Lab @ Fraunhofer HHI"
+  country: "Germany (Berlin)"
+  type: "research-institute venture lab"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.siliconallee.com"
+  portfolio_url: "https://www.siliconallee.com/portfolio"
+  notes: "Distinct from the general Fraunhofer AHEAD program - Berlin-specific, built on Fraunhofer HHI IP (AI, quantum, photonics). Up to 12 months of non-dilutive funding via full-time HHI employment."
+
 - id: helmholtz-enterprise
   name: "Helmholtz Enterprise"
   country: "Germany (18 centres incl. Jülich, KIT, DLR)"

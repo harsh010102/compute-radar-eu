@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T07:28:03.750336+00:00",
+  "generated_at": "2026-08-08T18:41:40.147901+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -540,6 +540,113 @@
       "funding_type": "non_dilutive_grant",
       "founders": [],
       "team_size_estimate": null
+    },
+    {
+      "name": "QuSine",
+      "one_liner": "Ultra-precise RF signal synthesizers (low phase-noise/jitter) for quantum systems, 6G, and radar.",
+      "incubator_id": "fraunhofer-hhi-silicon-allee",
+      "country": "Germany",
+      "layers": [
+        "codesign_eda"
+      ],
+      "stage": "early (Silicon Allee venture lab)",
+      "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Won the Berlin Brandenburg Innovation Award 2025 for its RF signal synthesizer work. Part of the same European \"quantum control electronics\" cluster as Qblox/FrostByte (Netherlands) and QENDRA (Switzerland) - a real cross-border pattern worth noting: control/signal-generation is emerging as its own sub-category, not just a footnote to the quantum-processor companies it serves. Funded via Silicon Allee's non-dilutive full-time-employment-at-HHI structure rather than equity.",
+      "founders": [
+        {
+          "name": "Aditya Gupta",
+          "role": null,
+          "linkedin_url": "https://www.linkedin.com/in/adityagupta-msc/",
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Exact title not confirmed from available sources."
+        }
+      ],
+      "source_urls": [
+        "https://www.hhi.fraunhofer.de/en/press/news/2025/fraunhofer-hhi-portfolio-startup-qusine-wins-berlin-brandenburg-innovation-award-2025.html",
+        "https://www.qusinus.com/857-2/"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "EnLIGHT Photonics",
+      "one_liner": "Integrated photonic circuits (lithium-niobate-on-insulator) for a future quantum internet.",
+      "incubator_id": "eth-pioneer",
+      "country": "Switzerland",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "pre-seed (current ETH Pioneer Fellow)",
+      "funding_eur_m": 0.125,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
+      "sovereignty_basis": "Switzerland",
+      "architectural_differentiation_note": "Genuine device physics - lithium-niobate-on-insulator quantum photonic integrated circuits, a real scalability path for quantum networking. Founder is an active ETH postdoc in nanophotonics/integrated optics with a verifiable publication record - strong technical pedigree signal.",
+      "founders": [
+        {
+          "name": "Giovanni Finco",
+          "role": "Founder",
+          "linkedin_url": "https://www.linkedin.com/in/giovanni-finco-882912207/",
+          "github_url": null,
+          "research_profile_url": "https://scholar.google.com/citations?user=FEqlog0AAAAJ&hl=it",
+          "note": "Postdoctoral researcher, ETH Zurich Optical Nanomaterial / Quantum Photonics groups."
+        }
+      ],
+      "source_urls": [
+        "https://entrepreneurship.ethz.ch/startups-spinoffs/find-offers-programs-space-grants-for-entrepreneurs/pioneer-fellowship/current-fellows.html",
+        "https://ong.ethz.ch/people0/person-detail.MjkzOTYy.TGlzdC8zOTIwLDE1ODc0NjQzMzQ=.html"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "QENDRA",
+      "one_liner": "Classical control systems purpose-built for trapped-ion and neutral-atom quantum computers.",
+      "incubator_id": "eth-pioneer",
+      "country": "Switzerland",
+      "layers": [
+        "codesign_eda"
+      ],
+      "stage": "pre-seed (ETH Pioneer Fellowship 2024 cohort; active sales for 2026)",
+      "funding_eur_m": 0.155,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
+      "sovereignty_basis": "Switzerland",
+      "architectural_differentiation_note": "ETH spinout from the Trapped Ion Quantum Information group, built specifically for ion/neutral-atom platforms that commercial control-system vendors have neglected - a real gap, not a me-too. Fourth company in this dataset in the same \"quantum control electronics\" niche (with Qblox, FrostByte, QuSine), spanning NL/DE/CH.",
+      "founders": [
+        {
+          "name": "Martin Stadler",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "PhD, ETH Zurich Trapped Ion Quantum Information group."
+        },
+        {
+          "name": "Ferdinand Felder",
+          "role": "COO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": null
+        },
+        {
+          "name": "Chidzahi Mabritto",
+          "role": "Deputy CTO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": null
+        }
+      ],
+      "source_urls": [
+        "https://tech.eu/2026/04/27/qendra-gets-eur162k-to-scale-quantum-computing-systems/",
+        "https://www.startupticker.ch/en/news/qendra-obtains-chf-150-000-from-venture-kick",
+        "https://qendra.tech/about"
+      ],
+      "last_verified": "2026-08-08"
     }
   ]
 }
