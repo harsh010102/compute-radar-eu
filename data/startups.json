@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-07T18:23:47.595444+00:00",
+  "generated_at": "2026-08-08T07:28:03.750336+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -353,6 +353,91 @@
         "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
       "last_verified": "2026-08-07"
+    },
+    {
+      "name": "AEROLYTICS",
+      "one_liner": "Indoor autonomous drones that monitor greenhouse crops, reducing pesticide use while boosting yield and crop health.",
+      "incubator_id": "imec-istart",
+      "country": "Belgium",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "Early‑stage, pre‑seed",
+      "funding_eur_m": 0.1,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "AEROLYTICS builds autonomous drones with integrated sensors and AI, but it does not introduce a new compute architecture or substrate; it is a hardware platform that applies existing compute technology to a new application domain.",
+      "source_urls": [
+        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "AETECH",
+      "one_liner": "Innovative medical device that integrates with ECMO systems to provide intelligent, real‑time therapy adjustments.",
+      "incubator_id": "imec-istart",
+      "country": "Belgium",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "Early‑stage, pre‑seed",
+      "funding_eur_m": 0.1,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "AETECH delivers a medical device that embeds AI for real‑time therapy adjustments; it is a hardware solution but does not represent a new compute architecture or substrate beyond conventional silicon.",
+      "source_urls": [
+        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "COMMON SENSE ROBOTICS",
+      "one_liner": "AI‑driven digitisation, integration and automation of manual touch‑labour in manufacturing, streamlining task management.",
+      "incubator_id": "imec-istart",
+      "country": "Belgium",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "Early‑stage, pre‑seed",
+      "funding_eur_m": 0.1,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "COMMON SENSE ROBOTICS provides robotic hardware with embedded AI for automation; it does not introduce a new compute architecture or substrate, merely applying existing technology to a new domain.",
+      "source_urls": [
+        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "LYNQO",
+      "one_liner": "Technology that improves surgical‑instrument management in hospitals, reducing workload, cost and environmental impact.",
+      "incubator_id": "imec-istart",
+      "country": "Belgium",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "Early‑stage, pre‑seed",
+      "funding_eur_m": 0.1,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "LYNQO offers a hardware‑centric solution for surgical‑instrument tracking; it does not present a new compute architecture or substrate, but rather adapts existing technology to a medical workflow.",
+      "source_urls": [
+        "https://www.imecistart.com/en/news/meet-the-imec-istart-spring-2025-cohort"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "STIMALIA",
+      "one_liner": "Miniaturised, injectable bio‑electronic implant that provides continuous, drug‑free PTSD therapy via long‑lasting nerve stimulation.",
+      "incubator_id": "imec-istart",
+      "country": "Belgium",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "Early‑stage, pre‑seed",
+      "funding_eur_m": 0.1,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "STIMALIA develops a bio‑electronic implant; while it is a novel hardware device, it does not introduce a new compute architecture or substrate beyond conventional silicon, but rather applies existing electronics to a medical application.",
+      "source_urls": [
+        "https://www.imecistart.com/en/news/meet-the-imec-istart-autumn-2025-cohort"
+      ],
+      "last_verified": "2026-08-08"
     }
   ]
 }
