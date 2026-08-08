@@ -4,16 +4,14 @@ name: Weekly refresh
 # incubator on a schedule and commits the updated data/startups.json. Free on a public
 # GitHub repo - no server to run or pay for.
 #
-# Setup: add OPENROUTER_API_KEY as a repository secret (Settings -> Secrets and variables
-# -> Actions) before this workflow can do anything beyond checkout.
+# Setup: add OPENROUTER_API_KEY and/or GEMINI_API_KEY as repository secrets (Settings ->
+# Secrets and variables -> Actions) before this workflow can do anything beyond checkout.
+# With both set, the pipeline round-robins incubators across the two and falls back from
+# one to the other on a rate-limit - see src/compute_radar/llm_provider.py.
 
 on:
   schedule:
     - cron: "17 6 * * 1"  # Mondays ~06:17 UTC - off the hour, per cron best practice
-    - cron: "11 6 8 8 *"  # ONE-SHOT: 2026-08-08 ~06:11 UTC, safely after the OpenRouter
-      # free-tier daily quota resets (00:00 UTC). Added to run --all once quota is fresh
-      # without waiting for the next Monday. Fires again on Aug 8 next year unless removed
-      # first - safe to delete this line once it's done its job.
   workflow_dispatch:        # lets you trigger a run manually from the Actions tab
     inputs:
       incubator:
@@ -43,6 +41,8 @@ jobs:
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
           INCUBATOR_INPUT: ${{ github.event.inputs.incubator }}
         run: |
           if [ -n "$INCUBATOR_INPUT" ]; then

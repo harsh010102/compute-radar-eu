@@ -1,11 +1,13 @@
 """Agent definitions. Two agents, deliberately: a Scout that only reads pages and a
 separate Analyst that only reasons/classifies. Splitting them (rather than one agent doing
 both) keeps the expensive LLM calls confined to the reasoning step and lets the Scout do as
-much of its work as possible via plain tool calls."""
+much of its work as possible via plain tool calls.
+
+Provider selection lives in llm_provider.py - build_scout_agent/build_analyst_agent both take
+an explicit `llm` so the caller (crew.py) controls which provider a given run uses, rather
+than this module hard-coding one."""
 
 from __future__ import annotations
-
-import os
 
 from crewai import LLM, Agent
 
@@ -14,23 +16,7 @@ from compute_radar.tools.scraper_tool import FetchPageTool
 from compute_radar.tools.search_tool import FreeWebSearchTool
 
 
-def get_llm() -> LLM:
-    model = os.getenv("OPENROUTER_MODEL", "openai/gpt-oss-20b:free")
-    api_key = os.getenv("OPENROUTER_API_KEY")
-    if not api_key:
-        raise RuntimeError(
-            "OPENROUTER_API_KEY is not set. Copy .env.example to .env and add a free key "
-            "from https://openrouter.ai/keys"
-        )
-    return LLM(
-        model=f"openrouter/{model}",
-        api_key=api_key,
-        base_url="https://openrouter.ai/api/v1",
-        temperature=0.2,
-    )
-
-
-def build_scout_agent() -> Agent:
+def build_scout_agent(llm: LLM) -> Agent:
     return Agent(
         role="Incubator Scout",
         goal=(
@@ -45,19 +31,17 @@ def build_scout_agent() -> Agent:
             "sponsor). You always cite the URL you found each company on."
         ),
         tools=[FetchPageTool(), FreeWebSearchTool()],
-        llm=get_llm(),
+        llm=llm,
         verbose=True,
         allow_delegation=False,
         max_iter=10,  # bound the tool-call loop - a free-tier model with a small context
         # window degrades badly on long agentic loops; better to return a partial answer
         # from a bounded number of calls than run until the context silently overflows.
-        # 6 proved crash-safe but under-covers a large portfolio page; 10 is the next step
-        # up now that per-call output is capped small (see scraper_tool.py).
         respect_context_window=True,
     )
 
 
-def build_analyst_agent() -> Agent:
+def build_analyst_agent(llm: LLM) -> Agent:
     return Agent(
         role="Compute Stack Analyst",
         goal=(
@@ -75,7 +59,7 @@ def build_analyst_agent() -> Agent:
             f"{describe_taxonomy_for_prompt()}"
         ),
         tools=[],
-        llm=get_llm(),
+        llm=llm,
         verbose=True,
         allow_delegation=False,
         respect_context_window=True,

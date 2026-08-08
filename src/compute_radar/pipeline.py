@@ -70,16 +70,22 @@ def main() -> None:
         parser.print_help()
         sys.exit(1)
 
-    # Imported here so `--help` works without OPENROUTER_API_KEY set.
+    # Imported here so `--help` works without an LLM key set.
     from compute_radar.crew import run_for_incubator
+    from compute_radar.llm_provider import available_providers
+
+    providers = available_providers()
+    print(f"LLM providers available this run: {providers} (round-robin + fallback between them)")
 
     snapshot = load_existing_snapshot()
     fresh: list[Startup] = []
 
-    for incubator in incubators:
-        print(f"\n=== Scouting {incubator['name']} ({incubator['id']}) ===")
+    for i, incubator in enumerate(incubators):
+        provider = providers[i % len(providers)]  # spread load across providers up front,
+        # rather than only switching after one is already exhausted
+        print(f"\n=== Scouting {incubator['name']} ({incubator['id']}) via {provider} ===")
         try:
-            result = run_for_incubator(incubator)
+            result = run_for_incubator(incubator, provider, providers)
             print(f"  -> found {len(result.startups)} compute-relevant companies")
             fresh.extend(result.startups)
         except Exception as exc:  # noqa: BLE001 - one bad incubator shouldn't kill the run
