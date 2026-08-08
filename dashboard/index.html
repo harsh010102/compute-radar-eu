@@ -63,6 +63,11 @@
     border:1px solid var(--border); background:var(--surface-2); color:var(--ink);
   }
   .search:focus{outline:2px solid var(--accent); outline-offset:1px;}
+  .refresh-btn{
+    font-size:.8rem; padding:.5rem .8rem; border-radius:8px; border:1px solid var(--accent);
+    background:var(--accent-wash); color:var(--accent); font-weight:600; white-space:nowrap;
+  }
+  .refresh-btn:hover{background:var(--accent); color:var(--accent-ink); text-decoration:none;}
   .topbar .meta{margin-left:auto; font-size:.76rem; color:var(--ink-muted); text-align:right;}
 
   .layout{display:grid; grid-template-columns:270px 1fr; gap:0; align-items:start;}
@@ -155,6 +160,9 @@
       <h1>European compute incubators &amp; the startups moving through them</h1>
     </div>
     <input class="search" id="search" type="search" placeholder="Search name or description…">
+    <a class="refresh-btn" id="refresh-btn" href="https://github.com/harsh010102/compute-radar-eu/actions/workflows/refresh.yml" target="_blank" rel="noopener" title="Opens the GitHub Actions run page — one click there re-runs the pipeline. A static site can't safely hold a token to trigger this with zero clicks.">
+      ↻ Refresh data
+    </a>
     <div class="meta" id="freshness"></div>
   </div>
 
