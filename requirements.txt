@@ -1,5 +1,9 @@
 crewai>=0.86.0
 crewai-tools>=0.17.0
+# CrewAI routes "gemini/..." models through its NATIVE Google Gen AI provider, which needs
+# this extra SDK - without it a Gemini run fails with "Google Gen AI native provider not
+# available". Required for the OpenRouter<->Gemini fallback in llm_provider.py to work.
+google-genai>=1.0.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0
 lxml>=5.0.0

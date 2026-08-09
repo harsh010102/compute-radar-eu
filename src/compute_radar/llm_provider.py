@@ -45,14 +45,19 @@ def build_llm(provider: str) -> LLM:
             temperature=0.2,
         )
     if provider == "gemini":
-        # litellm's "gemini/<model>" prefix talks to the Gemini API directly (not via
-        # Vertex) using GEMINI_API_KEY. Check ai.google.dev/gemini-api/docs/models for the
-        # current free-tier model name if this one has been retired - same rotation risk
-        # as the OpenRouter default, see README.
+        # CrewAI routes "gemini/<model>" through its native Google Gen AI provider (needs
+        # the google-genai extra, see requirements.txt). That SDK reads GOOGLE_API_KEY or
+        # GEMINI_API_KEY from the env; we mirror our GEMINI_API_KEY into GOOGLE_API_KEY too
+        # so it's found however the provider looks for it. Check
+        # ai.google.dev/gemini-api/docs/models for the current free-tier model name if this
+        # one has been retired - same rotation risk as the OpenRouter default, see README.
+        gemini_key = os.getenv("GEMINI_API_KEY")
+        if gemini_key and not os.getenv("GOOGLE_API_KEY"):
+            os.environ["GOOGLE_API_KEY"] = gemini_key
         model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
         return LLM(
             model=f"gemini/{model}",
-            api_key=os.getenv("GEMINI_API_KEY"),
+            api_key=gemini_key,
             temperature=0.2,
         )
     raise ValueError(f"Unknown provider: {provider!r}")
