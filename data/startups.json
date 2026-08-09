@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:13:06.065174+00:00",
+  "generated_at": "2026-08-09T10:51:00.624070+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -11,13 +11,10 @@
       ],
       "stage": "commercial",
       "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
       "sovereignty_basis": "unclear",
       "architectural_differentiation_note": "Software/AI layer on top of existing ATE infrastructure (Advantest, Teradyne) for test-program generation and yield analytics - not a new physical or architectural approach. Doesn't map cleanly onto co-design, chiplet, or packaging as written in the thesis.",
-      "source_urls": [
-        "https://siltest.com/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "unclear",
       "founders": [
         {
           "name": "Sameer S.",
@@ -28,7 +25,11 @@
           "note": "Semiconductor industry background across product architecture; based in Germany."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://siltest.com/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "UniSCool",
@@ -40,13 +41,10 @@
       ],
       "stage": "seed / pilot (Try & Buy program)",
       "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Evolutionary efficiency gain rather than a new physical principle; academic roots (Universitat de Lleida) and EU public co-funding (NextGenerationEU/CDTI) are the strongest sovereignty signal of any venture in this set. Differentiation depends on IP defensibility vs. incumbents (Vertiv/Eaton/Schneider all bought into this niche in 2025).",
-      "source_urls": [
-        "https://uniscool.tech/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "non_dilutive_grant",
       "founders": [
         {
           "name": "Ramón Jiménez",
@@ -81,7 +79,11 @@
           "note": "Professor at Université de Sherbrooke, Canada (MEMS/microsystems)."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://uniscool.tech/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Finchetto",
@@ -93,13 +95,10 @@
       ],
       "stage": "pre-seed",
       "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
       "sovereignty_basis": "UK",
       "architectural_differentiation_note": "Genuine physics-level differentiation: 26-53x power reduction vs conventional switches, 40ns port-to-port latency. UK-based, so outside EU Chips Act/IPCEI/EuroHPC instruments - sovereign path would run through Innovate UK and direct hyperscaler contracts.",
-      "source_urls": [
-        "https://finchetto.com/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "unclear",
       "founders": [
         {
           "name": "Mark Rushworth",
@@ -118,7 +117,11 @@
           "note": null
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://finchetto.com/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Rayd Technologies",
@@ -132,13 +135,10 @@
       ],
       "stage": "pre-seed",
       "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
       "sovereignty_basis": "UK",
       "architectural_differentiation_note": "Combines a new substrate (photonics) and a new architecture (neuromorphic) simultaneously - the strongest architectural story in this dataset. >100x fewer parameters claimed for on-device, low-data inference. Same UK/Swiss sovereignty caveat as Finchetto.",
-      "source_urls": [
-        "https://www.rayd.tech/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "unclear",
       "founders": [
         {
           "name": "Kilian Stenning",
@@ -173,7 +173,11 @@
           "note": "Associate Professor of Physics, Imperial College London."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://www.rayd.tech/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Quobly",
@@ -185,15 +189,16 @@
       ],
       "stage": "Series A",
       "funding_eur_m": 115.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "CEA-Leti/CNRS spinout; STMicroelectronics involvement gives a credible CMOS-compatible manufacturing story, not just lab-scale physics. Already past cohort stage - useful as a market-validation reference, not a sourcing target.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "referenced in prior incubator research (compass_artifact doc); verify directly before citing funding figure"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "planqc",
@@ -205,16 +210,17 @@
       ],
       "stage": "growth (undisclosed round size)",
       "funding_eur_m": null,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Strong investor signal - Amadeus APEX Technology Fund invested with Hermann Hauser (ARM co-founder) taking a board seat. Funding amount not independently verified here.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://sifted.eu/articles/hermann-hauser-planqc-quantum-computing-news",
         "https://apexventures.substack.com/p/planqc-raises-from-the-amadeus-apex"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Swave Photonics",
@@ -226,16 +232,17 @@
       ],
       "stage": "Series A (+ follow-on)",
       "funding_eur_m": 40.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Genuine photonic hardware innovation, but the application is holographic AR/VR display, not general compute - borderline fit for a compute thesis specifically. Included for completeness; flag this distinction if citing it.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.imec-int.com/en/press/swave-photonics-raises-eu27m-2827m-series-funding-introduction-dynamic-3d-holographic-display",
         "https://www.imec-int.com/en/press/swave-photonics-raises-additional-series-funding-eu6m-69m-follow-investment-iag-capital"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "QuantWare",
@@ -247,16 +254,17 @@
       ],
       "stage": "Series B",
       "funding_eur_m": 152.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Largest private round yet for a dedicated quantum-processor company; led by Intel Capital, In-Q-Tel, ETF Partners. Too large/late for a cohort - market-validation reference for the physics_substrate layer.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.eu-startups.com/2026/05/quantware-raises-e152-million-in-the-largest-private-round-for-a-dedicated-quantum-processor-company/",
         "https://nltimes.nl/2026/05/05/dutch-quantum-firm-quantware-secures-eu152m-major-delft-facility"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Qblox",
@@ -268,15 +276,16 @@
       ],
       "stage": "unknown (Project HAVIK participant, EUR 1M KvW-funded consortium)",
       "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Maps directly onto the 'trusted control' bottleneck the live CDL-NGC site names but the written thesis annex doesn't. Funding stage not independently verified beyond the shared consortium grant.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://yesdelft.com/news/qblox-joins-forces-with-quantware-and-delft-circuits-in-project-havik/"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "non_dilutive_grant",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Quside",
@@ -289,13 +298,10 @@
       ],
       "stage": "Series A (extended)",
       "funding_eur_m": 10.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "ICFO spinout with genuine device-physics IP. Quantum-safe hardware roots of trust is a real, near-term EU procurement line, not speculative science.",
-      "source_urls": [
-        "https://thequantuminsider.com/2023/07/04/quside-extends-series-a-to-raise-more-than-e10-million-in-funding/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
       "founders": [
         {
           "name": "Carlos Abellan",
@@ -306,7 +312,11 @@
           "note": "PhD Photonics, ICFO (quantum cryptography/QRNG); 15+ scientific papers; MIT Innovators Under 35 Europe."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://thequantuminsider.com/2023/07/04/quside-extends-series-a-to-raise-more-than-e10-million-in-funding/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Openchip & Software Technologies",
@@ -319,16 +329,17 @@
       ],
       "stage": "state-backed growth (~300 employees)",
       "funding_eur_m": 115.77,
+      "funding_type": "unclear",
+      "team_size_estimate": "~300 employees (per UCC/Tyndall reporting)",
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "IPCEI-backed national champion status via Spain's SETT vehicle (Recovery Plan). Real proof the RISC-V sovereignty thesis is fundable in 2026, but too mature and state-anchored to be a cohort candidate.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.eu-startups.com/2026/06/spains-openchip-lands-e115-million-sett-investment-to-strengthen-europes-semiconductor-capabilities/",
         "https://www.hpcwire.com/off-the-wire/openchip-receives-e115m-financial-backing-from-sett/"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "unclear",
-      "founders": [],
-      "team_size_estimate": "~300 employees (per UCC/Tyndall reporting)"
+      "last_verified": "2026-08-07"
     },
     {
       "name": "SiPearl",
@@ -341,16 +352,17 @@
       ],
       "stage": "Series A",
       "funding_eur_m": 130.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "The clearest single proof-point that European sovereign silicon is fundable at scale in 2026 - backed partly by the EIC Fund. Not incubator-affiliated in the tracked network; included as market context.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.hpcwire.com/off-the-wire/sipearl-closes-e130m-series-a-to-advance-sovereign-european-supercomputing-processors/",
         "https://www.tomshardware.com/pc-components/cpus/sipearls-long-awaited-rhea-cpu-finally-gets-in-the-lab-opening-the-door-for-europes-first-sovereign-hpc-cpu-availability-of-rhea1-is-scheduled-for-end-of-2026-sipearl-vp-says-following-long-development-process"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Axelera AI",
@@ -363,15 +375,16 @@
       ],
       "stage": "growth",
       "funding_eur_m": 250.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Part of the EUR 240M DARE project (EU chiplet-based HPC stack, led by BSC). $250M+ raised led by Innovation Industries with BlackRock participation - too late-stage for a cohort, validates the chiplet/AI-accelerator thesis.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "semiengineering.com Q1 2026 startup funding roundup - verify directly before citing"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "enclaive",
@@ -383,13 +396,10 @@
       ],
       "stage": "seed",
       "funding_eur_m": 4.1,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Maps closely to the thesis's own 'attested inference, confidential compute' language. Differentiation is in the trust/attestation layer rather than new silicon - probe this at diligence. Amadeus APEX Technology Fund (Hermann Hauser's fund) co-led the round.",
-      "source_urls": [
-        "https://www.amadeuscapital.com/enclaive-4-1m-seed-confidential-computing-multi-cloud/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
       "founders": [
         {
           "name": "Andreas Walbrodt",
@@ -408,7 +418,11 @@
           "note": "Prof. Dr., cryptography/security academic background."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://www.amadeuscapital.com/enclaive-4-1m-seed-confidential-computing-multi-cloud/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "PoliCloud",
@@ -420,13 +434,10 @@
       ],
       "stage": "seed",
       "funding_eur_m": 7.5,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Infrastructure/hosting layer rather than a trust layer - complementary to enclaive rather than competing with it. Focused explicitly on EU public-entity customers.",
-      "source_urls": [
-        "https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"
-      ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
       "founders": [
         {
           "name": "David Gurlé",
@@ -437,7 +448,11 @@
           "note": "Former Microsoft executive; founder of Symphony (enterprise messaging, prior large exit) - serial entrepreneur, not a first-time founder."
         }
       ],
-      "team_size_estimate": null
+      "patents": null,
+      "source_urls": [
+        "https://www.eu-startups.com/2025/06/french-startup-policloud-raises-e7-5-million-to-innovate-next-gen-sovereign-cloud-infrastructure/"
+      ],
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Arkeon",
@@ -449,15 +464,16 @@
       ],
       "stage": "seed",
       "funding_eur_m": 0.594,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Founded 2025 (Peter Horstedt, Andreas Nylander, Marcus Rommel). Addresses a real manufacturing bottleneck in superconducting quantum chips (qubit frequency variance from fabrication) rather than building a new compute paradigm from scratch - narrower, more defensible claim than a lot of quantum hardware pitches.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.eu-startups.com/2026/06/gothenburgs-arkeon-closes-e594-2k-seed-round-to-boost-precision-in-quantum-chip-production/"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "FrostByte",
@@ -470,15 +486,16 @@
       ],
       "stage": "pre-seed",
       "funding_eur_m": 1.3,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "QuTech/TU Delft spinout addressing the 'trusted control' / cryo-electronics bottleneck the live CDL-NGC site names explicitly - a scaling constraint for every quantum hardware company, not just one architecture. Raised May 2026, led by InnovationQuarter Capital.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "referenced via quantum-hardware funding research Aug 2026; verify current terms directly before citing"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "equity_priced_round",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Vivid Photonics",
@@ -490,15 +507,16 @@
       ],
       "stage": "early (2025 spinout, ChipStart EU cohort 1)",
       "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Genuine photonic device innovation (claimed first-of-its-kind SLD geometry), but the application is AR/VR display rather than general compute - same borderline-fit caveat as Swave Photonics. Tyndall spinout, selected for ChipStart EU (Europe's first semiconductor-specific incubator).",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.tyndall.ie/news/vivid-photonics-launch/"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "non_dilutive_grant",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "PulpoSemi",
@@ -510,15 +528,16 @@
       ],
       "stage": "early (2025 spinout, ChipStart EU cohort 1)",
       "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Directly addresses the power-delivery layer this project's taxonomy elevates beyond the written CDL-NGC thesis's packaging footnote - power management silicon for high-density AI compute, not a downstream software layer.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "non_dilutive_grant",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "Endurance Semiconductors",
@@ -531,15 +550,16 @@
       ],
       "stage": "early (2025 spinout, ChipStart EU cohort 1)",
       "funding_eur_m": null,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
       "architectural_differentiation_note": "Wide-bandgap is a compound-semiconductor substrate approach (named directly in the physics_substrate layer definition), applied to the power-delivery problem - one of the cleanest double-layer fits in this dataset.",
+      "founders": [],
+      "patents": null,
       "source_urls": [
         "https://www.ucc.ie/en/news/2026/tyndalls-annual-report-highlights-growing-indigenous-semiconductor-sector-with-record-spinout-success.html"
       ],
-      "last_verified": "2026-08-07",
-      "funding_type": "non_dilutive_grant",
-      "founders": [],
-      "team_size_estimate": null
+      "last_verified": "2026-08-07"
     },
     {
       "name": "QuSine",
@@ -565,6 +585,7 @@
           "note": "Exact title not confirmed from available sources."
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://www.hhi.fraunhofer.de/en/press/news/2025/fraunhofer-hhi-portfolio-startup-qusine-wins-berlin-brandenburg-innovation-award-2025.html",
         "https://www.qusinus.com/857-2/"
@@ -595,6 +616,7 @@
           "note": "Postdoctoral researcher, ETH Zurich Optical Nanomaterial / Quantum Photonics groups."
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://entrepreneurship.ethz.ch/startups-spinoffs/find-offers-programs-space-grants-for-entrepreneurs/pioneer-fellowship/current-fellows.html",
         "https://ong.ethz.ch/people0/person-detail.MjkzOTYy.TGlzdC8zOTIwLDE1ODc0NjQzMzQ=.html"
@@ -641,6 +663,7 @@
           "note": null
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://tech.eu/2026/04/27/qendra-gets-eur162k-to-scale-quantum-computing-systems/",
         "https://www.startupticker.ch/en/news/qendra-obtains-chf-150-000-from-venture-kick",
@@ -674,6 +697,7 @@
           "note": "University of Oxford photonics background."
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://optics.org/news/salience-labs-raises-11.5-million-for-photonics-based-processor",
         "https://www.allaboutcircuits.com/news/salience-labs-marries-photonics-electronics-ai-processor/"
@@ -704,6 +728,7 @@
           "note": "Quantum error-correction research background."
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://tech.eu/2026/04/09/qoro-closes-750k-to-bridge-quantum-and-classical-computing/",
         "https://quantumcomputingreport.com/qoro-quantum-secures-750000-pre-seed-to-orchestrate-hybrid-networks/"
@@ -735,6 +760,7 @@
           "note": "PhD MIT (superconducting qubits); collaborated with Prof. Kevin O Brien."
         }
       ],
+      "patents": null,
       "source_urls": [
         "https://thequantuminsider.com/2025/10/03/atlantic-quantum-joins-google-quantum-ai/",
         "https://thequantuminsider.com/2024/11/14/atlantic-quantum-and-mit-secure-1-8m-afwerx-grant-to-advance-superconducting-quantum-computing-for-u-s-defense/"
