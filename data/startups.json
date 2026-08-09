@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:51:00.624070+00:00",
+  "generated_at": "2026-08-09T10:55:22.286230+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -766,6 +766,90 @@
         "https://thequantuminsider.com/2024/11/14/atlantic-quantum-and-mit-secure-1-8m-afwerx-grant-to-advance-superconducting-quantum-computing-for-u-s-defense/"
       ],
       "last_verified": "2026-08-08"
+    },
+    {
+      "name": "SpiNNcloud",
+      "one_liner": "Building next-generation compute infrastructure for AI and high-performance computing using sparsity-driven architectures.",
+      "incubator_id": "silicon-catalyst",
+      "country": "Germany",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "unclear",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Focuses on neuromorphic-inspired, sparsity-driven architectures which represent a departure from standard von Neumann bottlenecks.",
+      "founders": [],
+      "patents": {
+        "query_name": "SpiNNcloud",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://siliconcatalyst.com/portfolio-companies/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Brain-CA Technologies",
+      "one_liner": "Innovator in microprocessor design utilizing cellular automata-based processor architecture for energy-efficient AI.",
+      "incubator_id": "silicon-catalyst",
+      "country": "US",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "unclear",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "US",
+      "architectural_differentiation_note": "Uses cellular automata as a fundamental compute logic, which is a non-von Neumann architectural departure.",
+      "founders": [],
+      "patents": {
+        "query_name": "Brain-CA Technologies",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://siliconcatalyst.com/portfolio-companies/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "VisIC Technologies",
+      "one_liner": "Develops Gallium Nitride (GaN) technology, specifically Depletion-mode Direct Drive GaN (D3GaN) for high-voltage applications.",
+      "incubator_id": "silicon-catalyst",
+      "country": "Israel",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "unclear",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "unclear",
+      "architectural_differentiation_note": "Utilizes wide-bandgap semiconductor materials (GaN) to improve power efficiency and performance ceilings beyond traditional silicon CMOS.",
+      "founders": [],
+      "patents": {
+        "query_name": "VisIC Technologies",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://siliconcatalyst.com/portfolio-companies/"
+      ],
+      "last_verified": "2026-08-09"
     }
   ]
 }
