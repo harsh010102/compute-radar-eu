@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T10:55:22.286230+00:00",
+  "generated_at": "2026-08-09T15:00:39.197371+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -706,18 +706,18 @@
     },
     {
       "name": "Qoro Quantum",
-      "one_liner": "Orchestration software uniting classical CPUs/GPUs with quantum processors for hybrid workloads.",
+      "one_liner": "Develops the network stack for scalable, distributed quantum computing, automating how quantum programs are executed across heterogeneous hardware.",
       "incubator_id": "duality-quantum",
-      "country": "United Kingdom (London; UChicago Polsky-backed)",
+      "country": "United Kingdom (London)",
       "layers": [
         "sovereign_cloud"
       ],
-      "stage": "pre-seed",
-      "funding_eur_m": 0.68,
+      "stage": "seed",
+      "funding_eur_m": 0.0,
       "funding_type": "convertible_loan",
-      "team_size_estimate": null,
+      "team_size_estimate": "null",
       "sovereignty_basis": "UK",
-      "architectural_differentiation_note": "HONEST FLAG: this is a software/orchestration layer (distributed quantum-classical middleware), not new silicon - differentiation is in the hybrid-networking stack, not a physical limit. Genuinely early (pre-seed, 50K, Apr 2026) and went through Duality/Alchemist Chicago; backers incl. Ada Ventures, UChicago Polsky Center. Included as the software-layer counterpoint to the scarce-hardware bets.",
+      "architectural_differentiation_note": "This company addresses the fundamental challenge of distributed quantum computing and hardware heterogeneity, which is a necessary architectural evolution for scaling quantum systems beyond single-processor limitations.",
       "founders": [
         {
           "name": "Josu Etxezarreta Martinez",
@@ -728,12 +728,19 @@
           "note": "Quantum error-correction research background."
         }
       ],
-      "patents": null,
+      "patents": {
+        "query_name": "Qoro Quantum",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
       "source_urls": [
         "https://tech.eu/2026/04/09/qoro-closes-750k-to-bridge-quantum-and-classical-computing/",
         "https://quantumcomputingreport.com/qoro-quantum-secures-750000-pre-seed-to-orchestrate-hybrid-networks/"
       ],
-      "last_verified": "2026-08-08"
+      "last_verified": "2026-08-09"
     },
     {
       "name": "Atlantic Quantum",
@@ -848,6 +855,34 @@
       },
       "source_urls": [
         "https://siliconcatalyst.com/portfolio-companies/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "K1 Semiconductor",
+      "one_liner": "A deep-tech company pioneering a semiconductor wafer-splitting platform technology that enhances the efficiency and economics of advanced chip manufacturing.",
+      "incubator_id": "duality-quantum",
+      "country": "USA (Chicago, Illinois)",
+      "layers": [
+        "advanced_packaging"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "unclear",
+      "architectural_differentiation_note": "This is a genuine hardware-level innovation in semiconductor manufacturing processes (wafer-splitting), which directly impacts the physical production and cost-efficiency of advanced chips, rather than being a software layer.",
+      "founders": [],
+      "patents": {
+        "query_name": "K1 Semiconductor",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://www.dualityaccelerator.com/innovators/"
       ],
       "last_verified": "2026-08-09"
     }
