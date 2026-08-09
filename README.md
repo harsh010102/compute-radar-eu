@@ -4,16 +4,16 @@
 
 **[Live dashboard →](https://harsh010102.github.io/compute-radar-eu/dashboard/)** · [repo](https://github.com/harsh010102/compute-radar-eu) · hosted free on GitHub Pages, data refreshed by the pipeline below.
 
-Compute Radar EU tracks the ~20 European research institutes, university venture labs, and national programs that source and fund next-generation compute startups — semiconductors, quantum, photonics, neuromorphic hardware, chiplet/packaging, sovereign cloud/edge infrastructure, and the power/cooling layer underneath all of it — and keeps a structured, current picture of which startups are moving through each one.
+Compute Radar EU tracks ~28 European and North American research institutes, university venture labs, and national programs that source and fund next-generation compute startups — semiconductors, quantum, photonics, neuromorphic hardware, chiplet/packaging, sovereign cloud/edge infrastructure, and the power/cooling layer underneath all of it — and keeps a structured, current picture of which startups are moving through each one.
 
-It exists because this information is scattered across ~20 institutional websites, none of which publish a machine-readable feed, and all of which change quarterly (new cohorts, new funding rounds, program restructures). Anyone doing venture sourcing, corporate scouting, or ecosystem analysis in this space is currently doing this by hand, from scratch, every time.
+It exists because this information is scattered across ~28 institutional websites, none of which publish a machine-readable feed, and all of which change quarterly (new cohorts, new funding rounds, program restructures). Anyone doing venture sourcing, corporate scouting, or ecosystem analysis in this space is currently doing this by hand, from scratch, every time.
 
 ## Why this is a pipeline, not a spreadsheet
 
 A spreadsheet goes stale the day you stop maintaining it. This is a small multi-agent pipeline ([CrewAI](https://github.com/crewAIInc/crewAI)) that re-scrapes each program's public pages, extracts current portfolio/cohort companies, classifies each one against a fixed technology taxonomy, and writes structured output — on a schedule, for free, using an OpenRouter free-tier model for the synthesis step. The dashboard is just a read-only view over that output.
 
 ```
-config/incubators.yaml   →  the ~20 programs to track (seeded from prior research)
+config/incubators.yaml   →  the ~28 programs to track (EU + North America)
         │
         ▼
    Scout agent          →  fetches each program's site + portfolio/news pages
@@ -83,7 +83,7 @@ Seed data in `data/startups.json` was hand-researched (see `sources` field on ea
 ## Repo layout
 
 ```
-config/incubators.yaml         the ~20 tracked programs — add a new one by adding a row
+config/incubators.yaml         the ~28 tracked programs (EU + N. America) — add one by adding a row
 src/compute_radar/
   taxonomy.py                  the 8-layer classification schema + definitions
   models.py                    Startup / Incubator data schemas (pydantic)

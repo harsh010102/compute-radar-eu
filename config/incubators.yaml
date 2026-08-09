@@ -229,3 +229,68 @@
   url: "https://xpreneurs.io"
   portfolio_url: "https://xpreneurs.io"
   notes: "Europe's largest entrepreneurship centre. Known: Proxima Fusion, Quantum Diamonds."
+
+# ---------------------------------------------------------------------------
+# North America (US / Canada). Added Aug 2026 to extend coverage beyond Europe -
+# CDL's own network is Canadian, so tracking it closes the loop with CDL-NGC.
+# ---------------------------------------------------------------------------
+
+- id: cdl-network
+  name: "Creative Destruction Lab (network)"
+  country: "Canada (Toronto HQ) + US/UK/EU streams"
+  type: "objectives-based startup accelerator (science commercialization)"
+  compute_focus: high
+  eligibility: external
+  url: "https://creativedestructionlab.com"
+  portfolio_url: "https://creativedestructionlab.com/companies/"
+  notes: "The parent network of CDL-NGC. Quantum stream (Toronto), Compute (Vancouver), AI (multiple). Directly closes the loop with the case study."
+
+- id: silicon-catalyst
+  name: "Silicon Catalyst"
+  country: "USA (Silicon Valley) + UK/AU/JP chapters"
+  type: "semiconductor-exclusive incubator"
+  compute_focus: high
+  eligibility: external
+  url: "https://siliconcatalyst.com"
+  portfolio_url: "https://siliconcatalyst.com/portfolio-companies/"
+  notes: "The world's only incubator focused exclusively on semiconductors. Alumni: Ayar Labs (photonic interconnect unicorn), Salience Labs, Quadric, Spark Microsystems. Runs ChipStart EU/UK/AU."
+
+- id: the-engine
+  name: "The Engine / Engine Ventures (MIT)"
+  country: "USA (Cambridge, MA)"
+  type: "tough-tech venture firm + lab space (MIT-founded)"
+  compute_focus: medium
+  eligibility: external
+  url: "https://engine.xyz"
+  portfolio_url: "https://engineventures.com/companies"
+  notes: "MIT tough-tech: quantum, semiconductors, fusion. Atlantic Quantum built in Engine's Cambridge lab (acquired by Google Quantum AI, Oct 2025)."
+
+- id: activate
+  name: "Activate"
+  country: "USA (Berkeley + Boston, NY, Houston, national)"
+  type: "hardtech fellowship (non-dilutive)"
+  compute_focus: medium
+  eligibility: external
+  url: "https://www.activate.org"
+  portfolio_url: "https://www.activate.org/fellows"
+  notes: "Two-year non-dilutive fellowship for science entrepreneurs; energy, materials, semiconductors, compute hardware. Non-dilutive by design - strong fit for the pre-seed/grant focus."
+
+- id: duality-quantum
+  name: "Duality Quantum Accelerator / Alchemist Chicago"
+  country: "USA (Chicago, IL)"
+  type: "quantum-focused accelerator (UChicago Polsky + Argonne)"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.dualityaccelerator.com"
+  portfolio_url: "https://www.dualityaccelerator.com/companies/"
+  notes: "First US quantum-dedicated accelerator. UChicago Polsky Center + Chicago Quantum Exchange + Argonne. 2025 cohort via Alchemist Chicago incl. IBM track."
+
+- id: waterloo-quantum
+  name: "Institute for Quantum Computing / Velocity (Waterloo)"
+  country: "Canada (Waterloo, ON)"
+  type: "university quantum research + incubator ecosystem"
+  compute_focus: high
+  eligibility: hybrid
+  url: "https://uwaterloo.ca/institute-for-quantum-computing/"
+  portfolio_url: "https://uwaterloo.ca/institute-for-quantum-computing/spin-companies"
+  notes: "Waterloo quantum ecosystem (IQC + Quantum Valley + Velocity incubator). Spinouts in quantum hardware, sensing, cryptography."

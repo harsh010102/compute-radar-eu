@@ -116,7 +116,10 @@
 
   .results-header{display:flex; align-items:center; gap:.8rem; margin-bottom:.9rem; flex-wrap:wrap;}
   .results-header .count{font-size:.84rem; color:var(--ink-dim);}
-  .viewtoggle{margin-left:auto; display:flex; gap:.3rem;}
+  .earlytoggle{margin-left:auto; font-size:.78rem; padding:.4rem .8rem; border-radius:7px; cursor:pointer;
+    border:1px solid var(--layer-4); background:transparent; color:var(--ink-dim); font-weight:600; white-space:nowrap;}
+  .earlytoggle[aria-pressed="true"]{background:var(--layer-4); color:#0b0b0b; border-color:var(--layer-4);}
+  .viewtoggle{display:flex; gap:.3rem;}
   .viewtoggle button{font-size:.76rem; padding:.35rem .7rem; border-radius:7px; border:1px solid var(--border); background:var(--surface); color:var(--ink-dim); cursor:pointer;}
   .viewtoggle button[aria-pressed="true"]{background:var(--accent); color:var(--accent-ink); border-color:var(--accent);}
   .clearmap{font-size:.76rem; padding:.35rem .7rem; border-radius:7px; border:1px solid var(--accent); background:var(--accent-wash); color:var(--accent); cursor:pointer;}
@@ -125,6 +128,8 @@
   .card{background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:1.05rem 1.15rem; transition:box-shadow .15s, border-color .15s;}
   .card:hover{box-shadow:0 4px 16px rgba(15,18,34,.08); border-color:var(--accent);}
   .card h3{margin:0 0 .15rem; font-size:1.02rem;}
+  .earlybadge{font-size:.6rem; font-weight:700; letter-spacing:.03em; vertical-align:middle;
+    padding:.12rem .4rem; border-radius:4px; background:var(--layer-4); color:#0b0b0b;}
   .card .meta{font-size:.74rem; color:var(--ink-muted); margin-bottom:.5rem;}
   .card .oneliner{font-size:.86rem; color:var(--ink-dim); margin:.4rem 0;}
   .card .note{font-size:.76rem; color:var(--ink-muted); margin:.5rem 0; border-left:2px solid var(--border); padding-left:.6rem;}
@@ -192,6 +197,7 @@
       <div class="results-header">
         <span class="count" id="count-line"></span>
         <button class="clearmap hidden" id="clear-map-filter">✕ incubator filter active — clear</button>
+        <button class="earlytoggle" id="early-toggle" aria-pressed="false">⚡ Early-stage only</button>
         <div class="viewtoggle" role="group" aria-label="View">
           <button id="view-cards" aria-pressed="true">Cards</button>
           <button id="view-table" aria-pressed="false">Table</button>
@@ -231,7 +237,22 @@ const FUNDING_TYPES = [
   {key:"equity_priced_round", label:"Equity priced round"},
   {key:"unclear", label:"Unclear"},
 ];
-const SOV_BASES = ["EU/EEA","UK","Switzerland","Norway","other-Europe","unclear"];
+const SOV_BASES = ["EU/EEA","UK","Switzerland","Norway","other-Europe","US","Canada","unclear"];
+
+// Early-stage heuristic: the whole point of tracking incubators is catching companies
+// BEFORE a big priced round. "Early" = a pre-seed/seed/grant/pilot/fellowship stage and
+// NOT a later marker (Series B+, growth, commercial, acquired). A grant with no round still
+// counts as early even if stage text is sparse.
+const LATE_RE = /series\s*[b-z]|growth|commercial|acquired|scale-?up|series c/i;
+const EARLY_RE = /pre-?seed|seed|grant|pilot|pioneer|fellow|early|angel/i;
+function isEarly(s){
+  const st = (s.stage||"").toLowerCase();
+  if (LATE_RE.test(st)) return false;
+  if (s.funding_type === "non_dilutive_grant" || s.funding_type === "convertible_loan") return true;
+  if (EARLY_RE.test(st)) return true;
+  // fall back on size: small or undisclosed rounds read as early
+  return (s.funding_eur_m == null) || (s.funding_eur_m < 20);
+}
 const LIGHT_TEXT_SLOTS = new Set([3,4,5]);
 
 const layerColor = key => `var(--layer-${TAXONOMY.find(t=>t.key===key)?.slot ?? 1})`;
@@ -243,6 +264,7 @@ let INCUBATORS = {};
 let activeLayers = new Set();
 let activeFunding = new Set();
 let activeSov = new Set();
+let earlyOnly = false;
 let mapIncubatorFilter = null;
 let view = "cards";
 let leafletMap, markerLayer;
@@ -264,13 +286,13 @@ async function load(){
 
 function renderTiles(){
   const s = DATA.startups;
-  const totalFunding = s.reduce((a,x)=>a+(x.funding_eur_m||0),0);
-  const incubators = new Set(s.map(x=>x.incubator_id)).size;
+  const programsTracked = Object.values(INCUBATORS).filter(v=>v.lat!=null).length;
+  const early = s.filter(isEarly).length;
   const grants = s.filter(x=>x.funding_type==="non_dilutive_grant").length;
   const tiles = [
     {val:s.length, lbl:"Startups"},
-    {val:incubators, lbl:"Programs"},
-    {val:`€${totalFunding.toFixed(0)}M`, lbl:"Disclosed funding"},
+    {val:programsTracked, lbl:"Programs (EU + N. America)"},
+    {val:early, lbl:"Early-stage / pre-seed"},
     {val:grants, lbl:"Grant-only (undiscovered)"},
   ];
   document.getElementById("tiles").innerHTML = tiles.map(t=>
@@ -279,35 +301,46 @@ function renderTiles(){
 }
 
 function initMap(){
-  leafletMap = L.map('map', {scrollWheelZoom:false}).setView([50.5, 9], 4.3);
+  leafletMap = L.map('map', {scrollWheelZoom:false, worldCopyJump:true}).setView([50, -25], 3);
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors',
     maxZoom: 12,
   }).addTo(leafletMap);
   markerLayer = L.layerGroup().addTo(leafletMap);
   drawMarkers();
+  // Auto-frame all tracked programs (now spanning N. America + Europe).
+  const pts = Object.values(INCUBATORS).filter(v=>v.lat!=null && v.lon!=null).map(v=>[v.lat,v.lon]);
+  if (pts.length) leafletMap.fitBounds(pts, {padding:[40,40], maxZoom:5});
 }
 
 function drawMarkers(){
   markerLayer.clearLayers();
   const counts = {};
   DATA.startups.forEach(s => { counts[s.incubator_id] = (counts[s.incubator_id]||0) + 1; });
+  const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+  const muted = getComputedStyle(document.documentElement).getPropertyValue('--ink-muted').trim();
 
   Object.entries(INCUBATORS).forEach(([id, inc]) => {
     if (inc.lat == null || inc.lon == null) return;
     const n = counts[id] || 0;
-    if (n === 0) return;
-    const radius = 6 + Math.sqrt(n) * 5;
-    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+    const live = n > 0;
+    // Every tracked program is drawn — populated ones in accent (sized by count),
+    // not-yet-populated ones as a small faint ring so the coverage map reads honestly.
+    const radius = live ? (6 + Math.sqrt(n) * 5) : 4;
+    const col = live ? accent : muted;
     const marker = L.circleMarker([inc.lat, inc.lon], {
-      radius, color: accent, weight: mapIncubatorFilter === id ? 3 : 1.5,
-      fillColor: accent, fillOpacity: mapIncubatorFilter && mapIncubatorFilter !== id ? 0.18 : 0.45,
+      radius, color: col,
+      weight: mapIncubatorFilter === id ? 3 : (live ? 1.5 : 1),
+      fillColor: col,
+      fillOpacity: live ? (mapIncubatorFilter && mapIncubatorFilter !== id ? 0.18 : 0.45) : 0.12,
     }).addTo(markerLayer);
 
     const companies = DATA.startups.filter(s => s.incubator_id === id);
-    const listHtml = companies.slice(0,8).map(c => `<li>${c.name}</li>`).join("") + (companies.length>8 ? `<li>+${companies.length-8} more</li>` : "");
+    const listHtml = live
+      ? companies.slice(0,8).map(c => `<li>${c.name}</li>`).join("") + (companies.length>8 ? `<li>+${companies.length-8} more</li>` : "")
+      : `<li style="opacity:.7">tracked — pipeline pending</li>`;
     marker.bindPopup(`<div class="map-popup"><h4>${inc.name}</h4><div>${inc.city||inc.country} · ${n} tracked</div><ul>${listHtml}</ul></div>`);
-    marker.on('click', () => {
+    if (live) marker.on('click', () => {
       mapIncubatorFilter = mapIncubatorFilter === id ? null : id;
       drawMarkers();
       render();
@@ -362,6 +395,11 @@ function renderChips(){
   document.getElementById("search").addEventListener("input", render);
   document.getElementById("view-cards").addEventListener("click", ()=>setView("cards"));
   document.getElementById("view-table").addEventListener("click", ()=>setView("table"));
+  document.getElementById("early-toggle").addEventListener("click", (e)=>{
+    earlyOnly = !earlyOnly;
+    e.currentTarget.setAttribute("aria-pressed", earlyOnly);
+    render();
+  });
   document.getElementById("clear-map-filter").addEventListener("click", ()=>{ mapIncubatorFilter = null; drawMarkers(); render(); });
 }
 
@@ -377,6 +415,7 @@ function filtered(){
   const q = document.getElementById("search").value.trim().toLowerCase();
   return DATA.startups.filter(s=>{
     if (mapIncubatorFilter && s.incubator_id !== mapIncubatorFilter) return false;
+    if (earlyOnly && !isEarly(s)) return false;
     if (activeLayers.size && ![...activeLayers].some(l=>s.layers.includes(l))) return false;
     if (activeFunding.size && !activeFunding.has(s.funding_type)) return false;
     if (activeSov.size && !activeSov.has(s.sovereignty_basis)) return false;
@@ -404,7 +443,7 @@ function render(){
 
   document.getElementById("grid").innerHTML = list.map(s => `
     <div class="card">
-      <h3>${s.name}</h3>
+      <h3>${s.name}${isEarly(s) ? ` <span class="earlybadge">⚡ early</span>` : ""}</h3>
       <div class="meta">${incubatorName(s.incubator_id)} · ${s.country}</div>
       <p class="oneliner">${s.one_liner}</p>
       <div class="tags">

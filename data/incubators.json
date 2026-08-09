@@ -20,5 +20,11 @@
   "ideas-ncbr": {"name": "IDEAS NCBR", "country": "Poland", "city": "Warsaw", "lat": 52.2297, "lon": 21.0122},
   "hightech-startbahn": {"name": "HighTech Startbahn / Silicon Saxony", "country": "Germany", "city": "Dresden", "lat": 51.0504, "lon": 13.7373},
   "unternehmertum-xpreneurs": {"name": "UnternehmerTUM / XPRENEURS", "country": "Germany", "city": "Munich", "lat": 48.1450, "lon": 11.5680},
+  "cdl-network": {"name": "Creative Destruction Lab (network)", "country": "Canada", "city": "Toronto", "lat": 43.6629, "lon": -79.3957},
+  "silicon-catalyst": {"name": "Silicon Catalyst", "country": "USA", "city": "Silicon Valley", "lat": 37.3541, "lon": -121.9552},
+  "the-engine": {"name": "The Engine / Engine Ventures (MIT)", "country": "USA", "city": "Cambridge, MA", "lat": 42.3626, "lon": -71.0843},
+  "activate": {"name": "Activate", "country": "USA", "city": "Berkeley, CA", "lat": 37.8715, "lon": -122.2730},
+  "duality-quantum": {"name": "Duality Quantum Accelerator", "country": "USA", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987},
+  "waterloo-quantum": {"name": "IQC / Velocity (Waterloo)", "country": "Canada", "city": "Waterloo, ON", "lat": 43.4723, "lon": -80.5449},
   "independent": {"name": "Independently sourced", "country": "various", "city": null, "lat": null, "lon": null}
 }

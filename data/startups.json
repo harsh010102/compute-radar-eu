@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-08T18:41:40.147901+00:00",
+  "generated_at": "2026-08-09T10:13:06.065174+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -645,6 +645,99 @@
         "https://tech.eu/2026/04/27/qendra-gets-eur162k-to-scale-quantum-computing-systems/",
         "https://www.startupticker.ch/en/news/qendra-obtains-chf-150-000-from-venture-kick",
         "https://qendra.tech/about"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "Salience Labs",
+      "one_liner": "Photonic multi-chip processor + all-optical connectivity for AI infrastructure (on-memory compute).",
+      "incubator_id": "silicon-catalyst",
+      "country": "United Kingdom (Oxford / Munster spinout)",
+      "layers": [
+        "physics_substrate",
+        "new_architecture",
+        "chiplet_interconnect"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 10.5,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
+      "sovereignty_basis": "UK",
+      "architectural_differentiation_note": "Genuine photonic compute - combines photonic speed, electronic flexibility and CMOS manufacturability in an on-memory-compute architecture. Silicon Catalyst portfolio (the semiconductor-exclusive incubator whose alumnus Ayar Labs became a unicorn). Early enough to matter; UK/DE roots mean EU/UK instruments, not US.",
+      "founders": [
+        {
+          "name": "Vaysh Kewada",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "University of Oxford photonics background."
+        }
+      ],
+      "source_urls": [
+        "https://optics.org/news/salience-labs-raises-11.5-million-for-photonics-based-processor",
+        "https://www.allaboutcircuits.com/news/salience-labs-marries-photonics-electronics-ai-processor/"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "Qoro Quantum",
+      "one_liner": "Orchestration software uniting classical CPUs/GPUs with quantum processors for hybrid workloads.",
+      "incubator_id": "duality-quantum",
+      "country": "United Kingdom (London; UChicago Polsky-backed)",
+      "layers": [
+        "sovereign_cloud"
+      ],
+      "stage": "pre-seed",
+      "funding_eur_m": 0.68,
+      "funding_type": "convertible_loan",
+      "team_size_estimate": null,
+      "sovereignty_basis": "UK",
+      "architectural_differentiation_note": "HONEST FLAG: this is a software/orchestration layer (distributed quantum-classical middleware), not new silicon - differentiation is in the hybrid-networking stack, not a physical limit. Genuinely early (pre-seed, 50K, Apr 2026) and went through Duality/Alchemist Chicago; backers incl. Ada Ventures, UChicago Polsky Center. Included as the software-layer counterpoint to the scarce-hardware bets.",
+      "founders": [
+        {
+          "name": "Josu Etxezarreta Martinez",
+          "role": "Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "Quantum error-correction research background."
+        }
+      ],
+      "source_urls": [
+        "https://tech.eu/2026/04/09/qoro-closes-750k-to-bridge-quantum-and-classical-computing/",
+        "https://quantumcomputingreport.com/qoro-quantum-secures-750000-pre-seed-to-orchestrate-hybrid-networks/"
+      ],
+      "last_verified": "2026-08-08"
+    },
+    {
+      "name": "Atlantic Quantum",
+      "one_liner": "Fluxonium superconducting qubits with integrated cryogenic control electronics (modular cold-stage chip stack).",
+      "incubator_id": "the-engine",
+      "country": "USA (Cambridge, MA; MIT spinout)",
+      "layers": [
+        "physics_substrate",
+        "codesign_eda"
+      ],
+      "stage": "acquired (Google Quantum AI, Oct 2025)",
+      "funding_eur_m": null,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
+      "sovereignty_basis": "US",
+      "architectural_differentiation_note": "MARKET-CONTEXT REFERENCE, not a sourcing target - acquired by Google Quantum AI Oct 2025. Notable because its design integrates qubits AND superconducting control electronics in the cold stage - i.e. the same control-electronics-as-scarce-layer thesis as the Qblox/FrostByte/QENDRA cluster, validated by a Google acquisition. Prior non-dilutive AFWERX Phase II (.8M) for US Air Force. Proof of The Engine (MIT) dealflow quality.",
+      "founders": [
+        {
+          "name": "Bharath Kannan",
+          "role": "CEO, Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "PhD MIT (superconducting qubits); collaborated with Prof. Kevin O Brien."
+        }
+      ],
+      "source_urls": [
+        "https://thequantuminsider.com/2025/10/03/atlantic-quantum-joins-google-quantum-ai/",
+        "https://thequantuminsider.com/2024/11/14/atlantic-quantum-and-mit-secure-1-8m-afwerx-grant-to-advance-superconducting-quantum-computing-for-u-s-defense/"
       ],
       "last_verified": "2026-08-08"
     }

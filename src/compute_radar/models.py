@@ -8,7 +8,14 @@ from typing import Literal
 
 from pydantic import BaseModel, Field
 
-SovereigntyBasis = Literal["EU/EEA", "UK", "Switzerland", "Norway", "other-Europe", "unclear"]
+# Jurisdiction where the company is incorporated/HQ'd. Started Europe-only (the sovereignty
+# thesis is European); extended to US/Canada when the pipeline's incubator coverage grew to
+# North America (CDL's own network is Canadian). For a European-sovereignty venture the
+# EU/EEA value is the "can access EU Chips Act / EIC / EuroHPC" signal; US/Canada are tracked
+# for market context and CDL-network alignment, not EU-sovereignty eligibility.
+SovereigntyBasis = Literal[
+    "EU/EEA", "UK", "Switzerland", "Norway", "other-Europe", "US", "Canada", "unclear"
+]
 
 # The whole point of tracking incubators rather than funding databases: incubator money
 # (grants, convertible loans, Phase 1/2 non-dilutive support) surfaces companies BEFORE
