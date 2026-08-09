@@ -58,5 +58,10 @@ jobs:
           git config user.name "compute-radar-bot"
           git config user.email "actions@users.noreply.github.com"
           git add data/startups.json
-          git diff --cached --quiet || git commit -m "Weekly refresh: $(date -u +%Y-%m-%d)"
+          git diff --cached --quiet && { echo "no data changes"; exit 0; }
+          git commit -m "Refresh data: $(date -u +%Y-%m-%d)"
+          # Rebase onto any commits that landed while this run was in flight, so a
+          # concurrent push (e.g. an edit from a dev session) doesn't make us lose the run's
+          # data to a rejected non-fast-forward push.
+          git pull --rebase --autostash origin main
           git push
