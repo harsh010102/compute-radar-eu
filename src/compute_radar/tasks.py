@@ -9,15 +9,29 @@ from crewai import Agent, Task
 from compute_radar.models import StartupList
 
 
-def build_scout_task(agent: Agent, incubator: dict) -> Task:
+def build_scout_task(agent: Agent, incubator: dict, sources_line: str = "") -> Task:
     portfolio_url = incubator.get("portfolio_url") or incubator["url"]
+    extra_sources = (
+        (
+            "\n\nIf the portfolio page is thin or missing companies, also run site-scoped "
+            "free_web_search queries against these startup-news / funding databases (they "
+            "aggregate funding announcements and cohort write-ups this program's own site "
+            f"often omits): {sources_line}. Query them like "
+            f"'site:<domain> {incubator['name']}' or 'site:<domain> <company name>', then "
+            "fetch_page on the most promising results to confirm the company is genuinely "
+            "tied to this program before listing it."
+        )
+        if sources_line
+        else ""
+    )
     return Task(
         description=(
             f"Research the incubator '{incubator['name']}' ({incubator['country']}).\n"
             f"Start at {portfolio_url} using fetch_page. Follow links that look like "
             "individual startup/portfolio/cohort pages. If the page doesn't list current "
             "companies, use free_web_search with a query like "
-            f"'{incubator['name']} 2026 cohort portfolio companies' as a fallback.\n\n"
+            f"'{incubator['name']} 2026 cohort portfolio companies' as a fallback."
+            f"{extra_sources}\n\n"
             "List every current or recent (last ~18 months) compute-relevant company you "
             "find: name, one-line description, country if stated, funding/stage if stated, "
             "team size if stated, founder name(s)/role(s) if the page names them, and the "

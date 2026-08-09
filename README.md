@@ -16,8 +16,9 @@ A spreadsheet goes stale the day you stop maintaining it. This is a small multi-
 config/incubators.yaml   →  the ~28 programs to track (EU + North America)
         │
         ▼
-   Scout agent          →  fetches each program's site + portfolio/news pages
-   (scraper_tool)           free, no paid search API — direct HTTP + BeautifulSoup
+   Scout agent          →  fetches each program's portfolio page, AND site-scoped
+   (scraper_tool +          searches curated startup-news/funding databases
+    search_tool)            (config/sources.yaml) region-matched to the incubator
         │
         ▼
    Analyst agent         →  extracts company names + classifies each against the
@@ -94,12 +95,15 @@ Seed data in `data/startups.json` was hand-researched (see `sources` field on ea
 
 ```
 config/incubators.yaml         the ~28 tracked programs (EU + N. America) — add one by adding a row
+config/sources.yaml            curated startup-news/funding databases the Scout also searches
+                               (region-tagged, e.g. startupticker.ch for CH) — add domains here
 src/compute_radar/
   taxonomy.py                  the 8-layer classification schema + definitions
   models.py                    Startup / Incubator data schemas (pydantic)
   tools/scraper_tool.py        CrewAI tool: fetch + clean a URL (requests + BeautifulSoup)
   tools/search_tool.py         CrewAI tool: free DuckDuckGo HTML search (best-effort)
   tools/patent_tool.py         EPO OPS patent lookup (official free API, hand-rolled)
+  sources.py                   region-matches an incubator to relevant startup-news sites
   llm_provider.py              OpenRouter/Gemini round-robin + fallback
   enrich_patents.py            deterministic patent-verification pass (standalone CLI)
   agents.py                    Scout + Analyst agent definitions

@@ -10,6 +10,7 @@ from crewai import Crew, Process
 from compute_radar.agents import build_analyst_agent, build_scout_agent
 from compute_radar.llm_provider import build_llm, looks_like_quota_error, other_provider
 from compute_radar.models import StartupList
+from compute_radar.sources import format_sources_for_prompt, sources_for
 from compute_radar.tasks import build_analyst_task, build_scout_task
 
 
@@ -18,7 +19,8 @@ def _run_once(incubator: dict, provider: str) -> StartupList:
     scout = build_scout_agent(llm)
     analyst = build_analyst_agent(llm)
 
-    scout_task = build_scout_task(scout, incubator)
+    sources_line = format_sources_for_prompt(sources_for(incubator))
+    scout_task = build_scout_task(scout, incubator, sources_line)
     analyst_task = build_analyst_task(analyst, incubator, scout_task)
 
     crew = Crew(

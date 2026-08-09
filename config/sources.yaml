@@ -1,0 +1,98 @@
+# Curated startup-news / funding-database sites the Scout uses as an EXTRA discovery path
+# beyond each incubator's own (often thin) portfolio page. The Scout queries these with
+# site-scoped searches, e.g.  site:startupticker.ch <program or company name>  — which
+# surfaces funding announcements and cohort write-ups that the incubator's own site omits.
+#
+# Matched to each incubator by region (see src/compute_radar/sources.py). `focus: compute`
+# sources (quantum / semiconductors / HPC / data-center) are relevant to every program in
+# this project and are always eligible regardless of region.
+#
+# region: dach | benelux | nordics | france | iberia | italy | uk-ireland | cee |
+#         north-america | europe (pan-EU) | global
+# focus:  general | quantum | semiconductors | hpc | datacenter
+
+# --- pan-European / global general ---
+- domain: eu-startups.com
+  name: "EU-Startups"
+  region: europe
+  focus: general
+- domain: tech.eu
+  name: "Tech.eu"
+  region: europe
+  focus: general
+- domain: sifted.eu
+  name: "Sifted"
+  region: europe
+  focus: general
+- domain: techfundingnews.com
+  name: "Tech Funding News"
+  region: global
+  focus: general
+
+# --- region-specific general ---
+- domain: startupticker.ch
+  name: "Startupticker (Switzerland)"
+  region: dach
+  focus: general
+- domain: deutsche-startups.de
+  name: "Deutsche Startups"
+  region: dach
+  focus: general
+- domain: munich-startup.de
+  name: "Munich Startup"
+  region: dach
+  focus: general
+- domain: siliconcanals.com
+  name: "Silicon Canals (Benelux)"
+  region: benelux
+  focus: general
+- domain: maddyness.com
+  name: "Maddyness (France)"
+  region: france
+  focus: general
+- domain: novobrief.com
+  name: "Novobrief (Spain)"
+  region: iberia
+  focus: general
+- domain: irishtechnews.ie
+  name: "Irish Tech News"
+  region: uk-ireland
+  focus: general
+- domain: uktech.news
+  name: "UKTN"
+  region: uk-ireland
+  focus: general
+- domain: arcticstartup.com
+  name: "ArcticStartup (Nordics)"
+  region: nordics
+  focus: general
+- domain: betakit.com
+  name: "BetaKit (Canada)"
+  region: north-america
+  focus: general
+
+# --- compute-vertical (relevant to every program) ---
+- domain: thequantuminsider.com
+  name: "The Quantum Insider"
+  region: global
+  focus: quantum
+- domain: quantumcomputingreport.com
+  name: "Quantum Computing Report"
+  region: global
+  focus: quantum
+- domain: semiengineering.com
+  name: "Semiconductor Engineering"
+  region: global
+  focus: semiconductors
+- domain: eetimes.com
+  name: "EE Times"
+  region: global
+  focus: semiconductors
+- domain: hpcwire.com
+  name: "HPCwire"
+  region: global
+  focus: hpc
+- domain: datacenterdynamics.com
+  name: "Data Center Dynamics"
+  region: global
+  focus: datacenter
