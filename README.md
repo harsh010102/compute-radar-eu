@@ -87,6 +87,15 @@ python -m compute_radar.enrich_patents --founders # also match founders as inven
 
 Register a free "non-paying" OPS application to get `OPS_CONSUMER_KEY` / `OPS_CONSUMER_SECRET`; without them the pass is a graceful no-op. A full `--all` pipeline run also triggers enrichment automatically at the end when OPS is configured. Patent-verified companies show a `📄 N patents` badge on the dashboard.
 
+**Keyword discovery from the EU-Startups Directory** (`discover_from_directory.py`): beyond scraping incubator portfolio pages, the pipeline also mines the [EU-Startups Directory](https://www.eu-startups.com/directory/) — a structured, keyword-searchable database where each listing carries country, city, a real description, tags, funding status and website. A keyword search (`photonic`, `quantum`, …) yields rich, ready-to-classify records; the Analyst then drops the false positives the naive substring search lets through (e.g. a fintech named "QuantumScale") and classifies the rest under the `eu-startups-directory` bucket.
+
+```bash
+python -m compute_radar.discover_from_directory                 # default compute keywords
+python -m compute_radar.discover_from_directory --scrape-only   # just scrape + print, no LLM
+```
+
+Runs automatically on a full scheduled run. Caveat: the directory's search is naive single-token substring matching — distinctive terms (`photonic`, `quantum`) work well; short/common ones ("GaN" → "or**gan**isation") and multi-word phrases don't, so `DEFAULT_KEYWORDS` is curated to the terms that actually carry signal.
+
 ## Project status
 
 Seed data in `data/startups.json` was hand-researched (see `sources` field on each record) and covers the four CDL-NGC example ventures, ~15 companies found across the incubator network, and the candidates sourced independently for the CDL-NGC cohort task. Everything past that point is designed to be filled in by running the pipeline live.
@@ -103,9 +112,11 @@ src/compute_radar/
   tools/scraper_tool.py        CrewAI tool: fetch + clean a URL (requests + BeautifulSoup)
   tools/search_tool.py         CrewAI tool: free DuckDuckGo HTML search (best-effort)
   tools/patent_tool.py         EPO OPS patent lookup (official free API, hand-rolled)
+  tools/directory_tool.py      EU-Startups Directory scraper (search + rich profile fields)
   sources.py                   region-matches an incubator to relevant startup-news sites
   llm_provider.py              OpenRouter/Gemini round-robin + fallback
   enrich_patents.py            deterministic patent-verification pass (standalone CLI)
+  discover_from_directory.py   keyword discovery from the EU-Startups structured directory
   agents.py                    Scout + Analyst agent definitions
   tasks.py                     the two-step task chain (scout → classify)
   crew.py                      assembles the Crew, runs it per-incubator

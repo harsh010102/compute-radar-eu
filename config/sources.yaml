@@ -12,6 +12,10 @@
 # focus:  general | quantum | semiconductors | hpc | datacenter
 
 # --- pan-European / global general ---
+# NOTE: eu-startups.com also has a STRUCTURED, keyword-searchable directory
+# (/directory/?wpbdp_view=search&kw=<term>) with per-company country/description/website.
+# That's scraped separately by src/compute_radar/discover_from_directory.py — richer than
+# the site-scoped news search this file drives.
 - domain: eu-startups.com
   name: "EU-Startups"
   region: europe

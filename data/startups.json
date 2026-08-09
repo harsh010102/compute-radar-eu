@@ -850,6 +850,112 @@
         "https://siliconcatalyst.com/portfolio-companies/"
       ],
       "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Munich Quantum Instruments",
+      "one_liner": "Photon-based quantum technologies — high-performance single-photon detectors for quantum systems.",
+      "incubator_id": "eu-startups-directory",
+      "country": "Germany",
+      "layers": [
+        "physics_substrate",
+        "codesign_eda"
+      ],
+      "stage": "early (founded 2021)",
+      "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Genuine quantum-hardware enabling tech (single-photon detection) — part of the same control/measurement layer as the Qblox/QENDRA cluster. Found via EU-Startups directory keyword search (photon/quantum); directory lists no funding yet.",
+      "founders": [],
+      "source_urls": [
+        "https://www.eu-startups.com/directory/munich-quantum-instruments/",
+        "https://munich-quantum-instruments.com/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Orange Quantum Systems",
+      "one_liner": "Diagnostic and test systems that accelerate quantum-processor bring-up and characterization.",
+      "incubator_id": "eu-startups-directory",
+      "country": "Netherlands",
+      "layers": [
+        "codesign_eda"
+      ],
+      "stage": "seed (founded 2020)",
+      "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Delft quantum cluster; quantum test/diagnostics is the scarce measurement layer every QPU company needs. Reinforces the quantum-control/test cross-border pattern. Directory-sourced.",
+      "founders": [],
+      "source_urls": [
+        "https://www.eu-startups.com/directory/orange-quantum-systems/",
+        "https://orangeqs.com/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Vector Photonics",
+      "one_liner": "PCSEL semiconductor-laser technology — a claimed first major break-through in semiconductor lasers in 30 years.",
+      "incubator_id": "eu-startups-directory",
+      "country": "United Kingdom",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "early (founded 2020)",
+      "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
+      "sovereignty_basis": "UK",
+      "architectural_differentiation_note": "University of Glasgow spin-out; PCSEL is a genuine compound-semiconductor photonics device advance (optical interconnect / datacom relevant). Directory-sourced; verify current funding directly.",
+      "founders": [],
+      "source_urls": [
+        "https://www.eu-startups.com/directory/vector-photonics/",
+        "https://www.vectorphotonics.co.uk/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Mapsi Photonics",
+      "one_liner": "Nanotechnology-based integrated photonics; UPC (Universitat Politecnica de Catalunya) spin-off.",
+      "incubator_id": "eu-startups-directory",
+      "country": "Spain",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "early (founded 2018)",
+      "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Nanophotonics manufacturing spin-off from UPC Barcelona. Genuine device-physics IP. Directory-sourced; directory funding field looked unreliable, so left null.",
+      "founders": [],
+      "source_urls": [
+        "https://www.eu-startups.com/directory/mapsi-photonics/",
+        "https://mapsi.es/"
+      ],
+      "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Wave Photonics",
+      "one_liner": "Computational design platform that accelerates integrated-photonics product design (photonics EDA).",
+      "incubator_id": "eu-startups-directory",
+      "country": "United Kingdom",
+      "layers": [
+        "codesign_eda"
+      ],
+      "stage": "early (founded 2021)",
+      "funding_eur_m": null,
+      "funding_type": "unclear",
+      "team_size_estimate": null,
+      "sovereignty_basis": "UK",
+      "architectural_differentiation_note": "Cambridge-based photonics design/EDA tooling — the co-design layer for integrated photonics. Software-leaning, but a real design-automation gap rather than a wrapper. Directory-sourced.",
+      "founders": [],
+      "source_urls": [
+        "https://www.eu-startups.com/directory/wave-photonics/",
+        "https://www.wavephotonics.com/"
+      ],
+      "last_verified": "2026-08-09"
     }
   ]
 }

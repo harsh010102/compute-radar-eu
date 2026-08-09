@@ -26,5 +26,6 @@
   "activate": {"name": "Activate", "country": "USA", "city": "Berkeley, CA", "lat": 37.8715, "lon": -122.2730},
   "duality-quantum": {"name": "Duality Quantum Accelerator", "country": "USA", "city": "Chicago, IL", "lat": 41.7886, "lon": -87.5987},
   "waterloo-quantum": {"name": "IQC / Velocity (Waterloo)", "country": "Canada", "city": "Waterloo, ON", "lat": 43.4723, "lon": -80.5449},
-  "independent": {"name": "Independently sourced", "country": "various", "city": null, "lat": null, "lon": null}
+  "independent": {"name": "Independently sourced", "country": "various", "city": null, "lat": null, "lon": null},
+  "eu-startups-directory": {"name": "EU-Startups Directory", "country": "pan-European", "city": null, "lat": null, "lon": null}
 }

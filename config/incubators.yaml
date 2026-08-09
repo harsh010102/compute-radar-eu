@@ -220,6 +220,18 @@
     university spinouts tracked for market context that aren't tied to one of the
     programs above (e.g. SiPearl, Axelera AI). Not a real incubator - don't scrape this one."
 
+- id: eu-startups-directory
+  name: "EU-Startups Directory (keyword discovery)"
+  country: "pan-European (directory)"
+  type: "structured startup database - keyword discovery source"
+  compute_focus: high
+  eligibility: external
+  url: "https://www.eu-startups.com/directory/"
+  portfolio_url: null
+  notes: "Not an incubator - a keyword-searchable directory of European startups.
+    Companies here are found via compute keyword searches (photonic, quantum, chip, GaN,
+    RISC...) by the separate discover_from_directory pass, not the per-incubator Scout."
+
 - id: unternehmertum-xpreneurs
   name: "UnternehmerTUM / XPRENEURS"
   country: "Germany (Munich)"

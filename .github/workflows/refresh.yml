@@ -53,6 +53,17 @@ jobs:
             python -m compute_radar.pipeline --all
           fi
 
+      - name: Discover from EU-Startups directory
+        # Keyword-driven discovery from the structured directory (separate from the
+        # per-incubator Scout). Only on a full run; never fails the job.
+        if: ${{ github.event.inputs.incubator == '' }}
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.1-flash-lite' }}
+        run: python -m compute_radar.discover_from_directory --max 25 || true
+
       - name: Commit updated data
         run: |
           git config user.name "compute-radar-bot"
