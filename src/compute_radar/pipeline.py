@@ -40,11 +40,42 @@ def load_existing_snapshot() -> RadarSnapshot:
         return RadarSnapshot.model_validate(json.load(f))
 
 
+def _is_empty(v: object) -> bool:
+    return v is None or v == "" or v == [] or v == "unclear"
+
+
+def _merge_record(old: Startup, new: Startup) -> Startup:
+    """Field-level merge: fresh data fills gaps but never erases richer existing data.
+
+    A fresh scrape is often thinner than a hand-curated seed record (which may carry
+    founders, patents, funding_type, source URLs). So for each field we keep the fresh
+    value only when it's non-empty; otherwise we retain what was already there. This keeps
+    the weekly auto-run additive — it can enrich or add companies, but a sparse re-scrape
+    can't degrade a good record. Lists (layers, founders, source_urls) keep whichever side
+    has more entries.
+    """
+    merged = old.model_copy(deep=True)
+    for field in new.model_fields:
+        nv = getattr(new, field)
+        ov = getattr(merged, field)
+        if field in ("layers", "founders", "source_urls"):
+            if isinstance(nv, list) and len(nv) > len(ov or []):
+                setattr(merged, field, nv)
+        elif not _is_empty(nv):
+            setattr(merged, field, nv)
+    merged.last_verified = dt.date.today()
+    return merged
+
+
 def merge(existing: list[Startup], fresh: list[Startup]) -> list[Startup]:
     by_key = {(s.name.lower(), s.incubator_id): s for s in existing}
     for s in fresh:
-        s.last_verified = dt.date.today()
-        by_key[(s.name.lower(), s.incubator_id)] = s
+        key = (s.name.lower(), s.incubator_id)
+        if key in by_key:
+            by_key[key] = _merge_record(by_key[key], s)  # gap-fill, don't clobber
+        else:
+            s.last_verified = dt.date.today()
+            by_key[key] = s
     return list(by_key.values())
 
 
