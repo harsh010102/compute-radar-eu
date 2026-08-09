@@ -54,7 +54,11 @@ def build_llm(provider: str) -> LLM:
         gemini_key = os.getenv("GEMINI_API_KEY")
         if gemini_key and not os.getenv("GOOGLE_API_KEY"):
             os.environ["GOOGLE_API_KEY"] = gemini_key
-        model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
+        # gemini-3.1-flash-lite: current free-tier model with the highest daily quota
+        # (~1000 req/day), which suits the many-call agentic loop. Google retired the 2.5
+        # series for new API keys in 2026 - if this 404s as "no longer available", check
+        # ai.google.dev/gemini-api/docs/models for the current free id and set GEMINI_MODEL.
+        model = os.getenv("GEMINI_MODEL", "gemini-3.1-flash-lite")
         return LLM(
             model=f"gemini/{model}",
             api_key=gemini_key,
