@@ -30,6 +30,18 @@ FundingType = Literal[
 ]
 
 
+class PatentInfo(BaseModel):
+    """EPO Open Patent Services verification signal — see tools/patent_tool.py.
+    A real EP filing is a strong 'differentiation is more than marketing' indicator."""
+
+    query_name: str
+    patent_count: int = 0
+    has_ep_patents: bool = False
+    samples: list[str] = Field(default_factory=list, description="Sample publication numbers, e.g. EP4012345A1")
+    checked_at: date | None = None
+    source: str = "EPO OPS"
+
+
 class Founder(BaseModel):
     name: str
     role: str | None = Field(default=None, description="e.g. CEO, CTO, Co-founder")
@@ -74,6 +86,9 @@ class Startup(BaseModel):
         "not just a software layer on existing hardware.",
     )
     founders: list[Founder] = Field(default_factory=list)
+    patents: PatentInfo | None = Field(
+        default=None, description="EPO OPS patent-verification signal; null until enriched."
+    )
     source_urls: list[str] = Field(default_factory=list)
     last_verified: date | None = None
 

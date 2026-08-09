@@ -136,6 +136,7 @@
   .tags{display:flex; flex-wrap:wrap; gap:.3rem; margin:.6rem 0;}
   .tag{font-size:.66rem; padding:.16rem .48rem; border-radius:5px; font-weight:700; letter-spacing:.02em;}
   .fundingtag{font-size:.66rem; padding:.16rem .48rem; border-radius:5px; font-weight:600; background:var(--surface-2); color:var(--ink-dim); border:1px solid var(--border);}
+  .patenttag{font-size:.66rem; padding:.16rem .48rem; border-radius:5px; font-weight:600; background:var(--layer-3); color:#0b0b0b; cursor:help;}
 
   .founders{display:flex; flex-direction:column; gap:.25rem; margin:.55rem 0; font-size:.78rem;}
   .founder{display:flex; align-items:center; gap:.4rem; color:var(--ink-dim);}
@@ -449,6 +450,9 @@ function render(){
       <div class="tags">
         ${s.layers.map(l=>`<span class="tag" style="background:${layerColor(l)}; color:${layerTextColor(l)}">${layerLabel(l)}</span>`).join("")}
         <span class="fundingtag">${fundingLabel(s.funding_type)}</span>
+        ${s.patents && s.patents.patent_count > 0
+          ? `<span class="patenttag" title="EPO-verified: ${(s.patents.samples||[]).join(', ')||'EP filings on record'}">📄 ${s.patents.patent_count} patent${s.patents.patent_count>1?'s':''}</span>`
+          : ""}
       </div>
       ${s.architectural_differentiation_note ? `<p class="note">${s.architectural_differentiation_note}</p>` : ""}
       ${s.founders && s.founders.length ? `<div class="founders">${s.founders.map(f=>`

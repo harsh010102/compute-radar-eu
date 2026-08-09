@@ -74,7 +74,17 @@ python -m http.server 8080
 
 **Provider round-robin + fallback** (`src/compute_radar/llm_provider.py`): set both `OPENROUTER_API_KEY` and `GEMINI_API_KEY` and the pipeline alternates providers incubator-by-incubator, and retries on the other provider if one hits a rate limit mid-run — this is using two separate, legitimately-provisioned services the way a router is meant to, not the same trick as creating multiple accounts on one provider to dodge its limit (which this project deliberately does not do).
 
-**Verifying claims (Crunchbase/Tracxn/EPO Deep Tech Finder)**: Crunchbase and Tracxn both require paid API access this project doesn't have, so funding/investor claims are verified via direct search of primary sources (press releases, EU-Startups, program announcements) instead — see `source_urls` on each record. The EPO's [Deep Tech Finder](https://dtf.epo.org/) is a genuinely useful free companion for manual verification (cross-references Dealroom startup data against real EPO patent filings, so a hit there is a strong differentiation signal) — but it has no public API and its own bot protection blocks automated access, so it's a human-in-the-loop check, not something this pipeline can query automatically.
+**Verifying claims (Crunchbase/Tracxn)**: both require paid API access this project doesn't have, so funding/investor claims are verified via direct search of primary sources (press releases, EU-Startups, program announcements) — see `source_urls` on each record.
+
+**Patent verification via EPO OPS** (`src/compute_radar/tools/patent_tool.py`): the EPO's [Deep Tech Finder](https://dtf.epo.org/) web tool has no API and actively blocks automated access — so instead of scraping it, this project queries EPO's **official free** [Open Patent Services (OPS)](https://developers.epo.org) REST API directly. Given a company name it looks up that applicant's European patent filings and attaches a `patents` signal (count + sample publication numbers) to each record; a real EP filing is a strong "the differentiation is more than marketing" indicator. It's a deterministic API call, not an LLM task, so it runs as a separate enrichment pass:
+
+```bash
+python -m compute_radar.enrich_patents            # backfill records not yet checked
+python -m compute_radar.enrich_patents --force    # re-check all
+python -m compute_radar.enrich_patents --founders # also match founders as inventors
+```
+
+Register a free "non-paying" OPS application to get `OPS_CONSUMER_KEY` / `OPS_CONSUMER_SECRET`; without them the pass is a graceful no-op. A full `--all` pipeline run also triggers enrichment automatically at the end when OPS is configured. Patent-verified companies show a `📄 N patents` badge on the dashboard.
 
 ## Project status
 
@@ -89,6 +99,9 @@ src/compute_radar/
   models.py                    Startup / Incubator data schemas (pydantic)
   tools/scraper_tool.py        CrewAI tool: fetch + clean a URL (requests + BeautifulSoup)
   tools/search_tool.py         CrewAI tool: free DuckDuckGo HTML search (best-effort)
+  tools/patent_tool.py         EPO OPS patent lookup (official free API, hand-rolled)
+  llm_provider.py              OpenRouter/Gemini round-robin + fallback
+  enrich_patents.py            deterministic patent-verification pass (standalone CLI)
   agents.py                    Scout + Analyst agent definitions
   tasks.py                     the two-step task chain (scout → classify)
   crew.py                      assembles the Crew, runs it per-incubator

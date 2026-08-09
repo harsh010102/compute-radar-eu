@@ -100,6 +100,15 @@ def main() -> None:
 
     print(f"\nWrote {len(merged)} total startups to {DATA_PATH}")
 
+    # Best-effort patent-verification pass (deterministic API call, no LLM). No-op unless
+    # OPS_CONSUMER_KEY / OPS_CONSUMER_SECRET are configured.
+    try:
+        from compute_radar.enrich_patents import run_enrichment
+
+        run_enrichment(force=False, founders=False)
+    except Exception as exc:  # noqa: BLE001 - enrichment must never fail the whole run
+        print(f"  !! patent enrichment skipped: {exc}", file=sys.stderr)
+
 
 if __name__ == "__main__":
     main()

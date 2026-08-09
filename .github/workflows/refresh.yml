@@ -43,6 +43,8 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-2.5-flash' }}
+          OPS_CONSUMER_KEY: ${{ secrets.OPS_CONSUMER_KEY }}
+          OPS_CONSUMER_SECRET: ${{ secrets.OPS_CONSUMER_SECRET }}
           INCUBATOR_INPUT: ${{ github.event.inputs.incubator }}
         run: |
           if [ -n "$INCUBATOR_INPUT" ]; then
