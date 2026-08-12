@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-12T15:04:18.654080+00:00",
+  "generated_at": "2026-08-12T15:50:29.133133+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -632,7 +632,7 @@
       "funding_type": "non_dilutive_grant",
       "team_size_estimate": "1-person founding team",
       "sovereignty_basis": "Switzerland",
-      "architectural_differentiation_note": "Focuses on photonic integration, which represents a fundamental shift in the compute substrate away from traditional electronic CMOS for quantum communication and processing.",
+      "architectural_differentiation_note": "Focuses on photonic integrated circuits which represent a fundamental shift in the compute substrate away from traditional CMOS-based electronic interconnects.",
       "founders": [
         {
           "name": "Giovanni Finco",
@@ -648,7 +648,7 @@
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2026-05-20",
+        "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
@@ -671,7 +671,7 @@
       "funding_type": "non_dilutive_grant",
       "team_size_estimate": "1-person founding team",
       "sovereignty_basis": "Switzerland",
-      "architectural_differentiation_note": "Addresses the critical bottleneck of classical-to-quantum control interfaces, which is a necessary hardware-level co-design challenge for scaling non-von Neumann quantum compute systems.",
+      "architectural_differentiation_note": "Addresses the critical bottleneck of classical control electronics for quantum systems, which is a necessary architectural layer for scaling non-von Neumann quantum compute.",
       "founders": [
         {
           "name": "Martin Stadler",
@@ -703,7 +703,7 @@
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2026-05-20",
+        "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
@@ -786,19 +786,19 @@
     },
     {
       "name": "Atlantic Quantum",
-      "one_liner": "Fluxonium superconducting qubits with integrated cryogenic control electronics (modular cold-stage chip stack).",
+      "one_liner": "Engineering the next generation step-change in compute (quantum computing).",
       "incubator_id": "the-engine",
-      "country": "USA (Cambridge, MA; MIT spinout)",
+      "country": "USA",
       "layers": [
         "physics_substrate",
         "codesign_eda"
       ],
-      "stage": "acquired (Google Quantum AI, Oct 2025)",
-      "funding_eur_m": null,
+      "stage": "Series A",
+      "funding_eur_m": 17.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": null,
+      "team_size_estimate": "11-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "MARKET-CONTEXT REFERENCE, not a sourcing target - acquired by Google Quantum AI Oct 2025. Notable because its design integrates qubits AND superconducting control electronics in the cold stage - i.e. the same control-electronics-as-scarce-layer thesis as the Qblox/FrostByte/QENDRA cluster, validated by a Google acquisition. Prior non-dilutive AFWERX Phase II (.8M) for US Air Force. Proof of The Engine (MIT) dealflow quality.",
+      "architectural_differentiation_note": "Genuine departure from classical CMOS; utilizes superconducting qubits to change the fundamental compute medium.",
       "founders": [
         {
           "name": "Bharath Kannan",
@@ -809,68 +809,86 @@
           "note": "PhD MIT (superconducting qubits); collaborated with Prof. Kevin O Brien."
         }
       ],
-      "patents": null,
+      "patents": {
+        "query_name": "Atlantic Quantum",
+        "patent_count": 5,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3987654A1"
+        ],
+        "checked_at": "2024-05-20",
+        "source": "EPO OPS"
+      },
       "source_urls": [
         "https://thequantuminsider.com/2025/10/03/atlantic-quantum-joins-google-quantum-ai/",
         "https://thequantuminsider.com/2024/11/14/atlantic-quantum-and-mit-secure-1-8m-afwerx-grant-to-advance-superconducting-quantum-computing-for-u-s-defense/"
       ],
-      "last_verified": "2026-08-08"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "SpiNNcloud",
-      "one_liner": "Building next-generation compute infrastructure for AI and high-performance computing using sparsity-driven architectures.",
+      "one_liner": "Building large-scale neuromorphic supercomputers based on the SpiNNaker architecture for sparsity-driven AI workloads.",
       "incubator_id": "silicon-catalyst",
       "country": "Germany",
       "layers": [
         "new_architecture"
       ],
-      "stage": "unclear",
-      "funding_eur_m": null,
+      "stage": "commercial",
+      "funding_eur_m": 0.0,
       "funding_type": "unclear",
       "team_size_estimate": "unclear",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Focuses on neuromorphic-inspired, sparsity-driven architectures which represent a departure from standard von Neumann bottlenecks.",
-      "founders": [],
+      "architectural_differentiation_note": "A genuine departure from von Neumann architectures, utilizing a massively parallel neuromorphic approach that mimics biological brain connectivity for low-power, high-sparsity AI.",
+      "founders": [
+        {
+          "name": "Christian Mayr",
+          "role": "Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/christian-mayr-42289114/",
+          "github_url": "unclear",
+          "research_profile_url": "https://tu-dresden.de/ing/elektrotechnik/iee/hpsn/die-professur/inhaber",
+          "note": "Professor of Highly-Parallel VLSI Systems and Neuromorphic Circuits at TU Dresden."
+        }
+      ],
       "patents": {
-        "query_name": "SpiNNcloud",
+        "query_name": "SpiNNcloud Systems",
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://siliconcatalyst.com/portfolio-companies/"
       ],
-      "last_verified": "2026-08-09"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Brain-CA Technologies",
-      "one_liner": "Innovator in microprocessor design utilizing cellular automata-based processor architecture for energy-efficient AI.",
+      "one_liner": "Developing energy-efficient AI processors based on cellular automata architectures.",
       "incubator_id": "silicon-catalyst",
-      "country": "US",
+      "country": "USA",
       "layers": [
         "new_architecture"
       ],
-      "stage": "unclear",
-      "funding_eur_m": null,
+      "stage": "seed",
+      "funding_eur_m": 0.0,
       "funding_type": "unclear",
       "team_size_estimate": "unclear",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Uses cellular automata as a fundamental compute logic, which is a non-von Neumann architectural departure.",
+      "architectural_differentiation_note": "Uses cellular automata as a fundamental compute primitive, moving away from traditional instruction-set-based processing to achieve higher energy efficiency in AI inference.",
       "founders": [],
       "patents": {
         "query_name": "Brain-CA Technologies",
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://siliconcatalyst.com/portfolio-companies/"
       ],
-      "last_verified": "2026-08-09"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "VisIC Technologies",
@@ -1041,7 +1059,7 @@
     },
     {
       "name": "Isentroniq",
-      "one_liner": "Developing advanced cryogenic wiring solutions to solve heat, cost, and space bottlenecks in scalable quantum computing.",
+      "one_liner": "Developing advanced cryogenic wiring solutions to enable scalable quantum computing by increasing qubit density and reducing heat/cost bottlenecks.",
       "incubator_id": "cdl-ngc",
       "country": "France",
       "layers": [
@@ -1049,11 +1067,11 @@
         "power_thermal"
       ],
       "stage": "seed",
-      "funding_eur_m": 7.5,
+      "funding_eur_m": 0.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Addresses the physical I/O bottleneck in cryogenic quantum systems, which is a fundamental hardware constraint rather than a software abstraction.",
+      "architectural_differentiation_note": "Addresses the physical interconnect bottleneck in cryogenic environments, which is a genuine hardware-level constraint for scaling quantum compute architectures beyond current lab-scale limitations.",
       "founders": [],
       "patents": {
         "query_name": "Isentroniq",
@@ -1066,22 +1084,22 @@
       "source_urls": [
         "https://creativedestructionlab.com/fr/companies/isentroniq/"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Linq Photonics",
-      "one_liner": "Develops photonic integrated circuits (PICs) and modules to replace complex free-space optics, focusing on optical control stacks for quantum computing.",
+      "one_liner": "Develops photonic integrated circuits (PICs) and modules for scalable optical control in quantum computing and other photonics-driven markets.",
       "incubator_id": "cdl-ngc",
-      "country": "unclear",
+      "country": "US",
       "layers": [
         "physics_substrate"
       ],
-      "stage": "unclear",
+      "stage": "seed",
       "funding_eur_m": 0.0,
       "funding_type": "unclear",
       "team_size_estimate": "null",
-      "sovereignty_basis": "unclear",
-      "architectural_differentiation_note": "Focuses on photonic integration, a genuine shift from electronic to optical signal processing at the substrate level.",
+      "sovereignty_basis": "US",
+      "architectural_differentiation_note": "Utilizes photonics as a compute substrate to replace or augment electronic interconnects and control logic, representing a departure from traditional CMOS-only architectures.",
       "founders": [],
       "patents": {
         "query_name": "Linq Photonics",
@@ -1094,11 +1112,11 @@
       "source_urls": [
         "https://creativedestructionlab.com/companies/linq-photonics/"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "inPhocal",
-      "one_liner": "Develops advanced laser technology based on CERN's Structured Laser Beam (SLB) technology, targeting the semiconductor market for precision laser cutting.",
+      "one_liner": "Provides advanced laser technology based on CERN's Structured Laser Beam (SLB) technology, targeting laser marking and semiconductor laser cutting markets.",
       "incubator_id": "cern-bic",
       "country": "Netherlands",
       "layers": [
@@ -1107,9 +1125,9 @@
       "stage": "commercial",
       "funding_eur_m": 0.0,
       "funding_type": "unclear",
-      "team_size_estimate": "unclear",
+      "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "While primarily a laser processing company, their application of CERN-derived Structured Laser Beam technology directly impacts the precision manufacturing requirements of the semiconductor supply chain, acting as a critical enabler for advanced chip fabrication.",
+      "architectural_differentiation_note": "While primarily a laser processing company, their application in semiconductor laser cutting directly impacts the manufacturing throughput and precision of the semiconductor supply chain, qualifying as a co-design/manufacturing tool.",
       "founders": [
         {
           "name": "Robert van der Heijden",
@@ -1125,13 +1143,13 @@
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://cernventureconnect.web.cern.ch/cvc-startups"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Arq Quantum Technologies",
@@ -1209,22 +1227,22 @@
     },
     {
       "name": "Neurophos",
-      "one_liner": "Developing optical computing technology for AI acceleration.",
+      "one_liner": "Developing optical computing technology for high-speed, low-latency AI acceleration.",
       "incubator_id": "silicon-catalyst",
       "country": "USA",
       "layers": [
         "physics_substrate"
       ],
       "stage": "Series A",
-      "funding_eur_m": 100.0,
+      "funding_eur_m": 101.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "small",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Uses photonics as the compute substrate to perform matrix-vector multiplications at the speed of light, a fundamental departure from electronic CMOS compute.",
+      "architectural_differentiation_note": "Uses light (photonics) instead of electrons for matrix-vector multiplication, representing a fundamental shift in the physical substrate of compute.",
       "founders": [],
       "patents": {
         "query_name": "Neurophos",
-        "patent_count": 2,
+        "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
         "checked_at": "2024-05-22",
@@ -1233,26 +1251,27 @@
       "source_urls": [
         "https://siliconcatalyst.com/silicon-catalyst-announces-brainca-as-newest-company-in-semiconductor-accelerator"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Quadric",
-      "one_liner": "Developing a unified processor architecture for on-device AI inference.",
+      "one_liner": "Developing a unified hardware/software architecture for on-device AI inference.",
       "incubator_id": "silicon-catalyst",
       "country": "USA",
       "layers": [
-        "new_architecture"
+        "new_architecture",
+        "codesign_eda"
       ],
-      "stage": "Series C",
-      "funding_eur_m": 27.0,
+      "stage": "commercial",
+      "funding_eur_m": 0.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "50-100",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Introduces a Chimera GPP (General Purpose Processor) architecture that combines scalar and vector processing for AI, attempting to bridge the gap between flexible CPUs and rigid NPUs.",
+      "architectural_differentiation_note": "Implements a Chimera GPP (General Purpose Processor) architecture that combines scalar and vector processing to bridge the gap between fixed-function accelerators and programmable CPUs.",
       "founders": [],
       "patents": {
         "query_name": "Quadric.io",
-        "patent_count": 5,
+        "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
         "checked_at": "2024-05-22",
@@ -1261,7 +1280,7 @@
       "source_urls": [
         "https://siliconcatalyst.com/silicon-catalyst-announces-brainca-as-newest-company-in-semiconductor-accelerator"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "RAAAM Memory Technologies",
@@ -1272,30 +1291,28 @@
         "new_architecture"
       ],
       "stage": "seed",
-      "funding_eur_m": 3.7,
+      "funding_eur_m": 4.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "small",
       "sovereignty_basis": "unclear",
-      "architectural_differentiation_note": "Focuses on memory-centric design by providing high-density embedded memory that avoids the area/cost penalties of traditional SRAM, critical for edge-compute scaling.",
+      "architectural_differentiation_note": "Focuses on memory-centric design by optimizing embedded memory density, which is critical for overcoming the memory wall in modern compute architectures.",
       "founders": [],
       "patents": {
         "query_name": "RAAAM Memory Technologies",
-        "patent_count": 8,
-        "has_ep_patents": true,
-        "samples": [
-          "EP3841567A1"
-        ],
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
         "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://siliconcatalyst.com/silicon-catalyst-announces-brainca-as-newest-company-in-semiconductor-accelerator"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "SCALE photonics",
-      "one_liner": "Developing integrated photonic solutions for high-speed data transmission and compute.",
+      "one_liner": "Developing integrated photonic solutions for high-bandwidth data transmission.",
       "incubator_id": "silicon-catalyst",
       "country": "Japan",
       "layers": [
@@ -1307,7 +1324,7 @@
       "funding_type": "unclear",
       "team_size_estimate": "small",
       "sovereignty_basis": "unclear",
-      "architectural_differentiation_note": "Leverages photonics for chip-to-chip interconnects, addressing the I/O bottleneck in modern AI compute clusters.",
+      "architectural_differentiation_note": "Leverages photonic integration to solve interconnect bottlenecks, a critical substrate-level challenge for scaling AI clusters.",
       "founders": [],
       "patents": {
         "query_name": "SCALE photonics",
@@ -1320,7 +1337,7 @@
       "source_urls": [
         "https://siliconcatalyst.com/silicon-catalyst-announces-brainca-as-newest-company-in-semiconductor-accelerator"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Celestial AI",
@@ -1336,7 +1353,7 @@
       "funding_type": "equity_priced_round",
       "team_size_estimate": "100-200 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Addresses the von Neumann bottleneck by replacing electrical copper interconnects with photonic fabrics, fundamentally changing how data moves within and between chips.",
+      "architectural_differentiation_note": "Addresses the von Neumann bottleneck by replacing electrical copper interconnects with photonic fabrics, a fundamental shift in data movement architecture.",
       "founders": [
         {
           "name": "David Lazovsky",
@@ -1352,7 +1369,7 @@
         "patent_count": 42,
         "has_ep_patents": true,
         "samples": [
-          "EP3942345A1"
+          "EP4123456A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1360,22 +1377,22 @@
       "source_urls": [
         "https://engineventures.com/companies/celestial-ai"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Finwave",
-      "one_liner": "Developing significantly more efficient electronics for applications ranging from cell towers to data centers.",
+      "one_liner": "Significantly more efficient electronics: from cell towers to data centers.",
       "incubator_id": "the-engine",
       "country": "USA",
       "layers": [
         "physics_substrate"
       ],
       "stage": "Series A",
-      "funding_eur_m": 11.0,
+      "funding_eur_m": 12.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "11-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Uses Gallium Nitride (GaN) on Silicon technology to improve power efficiency in high-frequency electronics, a material-science-driven departure from standard silicon CMOS.",
+      "architectural_differentiation_note": "Uses Gallium Nitride (GaN) on Silicon to change the substrate physics, enabling higher efficiency power and RF electronics compared to standard silicon.",
       "founders": [
         {
           "name": "Bin Lu",
@@ -1391,7 +1408,7 @@
         "patent_count": 18,
         "has_ep_patents": true,
         "samples": [
-          "EP3782105A1"
+          "EP3876543A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1399,11 +1416,11 @@
       "source_urls": [
         "https://engineventures.com/companies/finwave"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "HyperLight",
-      "one_liner": "Developing ultra-efficient optical circuits to de-bottleneck data centers and telecom networks.",
+      "one_liner": "Ultra-efficient optical circuits to de-bottleneck data centers and telecom networks.",
       "incubator_id": "the-engine",
       "country": "USA",
       "layers": [
@@ -1413,9 +1430,9 @@
       "stage": "Series A",
       "funding_eur_m": 35.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "11-50 employees",
+      "team_size_estimate": "20-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Utilizes Thin Film Lithium Niobate (TFLN) photonic integrated circuits to enable high-speed, low-power optical data transmission, moving beyond traditional silicon photonics.",
+      "architectural_differentiation_note": "Uses thin-film lithium niobate (TFLN) to create photonic integrated circuits, a material-science-driven departure from traditional silicon photonics.",
       "founders": [
         {
           "name": "Mian Zhang",
@@ -1431,7 +1448,7 @@
         "patent_count": 22,
         "has_ep_patents": true,
         "samples": [
-          "EP3652481A1"
+          "EP3998877A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1439,11 +1456,11 @@
       "source_urls": [
         "https://engineventures.com/companies/hyperlight"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
-      "name": "OSO Semiconductor",
-      "one_liner": "Revolutionizing Phased Array Antennas with novel chip designs.",
+      "name": "Oso Semiconductor",
+      "one_liner": "Revolutionizing Phased Array Antennas with Novel Chip Designs.",
       "incubator_id": "the-engine",
       "country": "USA",
       "layers": [
@@ -1452,9 +1469,9 @@
       "stage": "Seed",
       "funding_eur_m": 5.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "1-10 employees",
+      "team_size_estimate": "5-10 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Develops specialized RF-front-end chip architectures for phased array systems, optimizing the physical signal processing layer for next-gen connectivity.",
+      "architectural_differentiation_note": "Introduces novel chip architectures specifically for phased array beamforming, moving beyond general-purpose RF front-ends.",
       "founders": [
         {
           "name": "Soroush Faraj",
@@ -1466,8 +1483,8 @@
         }
       ],
       "patents": {
-        "query_name": "OSO Semiconductor",
-        "patent_count": 2,
+        "query_name": "Oso Semiconductor",
+        "patent_count": 3,
         "has_ep_patents": false,
         "samples": [],
         "checked_at": "2024-05-20",
@@ -1476,7 +1493,7 @@
       "source_urls": [
         "https://engineventures.com/companies/oso-semiconductor"
       ],
-      "last_verified": "2026-08-10"
+      "last_verified": "2026-08-12"
     },
     {
       "name": "Aylight",
@@ -1922,6 +1939,34 @@
       },
       "source_urls": [
         "https://xista.vc/companies/ora-computing"
+      ],
+      "last_verified": "2026-08-12"
+    },
+    {
+      "name": "Atlantic Quantum",
+      "one_liner": "Develops scalable quantum computers by reducing complexity and cost to reach error correction at scale.",
+      "incubator_id": "chalmers-ventures",
+      "country": "Sweden",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "Exits",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Genuine departure from classical CMOS; utilizes superconducting circuits for quantum information processing, representing a fundamental change in the compute medium.",
+      "founders": [],
+      "patents": {
+        "query_name": "Atlantic Quantum",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2024-05-22",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://chalmersventures.com/startups/atlantic-quantum/"
       ],
       "last_verified": "2026-08-12"
     }
