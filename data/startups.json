@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-09T15:22:26.705635+00:00",
+  "generated_at": "2026-08-12T14:04:04.084337+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -713,9 +713,9 @@
         "sovereign_cloud"
       ],
       "stage": "seed",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": null,
       "funding_type": "convertible_loan",
-      "team_size_estimate": "null",
+      "team_size_estimate": null,
       "sovereignty_basis": "UK",
       "architectural_differentiation_note": "This company addresses the fundamental challenge of distributed quantum computing and hardware heterogeneity, which is a necessary architectural evolution for scaling quantum systems beyond single-processor limitations.",
       "founders": [
@@ -783,7 +783,7 @@
         "new_architecture"
       ],
       "stage": "unclear",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": null,
       "funding_type": "unclear",
       "team_size_estimate": "unclear",
       "sovereignty_basis": "EU/EEA",
@@ -811,7 +811,7 @@
         "new_architecture"
       ],
       "stage": "unclear",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": null,
       "funding_type": "unclear",
       "team_size_estimate": "unclear",
       "sovereignty_basis": "US",
@@ -839,7 +839,7 @@
         "physics_substrate"
       ],
       "stage": "unclear",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": null,
       "funding_type": "unclear",
       "team_size_estimate": "unclear",
       "sovereignty_basis": "unclear",
@@ -867,12 +867,12 @@
         "physics_substrate",
         "codesign_eda"
       ],
-      "stage": "early (founded 2021)",
+      "stage": "pre-seed/seed (Bayern Kapital, 2025)",
       "funding_eur_m": null,
-      "funding_type": "unclear",
+      "funding_type": "equity_priced_round",
       "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine quantum-hardware enabling tech (single-photon detection) — part of the same control/measurement layer as the Qblox/QENDRA cluster. Found via EU-Startups directory keyword search (photon/quantum); directory lists no funding yet.",
+      "architectural_differentiation_note": "Genuine quantum-hardware enabling tech (single-photon detection) — part of the same control/measurement layer as the Qblox/QENDRA cluster. Found via EU-Startups directory keyword search (photon/quantum); directory lists no funding yet. [Updated Aug 2026: started on a grant (2024) then took Bayern Kapital equity — no longer purely non-dilutive.]",
       "founders": [],
       "source_urls": [
         "https://www.eu-startups.com/directory/munich-quantum-instruments/",
@@ -888,12 +888,12 @@
       "layers": [
         "codesign_eda"
       ],
-      "stage": "seed (founded 2020)",
-      "funding_eur_m": null,
-      "funding_type": "unclear",
+      "stage": "seed (€15M extended, EIC Fund-led, 2026)",
+      "funding_eur_m": 15.0,
+      "funding_type": "equity_priced_round",
       "team_size_estimate": null,
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Delft quantum cluster; quantum test/diagnostics is the scarce measurement layer every QPU company needs. Reinforces the quantum-control/test cross-border pattern. Directory-sourced.",
+      "architectural_differentiation_note": "Delft quantum cluster; quantum test/diagnostics is the scarce measurement layer every QPU company needs. Reinforces the quantum-control/test cross-border pattern. Directory-sourced. [Updated Aug 2026: raised €15M seed (extended, led by EIC Fund; InnovationQuarter/QDNL/Cottonwood/Icecat) — NOT non-dilutive and now seed/Series-A scale, so market-context rather than an early cohort target.]",
       "founders": [],
       "source_urls": [
         "https://www.eu-startups.com/directory/orange-quantum-systems/",
@@ -909,12 +909,12 @@
       "layers": [
         "physics_substrate"
       ],
-      "stage": "early (founded 2020)",
+      "stage": "seed (equity + Innovate UK grants; founded 2020)",
       "funding_eur_m": null,
-      "funding_type": "unclear",
+      "funding_type": "equity_priced_round",
       "team_size_estimate": null,
       "sovereignty_basis": "UK",
-      "architectural_differentiation_note": "University of Glasgow spin-out; PCSEL is a genuine compound-semiconductor photonics device advance (optical interconnect / datacom relevant). Directory-sourced; verify current funding directly.",
+      "architectural_differentiation_note": "University of Glasgow spin-out; PCSEL is a genuine compound-semiconductor photonics device advance (optical interconnect / datacom relevant). Directory-sourced; verify current funding directly. [Updated Aug 2026: mixed funding — equity (Foresight, Scottish Enterprise, UK Innovation & Science Seed Fund) plus Innovate UK grants; not purely non-dilutive.]",
       "founders": [],
       "source_urls": [
         "https://www.eu-startups.com/directory/vector-photonics/",
@@ -973,9 +973,9 @@
         "advanced_packaging"
       ],
       "stage": "seed",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": null,
       "funding_type": "unclear",
-      "team_size_estimate": "null",
+      "team_size_estimate": null,
       "sovereignty_basis": "unclear",
       "architectural_differentiation_note": "This is a genuine hardware-level innovation in semiconductor manufacturing processes (wafer-splitting), which directly impacts the physical production and cost-efficiency of advanced chips, rather than being a software layer.",
       "founders": [],
@@ -991,6 +991,45 @@
         "https://www.dualityaccelerator.com/innovators/"
       ],
       "last_verified": "2026-08-09"
+    },
+    {
+      "name": "Aylight",
+      "one_liner": "Chip-scale multiwavelength laser — one photonic chip emitting many precisely-spaced wavelengths for AI data-centre optical interconnect and FMCW sensing.",
+      "incubator_id": "independent",
+      "country": "Switzerland (ETH Zürich spinout)",
+      "layers": [
+        "physics_substrate",
+        "chiplet_interconnect"
+      ],
+      "stage": "pre-seed (€4.5M, 2026)",
+      "funding_eur_m": 4.5,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": null,
+      "sovereignty_basis": "Switzerland",
+      "architectural_differentiation_note": "ETH Zürich spinout. Chip-scale multiwavelength laser is the missing light source for co-packaged optics — the interconnect layer the whole AI-infra industry is racing toward (same bottleneck the case venture Finchetto targets, from the light-source side). Genuine device physics; dual-use (optical interconnect + FMCW metrology/robotics). Equity pre-seed (Elaia, Swisscom Ventures, Verve Ventures, Plug and Play) — already VC-discovered, so market-context, not a non-dilutive radar-first find.",
+      "founders": [
+        {
+          "name": "Bahareh Marzban",
+          "role": "Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "ETH Zürich photonics research."
+        },
+        {
+          "name": "Dmitry Kazakov",
+          "role": "Co-founder",
+          "linkedin_url": null,
+          "github_url": null,
+          "research_profile_url": null,
+          "note": "ETH Zürich photonics research."
+        }
+      ],
+      "source_urls": [
+        "https://tech.eu/2026/07/06/aylight-closes-eur45m-pre-seed-round-to-advance-optical-interconnect-technology/",
+        "https://aylight.io/news/preseed-funding/"
+      ],
+      "last_verified": "2026-08-11"
     }
   ]
 }
