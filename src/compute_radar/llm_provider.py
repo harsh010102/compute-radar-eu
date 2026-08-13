@@ -85,5 +85,14 @@ def looks_like_quota_error(exc: Exception) -> bool:
         "resource_exhausted",
         "resourceexhausted",
         "invalid response from llm call",  # the empty-response symptom seen on free tiers
+        # When a free model is rate-limited upstream it sometimes returns HTTP 200 with a
+        # null body instead of a clean 429, and the client blows up indexing choices[0] with
+        # "'NoneType' object is not subscriptable" / "OpenAI API call failed". Same class of
+        # transient free-tier failure - treat it as exhaustion so the other provider retries
+        # this incubator rather than losing it. Worst case on a genuine bug: one extra
+        # (bounded, non-looping) attempt on the fallback provider, which then also fails.
+        "not subscriptable",
+        "nonetype",
+        "openai api call failed",
     )
     return any(s in text for s in signals)
