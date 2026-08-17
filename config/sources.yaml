@@ -100,3 +100,4 @@
   name: "Data Center Dynamics"
   region: global
   focus: datacenter
+  rss: https://www.datacenterdynamics.com/en/rss/  # non-standard feed path (see rss_tool.py)

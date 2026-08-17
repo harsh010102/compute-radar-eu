@@ -43,6 +43,7 @@ jobs:
           OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free' }}
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.1-flash-lite' }}
+          EXA_API_KEY: ${{ secrets.EXA_API_KEY }}
           OPS_CONSUMER_KEY: ${{ secrets.OPS_CONSUMER_KEY }}
           OPS_CONSUMER_SECRET: ${{ secrets.OPS_CONSUMER_SECRET }}
           INCUBATOR_INPUT: ${{ github.event.inputs.incubator }}
@@ -63,6 +64,18 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.1-flash-lite' }}
         run: python -m compute_radar.discover_from_directory --max 25 || true
+
+      - name: Discover from news feeds (RSS)
+        # Third discovery path: read the regional + compute-vertical startup-news RSS feeds
+        # in config/sources.yaml, keyword-filter for compute relevance, then classify. This
+        # is the "read what Crunchbase reads" path. Full runs only; never fails the job.
+        if: ${{ github.event.inputs.incubator == '' }}
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-oss-20b:free' }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL || 'gemini-3.1-flash-lite' }}
+        run: python -m compute_radar.discover_from_news --since-days 120 --max 60 || true
 
       - name: Commit updated data
         run: |
