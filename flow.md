@@ -231,7 +231,7 @@ The dashboard never writes — it only renders whatever the pipeline last commit
 | `discover_from_news.py` | **Entry** for the news-RSS discovery path. |
 | `enrich_patents.py` | **Entry** for deterministic EPO OPS patent enrichment. |
 | `tools/scraper_tool.py` | `FetchPageTool` — polite requests+BS4 page fetch. |
-| `tools/search_tool.py` | `FreeWebSearchTool` — Exa semantic search, DuckDuckGo fallback. |
+| `tools/search_tool.py` | `FreeWebSearchTool` — Exa search (cheapest mode, per-run cap, auto-disable on 401/402/429) with DuckDuckGo fallback. |
 | `tools/directory_tool.py` | EU-Startups directory scraper (`search_directory`, `fetch_listing`, `discover`). |
 | `tools/rss_tool.py` | RSS/Atom feed fetch + compute keyword filter for the news path (`discover_news`). |
 | `tools/patent_tool.py` | EPO OPS client (auth, search, defensive parse, throttle handling). |

@@ -149,11 +149,18 @@ scraped SERP, and it's a stable keyed API rather than fragile HTML — but keepi
 DuckDuckGo backend means the pipeline still runs for free with zero configuration. Both
 backends return the same `title/url/snippet` text, so agents/tasks are backend-agnostic and
 either can be swapped in one file.
-**Trade-off.** Exa's free tier has a monthly quota; when exhausted or unconfigured the tool
-degrades to the fragile DDG scrape rather than failing. Isolated behind one tool class.
-**History.** Originally DuckDuckGo-only; Exa was added as the primary backend once the DDG
-scrape proved to be the most fragile part of the pipeline.
-**Where.** `src/compute_radar/tools/search_tool.py` (`_exa_search` / `_ddg_search`).
+**Free-tier discipline.** Exa is used *only while free* and can never generate a paid call:
+(1) calls run in Exa's cheapest mode — search only, **no `contents`** retrieval (the Scout
+reads pages with its own free scraper); (2) a per-run cap `EXA_MAX_CALLS_PER_RUN` (default
+300) ceilings usage; (3) the first `401/402/429` (key rejected / billing / quota) **disables
+Exa for the rest of the process** and falls back to DuckDuckGo — no repeated paid hits. Each
+query logs which backend served it, so the Actions log confirms Exa is actually in use.
+**Trade-off.** Search-only Exa returns no snippets, so the Scout may spend a (free) fetch_page
+to judge a result — acceptable, and it shifts cost off the paid API onto our free scraper.
+**History.** Originally DuckDuckGo-only; Exa added as primary; then hardened with the
+free-tier guard above so a configured key can never bill.
+**Where.** `src/compute_radar/tools/search_tool.py` (`_exa_search` / `_ddg_search`,
+`_exa_budget_left`, `_exa_state`).
 
 ### D15 · Region-matched news sources, kept deliberately short
 **Decision.** Each incubator is matched (by country → region) to a handful of relevant
