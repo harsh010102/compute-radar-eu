@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-16T11:11:31.216398+00:00",
+  "generated_at": "2026-08-17T07:38:15.152321+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -1058,19 +1058,19 @@
     },
     {
       "name": "Isentroniq",
-      "one_liner": "Develops advanced cryogenic wiring solutions to solve heat, cost, and space bottlenecks in superconducting quantum computers.",
+      "one_liner": "Developing advanced computing hardware components for next-generation systems.",
       "incubator_id": "cdl-ngc",
       "country": "France",
       "layers": [
         "physics_substrate",
         "power_thermal"
       ],
-      "stage": "Series A",
-      "funding_eur_m": 7.5,
+      "stage": "seed",
+      "funding_eur_m": 0.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Addresses the physical I/O bottleneck in cryogenic environments, which is a critical hardware-level constraint for scaling superconducting quantum processors beyond current qubit counts.",
+      "architectural_differentiation_note": "Focuses on hardware-level compute substrate improvements; requires further technical validation to confirm departure from CMOS.",
       "founders": [],
       "patents": {
         "query_name": "Isentroniq",
@@ -1083,22 +1083,23 @@
       "source_urls": [
         "https://creativedestructionlab.com/fr/companies/isentroniq/"
       ],
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "name": "Linq Photonics",
-      "one_liner": "Develops photonic integrated circuits (PICs) and modules for scalable optical control in quantum computing and other photonics-driven markets.",
+      "one_liner": "Developing photonic interconnect and computing solutions to overcome electronic bandwidth bottlenecks.",
       "incubator_id": "cdl-ngc",
-      "country": "France",
+      "country": "Germany",
       "layers": [
-        "physics_substrate"
+        "physics_substrate",
+        "chiplet_interconnect"
       ],
       "stage": "seed",
       "funding_eur_m": 0.0,
       "funding_type": "unclear",
       "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Focuses on the transition from electronic to photonic interconnects and control, which is a fundamental shift in the compute substrate required to overcome the bandwidth and thermal limits of traditional copper-based architectures.",
+      "architectural_differentiation_note": "Utilizes photonics to replace or augment electrical signaling, representing a genuine departure from classical copper-based interconnects.",
       "founders": [],
       "patents": {
         "query_name": "Linq Photonics",
@@ -1111,7 +1112,7 @@
       "source_urls": [
         "https://creativedestructionlab.com/companies/linq-photonics/"
       ],
-      "last_verified": "2026-08-16"
+      "last_verified": "2026-08-17"
     },
     {
       "name": "inPhocal",
@@ -2214,6 +2215,118 @@
         "https://xista.vc/companies/vitrealab"
       ],
       "last_verified": "2026-08-16"
+    },
+    {
+      "name": "Moon Photonics",
+      "one_liner": "Developing photonic-based compute hardware for high-performance applications.",
+      "incubator_id": "cdl-ngc",
+      "country": "Germany",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Focuses on photonic compute substrates; potentially shifts the compute medium away from traditional silicon-only logic.",
+      "founders": [],
+      "patents": {
+        "query_name": "Moon Photonics",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/?stream=next-gen-computing"
+      ],
+      "last_verified": "2026-08-17"
+    },
+    {
+      "name": "Neurobus",
+      "one_liner": "Developing neuromorphic hardware architectures for efficient AI processing.",
+      "incubator_id": "cdl-ngc",
+      "country": "Germany",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Neuromorphic approaches represent a departure from von Neumann architectures by integrating memory and compute in a brain-inspired topology.",
+      "founders": [],
+      "patents": {
+        "query_name": "Neurobus",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/?stream=next-gen-computing"
+      ],
+      "last_verified": "2026-08-17"
+    },
+    {
+      "name": "Neuronova",
+      "one_liner": "Designing novel hardware architectures for neural network acceleration.",
+      "incubator_id": "cdl-ngc",
+      "country": "Germany",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Focuses on non-von Neumann hardware acceleration, specifically targeting neural network workloads.",
+      "founders": [],
+      "patents": {
+        "query_name": "Neuronova",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/?stream=next-gen-computing"
+      ],
+      "last_verified": "2026-08-17"
+    },
+    {
+      "name": "QuantaMap",
+      "one_liner": "Developing hardware-level mapping and control systems for quantum computing.",
+      "incubator_id": "cdl-ngc",
+      "country": "Germany",
+      "layers": [
+        "physics_substrate"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Quantum hardware represents a fundamental change in the compute substrate, moving beyond binary logic gates.",
+      "founders": [],
+      "patents": {
+        "query_name": "QuantaMap",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/?stream=next-gen-computing"
+      ],
+      "last_verified": "2026-08-17"
     }
   ]
 }
