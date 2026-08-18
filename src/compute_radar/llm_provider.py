@@ -14,6 +14,7 @@ used the way a router is supposed to use multiple backends.
 from __future__ import annotations
 
 import os
+import sys
 
 from crewai import LLM
 
@@ -84,6 +85,7 @@ def looks_like_quota_error(exc: Exception) -> bool:
         "quota",
         "resource_exhausted",
         "resourceexhausted",
+        "free-models-per-day",  # OpenRouter's daily free-tier ceiling (50/day) message
         "invalid response from llm call",  # the empty-response symptom seen on free tiers
         # When a free model is rate-limited upstream it sometimes returns HTTP 200 with a
         # null body instead of a clean 429, and the client blows up indexing choices[0] with
@@ -96,3 +98,28 @@ def looks_like_quota_error(exc: Exception) -> bool:
         "openai api call failed",
     )
     return any(s in text for s in signals)
+
+
+def run_with_provider_fallback(run_for_provider):
+    """Try each configured provider in order, falling back to the next on a quota/rate-limit
+    error. `run_for_provider(provider)` does the actual crew build + kickoff and returns its
+    result.
+
+    The main pipeline gets this behaviour via crew.run_for_incubator; the *standalone*
+    discovery paths (directory, news) used to pin providers[0] and die when that provider's
+    daily free quota was spent mid-run (observed: OpenRouter's 50/day ceiling is exhausted by
+    the incubator sweep, so the later discovery steps 429'd with no fallback). This helper
+    gives them the same resilience."""
+    providers = available_providers()
+    for i, provider in enumerate(providers):
+        try:
+            return run_for_provider(provider)
+        except Exception as exc:  # noqa: BLE001 - decide fallback-vs-reraise
+            if looks_like_quota_error(exc) and i < len(providers) - 1:
+                print(
+                    f"  {provider} exhausted ({exc}); falling back to {providers[i + 1]}",
+                    file=sys.stderr,
+                )
+                continue
+            raise
+    return []

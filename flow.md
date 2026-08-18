@@ -106,7 +106,8 @@ main()                                             # discover_from_directory.py
 ├─ (--scrape-only?) print and stop
 │
 └─ _classify(raw)                                  # LLM step
-     ├─ build_analyst_agent(build_llm(providers[0]))   # agents.py — same Analyst as pipeline
+     ├─ run_with_provider_fallback(_run)               # llm_provider.py — try providers in order (D33)
+     │    └─ _run(provider): build_analyst_agent(build_llm(provider))  # agents.py — same Analyst
      ├─ Crew(sequential).kickoff() with a single classify Task (output_pydantic=StartupList)
      │     → drops false positives (e.g. "Quantum Charging"=EV), classifies survivors
      └─ merge(snapshot, classified)  → write data/startups.json     # reuses pipeline.merge (D24)
@@ -136,7 +137,8 @@ main()                                             # discover_from_news.py
 ├─ (--scrape-only?) print stories and stop
 │
 └─ _classify(stories)                              # LLM step
-     ├─ build_analyst_agent(build_llm(providers[0]))    # agents.py — same Analyst
+     ├─ run_with_provider_fallback(_run)                # llm_provider.py — try providers in order (D33)
+     │    └─ _run(provider): build_analyst_agent(build_llm(provider))  # agents.py — same Analyst
      ├─ Crew(sequential).kickoff() with one Task (output_pydantic=StartupList)
      │     → extract the STARTUP each story is about; drop policy/roundups/big-corp/non-compute
      └─ merge(snapshot, classified) → write data/startups.json   # reuses pipeline.merge (D24)

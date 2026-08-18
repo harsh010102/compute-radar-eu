@@ -38,20 +38,15 @@ def _classify(stories: list[dict]):
     from crewai import Crew, Process, Task
 
     from compute_radar.agents import build_analyst_agent
-    from compute_radar.llm_provider import available_providers, build_llm
+    from compute_radar.llm_provider import build_llm, run_with_provider_fallback
     from compute_radar.models import StartupList
-
-    providers = available_providers()
-    llm = build_llm(providers[0])
-    analyst = build_analyst_agent(llm)
 
     listing = "\n".join(
         f"- [{s['source']}] {s['title']} ({s.get('published') or 'n.d.'}) | "
         f"{s['summary']} | url: {s['link']}"
         for s in stories
     )
-    task = Task(
-        description=(
+    description = (
             "The following are recent news headlines from European / North-American "
             "startup-news and compute-industry outlets. Each line is one story.\n\n"
             "For each story that is about a SPECIFIC early-stage compute startup - most "
@@ -70,14 +65,21 @@ def _classify(stories: list[dict]):
             f"set incubator_id to '{INCUBATOR_ID}'; put the story url in source_urls; write an "
             "honest architectural_differentiation_note. Do not invent companies or URLs.\n\n"
             f"Stories:\n{listing}"
-        ),
-        expected_output="A StartupList of only the genuinely compute-relevant startups found.",
-        agent=analyst,
-        output_pydantic=StartupList,
     )
-    crew = Crew(agents=[analyst], tasks=[task], process=Process.sequential, verbose=True)
-    result = crew.kickoff()
-    return result.pydantic.startups if result.pydantic else []
+
+    def _run(provider: str):
+        analyst = build_analyst_agent(build_llm(provider))
+        task = Task(
+            description=description,
+            expected_output="A StartupList of only the genuinely compute-relevant startups found.",
+            agent=analyst,
+            output_pydantic=StartupList,
+        )
+        crew = Crew(agents=[analyst], tasks=[task], process=Process.sequential, verbose=True)
+        result = crew.kickoff()
+        return result.pydantic.startups if result.pydantic else []
+
+    return run_with_provider_fallback(_run)
 
 
 def main() -> None:

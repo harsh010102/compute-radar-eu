@@ -128,6 +128,22 @@ the loop continues.
 **Why.** A single 404'd page or provider error shouldn't lose the other 28 incubators' work.
 **Where.** `src/compute_radar/pipeline.py::main`.
 
+### D33 · Discovery paths get cross-provider fallback too (not pinned to `providers[0]`)
+**Decision.** The standalone discovery paths (EU-Startups directory, news-RSS) run their
+Analyst classification through `run_with_provider_fallback()` — trying each configured
+provider in order and falling back on a quota/rate-limit error, the same resilience the main
+pipeline gets from `run_for_incubator`. Also added `free-models-per-day` (OpenRouter's daily
+free-tier ceiling message) to the quota-error signals.
+**Why.** Observed in a live run (2026-08-17): the 29-incubator sweep exhausts OpenRouter's
+50/day free limit, so the directory + news steps — which run *after* it and pinned
+`providers[0]` — both `429`'d with no fallback and classified nothing. The RSS ingester
+correctly found 60 stories, but none became records. Sharing the fallback lets those steps
+continue on Gemini (whose ~1000/day quota is usually still available).
+**Trade-off.** None material; a genuine (non-quota) error still re-raises after one bounded
+fallback attempt.
+**Where.** `src/compute_radar/llm_provider.py::run_with_provider_fallback`,
+`discover_from_directory.py::_classify`, `discover_from_news.py::_classify`.
+
 ---
 
 ## 3. Scraping & search tooling
