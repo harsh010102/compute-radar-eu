@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T05:09:38.643220+00:00",
+  "generated_at": "2026-08-24T07:32:24.463170+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -2710,6 +2710,80 @@
         "https://www.hpcwire.com/off-the-wire/molex-invests-in-caeplus-to-advance-thermal-management-with-active-liquid-cooling-solutions-for-ai-data-centers/"
       ],
       "last_verified": "2026-08-18"
+    },
+    {
+      "name": "Supurior GmbH",
+      "one_liner": "Develops and produces tailored polymers for the semiconductor industry, specifically for photolithography, using proprietary technology to combine multiple functions in a single polymer.",
+      "incubator_id": "fraunhofer-ahead",
+      "country": "Germany",
+      "layers": [
+        "codesign_eda"
+      ],
+      "stage": "Seed Stage",
+      "funding_eur_m": 0.15,
+      "funding_type": "non_dilutive_grant",
+      "team_size_estimate": "3 founders",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "While focused on materials, their ability to integrate multiple functions into a single polymer for photolithography directly impacts the resolution and yield of advanced node semiconductor manufacturing, serving as a critical enabler for next-gen lithography processes.",
+      "founders": [
+        {
+          "name": "Not disclosed",
+          "role": "Co-founder",
+          "linkedin_url": "unclear",
+          "github_url": "unclear",
+          "research_profile_url": "unclear",
+          "note": "Three founders identified by the incubator."
+        }
+      ],
+      "patents": {
+        "query_name": "Supurior GmbH",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2024-05-22",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://fraunhoferinvestmenthub.de/supurior"
+      ],
+      "last_verified": "2026-08-24"
+    },
+    {
+      "name": "Qurie GmbH",
+      "one_liner": "Develops and manufactures electrocaloric cooling systems (solid-state cooling) as a sustainable, refrigerant-free, and energy-efficient alternative to traditional vapor-compression cooling, with initial applications in laser cooling and server cabinet climate control.",
+      "incubator_id": "fraunhofer-ahead",
+      "country": "Germany",
+      "layers": [
+        "power_thermal"
+      ],
+      "stage": "Seed Stage",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Electrocaloric cooling represents a genuine departure from traditional vapor-compression cycles, offering a solid-state thermal management solution that is critical for the high-density power requirements of modern AI compute infrastructure.",
+      "founders": [
+        {
+          "name": "Christian Vogel",
+          "role": "Founder",
+          "linkedin_url": "unclear",
+          "github_url": "unclear",
+          "research_profile_url": "unclear",
+          "note": "Founder associated with Fraunhofer ISE research."
+        }
+      ],
+      "patents": {
+        "query_name": "Qurie GmbH",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2024-05-22",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://fraunhoferinvestmenthub.de/qurie"
+      ],
+      "last_verified": "2026-08-24"
     }
   ]
 }
