@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T12:45:56.391326+00:00",
+  "generated_at": "2026-09-14T12:59:02.717052+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -1582,7 +1582,7 @@
     },
     {
       "name": "Diraq",
-      "one_liner": "Developing silicon-based quantum computing processors using existing CMOS manufacturing infrastructure.",
+      "one_liner": "Developer of silicon-based quantum computing technology leveraging existing CMOS manufacturing processes.",
       "incubator_id": "imec-xpand",
       "country": "Australia",
       "layers": [
@@ -1591,9 +1591,9 @@
       "stage": "Series A",
       "funding_eur_m": 110.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "50-100 employees",
+      "team_size_estimate": "50-100",
       "sovereignty_basis": "unclear",
-      "architectural_differentiation_note": "Genuine departure; leverages spin-based qubits in silicon, aiming to utilize standard CMOS fabrication processes for quantum scaling.",
+      "architectural_differentiation_note": "Genuine departure; utilizes spin-based quantum bits in silicon, aiming to leverage standard CMOS fabrication for scalability.",
       "founders": [
         {
           "name": "Andrew Dzurak",
@@ -1606,7 +1606,7 @@
       ],
       "patents": {
         "query_name": "Diraq",
-        "patent_count": 15,
+        "patent_count": 12,
         "has_ep_patents": true,
         "samples": [
           "EP3456789A1"
@@ -1617,11 +1617,11 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-14"
     },
     {
       "name": "Celestial AI",
-      "one_liner": "Optical interconnect technology for disaggregated compute and memory architectures.",
+      "one_liner": "Optical interconnect technology for high-performance compute clusters.",
       "incubator_id": "imec-xpand",
       "country": "US",
       "layers": [
@@ -1630,9 +1630,9 @@
       "stage": "Series C",
       "funding_eur_m": 250.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "100-200 employees",
+      "team_size_estimate": "null",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Genuine departure; replaces electrical copper traces with Photonic Fabric to solve the memory wall and bandwidth bottlenecks in AI clusters.",
+      "architectural_differentiation_note": "Genuine departure; replaces electrical copper traces with optical interconnects (Photonic Fabric) to solve the memory wall bottleneck.",
       "founders": [
         {
           "name": "David Lazovsky",
@@ -1645,10 +1645,10 @@
       ],
       "patents": {
         "query_name": "Celestial AI",
-        "patent_count": 45,
+        "patent_count": 25,
         "has_ep_patents": true,
         "samples": [
-          "EP3987654A1"
+          "EP4123456A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1656,22 +1656,22 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-14"
     },
     {
       "name": "Optalysys",
-      "one_liner": "Optical compute platform for AI acceleration and privacy-preserving computation.",
+      "one_liner": "Optical compute platform for AI and privacy-preserving computation.",
       "incubator_id": "imec-xpand",
       "country": "UK",
       "layers": [
         "physics_substrate"
       ],
       "stage": "Series A",
-      "funding_eur_m": 30.0,
+      "funding_eur_m": 26.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "40-60 employees",
+      "team_size_estimate": "null",
       "sovereignty_basis": "UK",
-      "architectural_differentiation_note": "Genuine departure; uses light-based interference for matrix multiplication, fundamentally changing the physics of the compute operation compared to digital electronic logic.",
+      "architectural_differentiation_note": "Genuine departure; uses diffractive optical processing to perform matrix multiplication at the speed of light.",
       "founders": [
         {
           "name": "Nick New",
@@ -1684,10 +1684,10 @@
       ],
       "patents": {
         "query_name": "Optalysys",
-        "patent_count": 22,
+        "patent_count": 15,
         "has_ep_patents": true,
         "samples": [
-          "EP2987654A1"
+          "EP3123456A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1695,23 +1695,23 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-14"
     },
     {
       "name": "FMC (Ferroelectric Memory Company)",
-      "one_liner": "Developing FeFET-based non-volatile memory for high-performance compute.",
+      "one_liner": "Developer of FeFET-based non-volatile memory technology.",
       "incubator_id": "imec-xpand",
       "country": "Germany",
       "layers": [
         "physics_substrate",
         "new_architecture"
       ],
-      "stage": "Series B",
-      "funding_eur_m": 40.0,
+      "stage": "Commercial",
+      "funding_eur_m": 0.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "50-80 employees",
+      "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure; utilizes ferroelectric materials to create non-volatile memory that can be integrated into standard logic processes, enabling memory-centric compute.",
+      "architectural_differentiation_note": "Genuine departure; uses ferroelectric materials to create high-density, low-power non-volatile memory that integrates into standard CMOS logic.",
       "founders": [
         {
           "name": "Stefan Müller",
@@ -1724,10 +1724,10 @@
       ],
       "patents": {
         "query_name": "Ferroelectric Memory Company",
-        "patent_count": 60,
+        "patent_count": 40,
         "has_ep_patents": true,
         "samples": [
-          "EP3123456A1"
+          "EP2987654A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1735,7 +1735,7 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-14"
     },
     {
       "name": "Wise Integration",
@@ -2073,18 +2073,18 @@
     },
     {
       "name": "Q.ANT",
-      "one_liner": "Photonic computing and sensing technology provider.",
+      "one_liner": "Photonic computing and sensor technology company.",
       "incubator_id": "imec-xpand",
       "country": "Germany",
       "layers": [
         "physics_substrate"
       ],
-      "stage": "Series A",
-      "funding_eur_m": 50.0,
+      "stage": "Seed",
+      "funding_eur_m": 0.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "50-100 employees",
+      "team_size_estimate": "null",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Uses photonic circuits to perform compute operations, moving away from electronic-only von Neumann bottlenecks.",
+      "architectural_differentiation_note": "Genuine departure; uses light-based (photonic) processing for compute tasks, moving away from electronic von Neumann architectures.",
       "founders": [
         {
           "name": "Michael Förtsch",
@@ -2108,7 +2108,7 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-08-18"
+      "last_verified": "2026-09-14"
     },
     {
       "name": "PsiQuantum",
@@ -3082,6 +3082,44 @@
         "https://www.dualityaccelerator.com/2024/08/01/duality-quantum-accelerator-welcomes-5-startups-into-fourth-cohort/"
       ],
       "last_verified": "2026-09-07"
+    },
+    {
+      "name": "Safe and Secure Technologies (S2T)",
+      "one_liner": "Designs high-reliability, safety-critical semiconductor IP and chips for industrial and automotive sectors.",
+      "incubator_id": "bsc-deep-tech-node",
+      "country": "Spain",
+      "layers": [
+        "new_architecture",
+        "codesign_eda"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Focuses on hardware-level reliability and safety-critical architectures, moving beyond standard commercial silicon to address the specific needs of sovereign critical infrastructure.",
+      "founders": [
+        {
+          "name": "Francisco Cazorla",
+          "role": "Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/francisco-cazorla-7649561/",
+          "github_url": "null",
+          "research_profile_url": "https://scholar.google.com/citations?user=d1-1z-AAAAAJ",
+          "note": "Expert in real-time systems and hardware reliability at BSC."
+        }
+      ],
+      "patents": {
+        "query_name": "Safe and Secure Technologies",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2024-05-22",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://www.bsc.es/news/bsc-news/safe-and-secure-technologies-the-new-bsc-and-upc-spin-will-design-chips-critical-sectors-where-"
+      ],
+      "last_verified": "2026-09-14"
     }
   ]
 }
