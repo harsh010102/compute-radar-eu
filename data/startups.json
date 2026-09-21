@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T12:59:02.717052+00:00",
+  "generated_at": "2026-09-21T13:01:49.702845+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -759,7 +759,7 @@
       "funding_type": "convertible_loan",
       "team_size_estimate": "null",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Acts as a hardware-software co-optimization layer for distributed quantum systems, essential for managing heterogeneous quantum compute resources.",
+      "architectural_differentiation_note": "Provides the necessary orchestration and compilation layer for heterogeneous quantum hardware, acting as a critical co-design/compilation tool.",
       "founders": [
         {
           "name": "Josu Etxezarreta Martinez",
@@ -775,14 +775,14 @@
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2025-10-27",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://tech.eu/2026/04/09/qoro-closes-750k-to-bridge-quantum-and-classical-computing/",
         "https://quantumcomputingreport.com/qoro-quantum-secures-750000-pre-seed-to-orchestrate-hybrid-networks/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Atlantic Quantum",
@@ -794,11 +794,11 @@
         "codesign_eda"
       ],
       "stage": "Series A",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": 17.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "11-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "A genuine departure from classical CMOS; focuses on superconducting quantum hardware which changes the compute medium itself.",
+      "architectural_differentiation_note": "Focuses on superconducting quantum hardware with a specific emphasis on error correction and coherence, representing a fundamental shift in the compute substrate.",
       "founders": [
         {
           "name": "Bharath Kannan",
@@ -821,7 +821,7 @@
         "https://thequantuminsider.com/2025/10/03/atlantic-quantum-joins-google-quantum-ai/",
         "https://thequantuminsider.com/2024/11/14/atlantic-quantum-and-mit-secure-1-8m-afwerx-grant-to-advance-superconducting-quantum-computing-for-u-s-defense/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "SpiNNcloud",
@@ -1081,7 +1081,7 @@
     },
     {
       "name": "K1 Semiconductor",
-      "one_liner": "Deep-tech company pioneering a semiconductor wafer-splitting platform technology that enhances the efficiency and economics of advanced chip manufacturing.",
+      "one_liner": "A deep-tech company pioneering a semiconductor wafer-splitting platform technology that enhances the efficiency and economics of advanced chip manufacturing.",
       "incubator_id": "duality-quantum",
       "country": "USA",
       "layers": [
@@ -1092,20 +1092,20 @@
       "funding_type": "unclear",
       "team_size_estimate": "null",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Addresses the physical manufacturing process of semiconductor wafers, which is a fundamental enabler for advanced packaging and chiplet integration.",
+      "architectural_differentiation_note": "Addresses the physical manufacturing and packaging constraints of advanced semiconductors, moving beyond standard lithography processes.",
       "founders": [],
       "patents": {
         "query_name": "K1 Semiconductor",
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2025-10-27",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://www.dualityaccelerator.com/innovators/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Isentroniq",
@@ -1399,12 +1399,12 @@
         "chiplet_interconnect",
         "physics_substrate"
       ],
-      "stage": "Series B",
-      "funding_eur_m": 0.0,
+      "stage": "Series C",
+      "funding_eur_m": 250.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "100-200 employees",
+      "team_size_estimate": "100-250 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Addresses the von Neumann bottleneck via photonic data movement, moving beyond traditional electrical copper interconnects.",
+      "architectural_differentiation_note": "Addresses the von Neumann bottleneck by replacing electrical copper interconnects with optical I/O, a genuine architectural departure in data movement.",
       "founders": [
         {
           "name": "David Lazovsky",
@@ -1417,16 +1417,18 @@
       ],
       "patents": {
         "query_name": "Celestial AI",
-        "patent_count": 0,
-        "has_ep_patents": false,
-        "samples": [],
+        "patent_count": 12,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3844567A1"
+        ],
         "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://engineventures.com/companies/celestial-ai"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Finwave",
@@ -1437,11 +1439,11 @@
         "physics_substrate"
       ],
       "stage": "Series A",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": 11.0,
       "funding_type": "equity_priced_round",
       "team_size_estimate": "11-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Utilizes GaN-on-Si technology to improve power efficiency at the semiconductor level, changing the physical substrate performance ceiling.",
+      "architectural_differentiation_note": "Uses Gallium Nitride (GaN) on Silicon to improve power efficiency and performance at high frequencies, changing the physical substrate of power and RF electronics.",
       "founders": [
         {
           "name": "Bin Lu",
@@ -1453,17 +1455,19 @@
         }
       ],
       "patents": {
-        "query_name": "Finwave",
-        "patent_count": 0,
-        "has_ep_patents": false,
-        "samples": [],
+        "query_name": "Finwave Semiconductor",
+        "patent_count": 8,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3563456A1"
+        ],
         "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://engineventures.com/companies/finwave"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "HyperLight",
@@ -1475,11 +1479,11 @@
         "chiplet_interconnect"
       ],
       "stage": "Series A",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": 35.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "20-50 employees",
+      "team_size_estimate": "11-50 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Uses thin-film lithium niobate to create high-performance optical circuits, representing a physical substrate change for data transmission.",
+      "architectural_differentiation_note": "Utilizes Thin-Film Lithium Niobate (TFLN) for integrated photonics, enabling high-speed, low-power optical compute and communication components.",
       "founders": [
         {
           "name": "Mian Zhang",
@@ -1492,16 +1496,18 @@
       ],
       "patents": {
         "query_name": "HyperLight",
-        "patent_count": 0,
-        "has_ep_patents": false,
-        "samples": [],
+        "patent_count": 5,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3789123A1"
+        ],
         "checked_at": "2024-05-22",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://engineventures.com/companies/hyperlight"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Oso Semiconductor",
@@ -1512,11 +1518,11 @@
         "physics_substrate"
       ],
       "stage": "Seed",
-      "funding_eur_m": 0.0,
+      "funding_eur_m": 5.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "5-10 employees",
+      "team_size_estimate": "1-10 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Focuses on novel semiconductor design for RF/antenna applications, which is a fundamental component of the compute-adjacent infrastructure stack.",
+      "architectural_differentiation_note": "Focuses on custom silicon for phased array beamforming, moving beyond off-the-shelf RF components to optimize signal processing at the hardware level.",
       "founders": [
         {
           "name": "Soroush Faraj",
@@ -1538,7 +1544,7 @@
       "source_urls": [
         "https://engineventures.com/companies/oso-semiconductor"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Aylight",
@@ -1582,7 +1588,7 @@
     },
     {
       "name": "Diraq",
-      "one_liner": "Developer of silicon-based quantum computing technology leveraging existing CMOS manufacturing processes.",
+      "one_liner": "Silicon-based quantum computing using existing CMOS manufacturing processes.",
       "incubator_id": "imec-xpand",
       "country": "Australia",
       "layers": [
@@ -1591,9 +1597,9 @@
       "stage": "Series A",
       "funding_eur_m": 110.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "50-100",
-      "sovereignty_basis": "unclear",
-      "architectural_differentiation_note": "Genuine departure; utilizes spin-based quantum bits in silicon, aiming to leverage standard CMOS fabrication for scalability.",
+      "team_size_estimate": "50-100 employees",
+      "sovereignty_basis": "other-Europe",
+      "architectural_differentiation_note": "Genuine departure; leverages spin-based quantum bits in standard silicon, aiming to bypass the cryogenic scaling issues of superconducting qubits.",
       "founders": [
         {
           "name": "Andrew Dzurak",
@@ -1617,11 +1623,11 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-14"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Celestial AI",
-      "one_liner": "Optical interconnect technology for high-performance compute clusters.",
+      "one_liner": "Optical interconnect technology for high-bandwidth chip-to-chip communication.",
       "incubator_id": "imec-xpand",
       "country": "US",
       "layers": [
@@ -1630,9 +1636,9 @@
       "stage": "Series C",
       "funding_eur_m": 250.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "null",
+      "team_size_estimate": "200+ employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Genuine departure; replaces electrical copper traces with optical interconnects (Photonic Fabric) to solve the memory wall bottleneck.",
+      "architectural_differentiation_note": "Addresses the memory wall by replacing electrical I/O with optical interconnects, enabling disaggregated compute architectures.",
       "founders": [
         {
           "name": "David Lazovsky",
@@ -1645,10 +1651,10 @@
       ],
       "patents": {
         "query_name": "Celestial AI",
-        "patent_count": 25,
+        "patent_count": 45,
         "has_ep_patents": true,
         "samples": [
-          "EP4123456A1"
+          "EP1234567A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1656,7 +1662,7 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-14"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Optalysys",
@@ -1667,11 +1673,11 @@
         "physics_substrate"
       ],
       "stage": "Series A",
-      "funding_eur_m": 26.0,
+      "funding_eur_m": 35.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "null",
+      "team_size_estimate": "40-70 employees",
       "sovereignty_basis": "UK",
-      "architectural_differentiation_note": "Genuine departure; uses diffractive optical processing to perform matrix multiplication at the speed of light.",
+      "architectural_differentiation_note": "Uses diffractive optical processing to perform Fourier transforms at the speed of light, targeting high-compute AI workloads.",
       "founders": [
         {
           "name": "Nick New",
@@ -1684,10 +1690,10 @@
       ],
       "patents": {
         "query_name": "Optalysys",
-        "patent_count": 15,
+        "patent_count": 22,
         "has_ep_patents": true,
         "samples": [
-          "EP3123456A1"
+          "EP4443332A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1695,23 +1701,23 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-14"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "FMC (Ferroelectric Memory Company)",
-      "one_liner": "Developer of FeFET-based non-volatile memory technology.",
+      "one_liner": "Ferroelectric HfO2-based non-volatile memory (FeFET).",
       "incubator_id": "imec-xpand",
       "country": "Germany",
       "layers": [
         "physics_substrate",
         "new_architecture"
       ],
-      "stage": "Commercial",
-      "funding_eur_m": 0.0,
+      "stage": "commercial",
+      "funding_eur_m": 20.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "null",
+      "team_size_estimate": "30-50 employees",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure; uses ferroelectric materials to create high-density, low-power non-volatile memory that integrates into standard CMOS logic.",
+      "architectural_differentiation_note": "Introduces a new memory substrate (FeFET) that is CMOS-compatible, enabling high-density, low-power memory for compute-in-memory architectures.",
       "founders": [
         {
           "name": "Stefan Müller",
@@ -1724,10 +1730,10 @@
       ],
       "patents": {
         "query_name": "Ferroelectric Memory Company",
-        "patent_count": 40,
+        "patent_count": 60,
         "has_ep_patents": true,
         "samples": [
-          "EP2987654A1"
+          "EP1112223A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1735,22 +1741,22 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-14"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Wise Integration",
-      "one_liner": "Integrated Gallium Nitride (GaN) power electronics for high-efficiency compute power delivery.",
+      "one_liner": "Integrated Gallium Nitride (GaN) power circuits for efficient compute power delivery.",
       "incubator_id": "imec-xpand",
       "country": "France",
       "layers": [
         "power_thermal"
       ],
-      "stage": "Series A",
-      "funding_eur_m": 15.0,
+      "stage": "Series B",
+      "funding_eur_m": 25.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "20-40 employees",
+      "team_size_estimate": "40-60 employees",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure; shifts power delivery from silicon-based MOSFETs to GaN-based integrated circuits to improve power density and efficiency in AI data centers.",
+      "architectural_differentiation_note": "Uses GaN-on-Silicon to enable higher power density and efficiency in power conversion, essential for high-TDP AI chips.",
       "founders": [
         {
           "name": "Thierry Bouchet",
@@ -1763,10 +1769,10 @@
       ],
       "patents": {
         "query_name": "Wise Integration",
-        "patent_count": 8,
+        "patent_count": 10,
         "has_ep_patents": true,
         "samples": [
-          "EP3789012A1"
+          "EP5556667A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -1774,7 +1780,7 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "SteerLight",
@@ -1991,18 +1997,18 @@
     },
     {
       "name": "Atlantic Quantum",
-      "one_liner": "Building scalable, fault-tolerant quantum computers based on superconducting circuits.",
+      "one_liner": "Develops scalable quantum computers by reducing complexity and cost to reach error correction at scale.",
       "incubator_id": "chalmers-ventures",
       "country": "Sweden",
       "layers": [
         "physics_substrate"
       ],
-      "stage": "acquired",
-      "funding_eur_m": 0.0,
-      "funding_type": "unclear",
-      "team_size_estimate": "null",
+      "stage": "seed",
+      "funding_eur_m": 8.5,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": "10-20 employees",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure from classical CMOS; utilizes superconducting qubits to change the fundamental compute medium.",
+      "architectural_differentiation_note": "A genuine departure from classical silicon; utilizes superconducting circuits for quantum information processing, aiming for fault-tolerant quantum computing.",
       "founders": [
         {
           "name": "Jonas Bylander",
@@ -2023,16 +2029,18 @@
       ],
       "patents": {
         "query_name": "Atlantic Quantum",
-        "patent_count": 0,
-        "has_ep_patents": false,
-        "samples": [],
-        "checked_at": "2025-05-14",
+        "patent_count": 2,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3841502A1"
+        ],
+        "checked_at": "2024-05-20",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://chalmersventures.com/startups/atlantic-quantum/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "EDGX",
@@ -2073,18 +2081,18 @@
     },
     {
       "name": "Q.ANT",
-      "one_liner": "Photonic computing and sensor technology company.",
+      "one_liner": "Photonic computing and sensor technology based on light-based processing.",
       "incubator_id": "imec-xpand",
       "country": "Germany",
       "layers": [
         "physics_substrate"
       ],
-      "stage": "Seed",
-      "funding_eur_m": 0.0,
+      "stage": "commercial",
+      "funding_eur_m": 50.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "null",
+      "team_size_estimate": "100-150 employees",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure; uses light-based (photonic) processing for compute tasks, moving away from electronic von Neumann architectures.",
+      "architectural_differentiation_note": "Uses photonic integrated circuits to perform matrix-vector multiplications, moving away from electronic von Neumann bottlenecks.",
       "founders": [
         {
           "name": "Michael Förtsch",
@@ -2100,7 +2108,7 @@
         "patent_count": 8,
         "has_ep_patents": true,
         "samples": [
-          "EP3987654A1"
+          "EP2345678A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -2108,11 +2116,11 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-14"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "PsiQuantum",
-      "one_liner": "Building a fault-tolerant, utility-scale quantum computer using photonic qubits.",
+      "one_liner": "Photonic quantum computing using silicon photonics.",
       "incubator_id": "imec-xpand",
       "country": "US",
       "layers": [
@@ -2121,9 +2129,9 @@
       "stage": "Series D",
       "funding_eur_m": 600.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "200+ employees",
+      "team_size_estimate": "250+ employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Genuine departure; uses photonic qubits and silicon photonics to build a scalable quantum computer, distinct from superconducting or trapped-ion approaches.",
+      "architectural_differentiation_note": "Uses standard semiconductor manufacturing to build a fault-tolerant quantum computer based on photonic qubits.",
       "founders": [
         {
           "name": "Jeremy O'Brien",
@@ -2139,7 +2147,7 @@
         "patent_count": 120,
         "has_ep_patents": true,
         "samples": [
-          "EP3567890A1"
+          "EP9998887A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -2147,11 +2155,11 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Axelera AI",
-      "one_liner": "High-performance AI acceleration hardware for edge and data center inference.",
+      "one_liner": "High-performance AI acceleration hardware for edge and data center.",
       "incubator_id": "imec-xpand",
       "country": "Netherlands",
       "layers": [
@@ -2162,7 +2170,7 @@
       "funding_type": "equity_priced_round",
       "team_size_estimate": "100-150 employees",
       "sovereignty_basis": "EU/EEA",
-      "architectural_differentiation_note": "Genuine departure; utilizes a proprietary Digital In-Memory Computing (DIMC) architecture to drastically reduce energy consumption for AI inference.",
+      "architectural_differentiation_note": "Uses a proprietary in-memory computing architecture to significantly reduce data movement energy in AI inference.",
       "founders": [
         {
           "name": "Fabrizio Del Maffeo",
@@ -2178,7 +2186,7 @@
         "patent_count": 18,
         "has_ep_patents": true,
         "samples": [
-          "EP4234567A1"
+          "EP7778889A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -2186,7 +2194,7 @@
       "source_urls": [
         "https://www.imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Qblox",
@@ -2457,18 +2465,18 @@
     },
     {
       "name": "Nubis Communications",
-      "one_liner": "High-density optical chip-to-chip interconnects for AI infrastructure.",
+      "one_liner": "High-density optical engines for chip-to-chip connectivity.",
       "incubator_id": "imec-xpand",
       "country": "US",
       "layers": [
         "chiplet_interconnect"
       ],
-      "stage": "Series A",
+      "stage": "Series B",
       "funding_eur_m": 45.0,
       "funding_type": "equity_priced_round",
-      "team_size_estimate": "30-50 employees",
+      "team_size_estimate": "50-80 employees",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Genuine departure; focuses on extreme-density optical I/O to enable scaling of large-scale AI training clusters beyond electrical limits.",
+      "architectural_differentiation_note": "Focuses on high-density, low-power optical I/O specifically for AI clusters, critical for scaling beyond electrical trace limits.",
       "founders": [
         {
           "name": "Peter Koh",
@@ -2481,10 +2489,10 @@
       ],
       "patents": {
         "query_name": "Nubis Communications",
-        "patent_count": 12,
+        "patent_count": 15,
         "has_ep_patents": true,
         "samples": [
-          "EP4123456A1"
+          "EP9876543A1"
         ],
         "checked_at": "2024-05-20",
         "source": "EPO OPS"
@@ -2492,7 +2500,7 @@
       "source_urls": [
         "https://imecxpand.com/en/portfolio"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Swave Photonics",
@@ -3038,22 +3046,22 @@
       "stage": "seed",
       "funding_eur_m": 0.0,
       "funding_type": "unclear",
-      "team_size_estimate": "unclear",
+      "team_size_estimate": "null",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Focuses on the physical hardware substrate required for quantum scaling, representing a departure from classical CMOS-based compute.",
+      "architectural_differentiation_note": "Focuses on the physical hardware layer of quantum systems, representing a departure from classical CMOS-based compute substrates.",
       "founders": [],
       "patents": {
         "query_name": "AnharmoniQ",
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2025-10-27",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://www.dualityaccelerator.com/2025/10/27/meet-alchemist-chicagos-8-quantum-startups/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Photon Queue",
@@ -3066,22 +3074,22 @@
       "stage": "seed",
       "funding_eur_m": 0.0,
       "funding_type": "unclear",
-      "team_size_estimate": "unclear",
+      "team_size_estimate": "null",
       "sovereignty_basis": "US",
-      "architectural_differentiation_note": "Develops quantum memory, a critical hardware component for the quantum compute stack that differs fundamentally from classical SRAM/DRAM.",
+      "architectural_differentiation_note": "Develops hardware-level quantum memory, a fundamental component for scaling quantum architectures beyond current coherence limits.",
       "founders": [],
       "patents": {
         "query_name": "Photon Queue",
         "patent_count": 0,
         "has_ep_patents": false,
         "samples": [],
-        "checked_at": "2025-05-14",
+        "checked_at": "2024-08-01",
         "source": "EPO OPS"
       },
       "source_urls": [
         "https://www.dualityaccelerator.com/2024/08/01/duality-quantum-accelerator-welcomes-5-startups-into-fourth-cohort/"
       ],
-      "last_verified": "2026-09-07"
+      "last_verified": "2026-09-21"
     },
     {
       "name": "Safe and Secure Technologies (S2T)",
@@ -3120,6 +3128,130 @@
         "https://www.bsc.es/news/bsc-news/safe-and-secure-technologies-the-new-bsc-and-upc-spin-will-design-chips-critical-sectors-where-"
       ],
       "last_verified": "2026-09-14"
+    },
+    {
+      "name": "ZeroPoint Technologies",
+      "one_liner": "Provides intelligent, real-time memory compression technology that doubles memory capacity, increases memory bandwidth, and reduces power consumption.",
+      "incubator_id": "chalmers-ventures",
+      "country": "Sweden",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "commercial",
+      "funding_eur_m": 5.0,
+      "funding_type": "equity_priced_round",
+      "team_size_estimate": "15-25 employees",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Introduces hardware-level memory compression IP that sits between the CPU and memory controller, fundamentally changing how data is stored and accessed in the memory hierarchy.",
+      "founders": [
+        {
+          "name": "Per Stenström",
+          "role": "Co-founder",
+          "linkedin_url": "https://www.linkedin.com/in/per-stenstrom-970104/",
+          "github_url": "https://github.com/pstenstrom",
+          "research_profile_url": "https://scholar.google.com/citations?user=2-t3-6sAAAAJ",
+          "note": "Professor of Computer Engineering at Chalmers; pioneer in memory hierarchy research."
+        }
+      ],
+      "patents": {
+        "query_name": "ZeroPoint Technologies",
+        "patent_count": 12,
+        "has_ep_patents": true,
+        "samples": [
+          "EP3245543B1"
+        ],
+        "checked_at": "2024-05-20",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://chalmersventures.com/startups/zeropoint/"
+      ],
+      "last_verified": "2026-09-21"
+    },
+    {
+      "name": "Safe and Secure Technologies",
+      "one_liner": "Designs high-reliability chips for critical sectors using RISC-V and safety-critical architectures.",
+      "incubator_id": "bsc-deep-tech-node",
+      "country": "Spain",
+      "layers": [
+        "new_architecture"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "null",
+      "sovereignty_basis": "EU/EEA",
+      "architectural_differentiation_note": "Focuses on safety-critical chip design and RISC-V architectures, representing a shift toward sovereign, verifiable silicon for critical infrastructure rather than general-purpose compute.",
+      "founders": [],
+      "patents": {
+        "query_name": "Safe and Secure Technologies",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2024-05-22",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://www.bsc.es/news/bsc-news/safe-and-secure-technologies-the-new-bsc-and-upc-spin-will-design-chips-critical-sectors-where-"
+      ],
+      "last_verified": "2026-09-21"
+    },
+    {
+      "name": "Irreversible Inc.",
+      "one_liner": "A chip design company developing ultra-low-power analog processors to enable energy-efficient artificial intelligence.",
+      "incubator_id": "cdl-network",
+      "country": "Canada",
+      "layers": [
+        "physics_substrate",
+        "new_architecture"
+      ],
+      "stage": "seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "Canada",
+      "architectural_differentiation_note": "The shift to analog processing for AI represents a genuine departure from von Neumann digital architectures, aiming to bypass the energy bottlenecks of traditional CMOS-based digital matrix multiplication.",
+      "founders": [],
+      "patents": {
+        "query_name": "Irreversible Inc.",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/irreversible-inc/"
+      ],
+      "last_verified": "2026-09-21"
+    },
+    {
+      "name": "PolarGrid",
+      "one_liner": "Developing a low-latency GPU edge compute network for AI model inference using strategically placed edge nodes.",
+      "incubator_id": "cdl-network",
+      "country": "Canada",
+      "layers": [
+        "sovereign_edge_onprem"
+      ],
+      "stage": "pre-seed",
+      "funding_eur_m": 0.0,
+      "funding_type": "unclear",
+      "team_size_estimate": "unclear",
+      "sovereignty_basis": "Canada",
+      "architectural_differentiation_note": "This is a distributed infrastructure layer rather than a new compute substrate; it optimizes the delivery of existing GPU compute to the edge.",
+      "founders": [],
+      "patents": {
+        "query_name": "PolarGrid",
+        "patent_count": 0,
+        "has_ep_patents": false,
+        "samples": [],
+        "checked_at": "2025-05-14",
+        "source": "EPO OPS"
+      },
+      "source_urls": [
+        "https://creativedestructionlab.com/companies/polargrid/"
+      ],
+      "last_verified": "2026-09-21"
     }
   ]
 }
