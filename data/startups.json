@@ -19,9 +19,6 @@
         {
           "name": "Sameer S.",
           "role": "Founder, Managing Director",
-          "linkedin_url": "https://de.linkedin.com/in/sameer-s-5aa7794",
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Semiconductor industry background across product architecture; based in Germany."
         }
       ],
@@ -49,33 +46,21 @@
         {
           "name": "Ramón Jiménez",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": null
         },
         {
           "name": "Montse Vilarrubí",
           "role": "COO, Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/montse-vilarrub%C3%AD-porta-a4b855a2/",
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Researcher at Universitat de Lleida."
         },
         {
           "name": "Jérôme Barrau",
           "role": "CTO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Professor at Universitat de Lleida, thermal/energy systems."
         },
         {
           "name": "Luc Fréchette",
           "role": "Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Professor at Université de Sherbrooke, Canada (MEMS/microsystems)."
         }
       ],
@@ -103,17 +88,11 @@
         {
           "name": "Mark Rushworth",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": null
         },
         {
           "name": "Michael Pearcey",
           "role": "CTO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": null
         }
       ],
@@ -143,33 +122,21 @@
         {
           "name": "Kilian Stenning",
           "role": "CEO, Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/kilian-stenning/",
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Imperial College London."
         },
         {
           "name": "Riccardo Sapienza",
           "role": "CTO, Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/riccardosapienza/",
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Professor of Physics, Imperial College London."
         },
         {
           "name": "Kirsten Moselund",
           "role": "CTO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Head of Laboratory, Paul Scherrer Institut (Switzerland)."
         },
         {
           "name": "Jack Gartside",
           "role": "CSO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Associate Professor of Physics, Imperial College London."
         }
       ],
@@ -197,9 +164,6 @@
         {
           "name": "Maud Vinet",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/maud-vinet-83a34a12/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=y-5-AAAAAJ",
           "note": "PhD in Physics, former head of quantum computing at CEA-Leti."
         }
       ],
@@ -324,9 +288,6 @@
         {
           "name": "Carlos Abellan",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "PhD Photonics, ICFO (quantum cryptography/QRNG); 15+ scientific papers; MIT Innovators Under 35 Europe."
         }
       ],
@@ -431,17 +392,11 @@
         {
           "name": "Andreas Walbrodt",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "University of Cambridge; 15+ years in cloud/utility business models."
         },
         {
           "name": "Sebastian Gajek",
           "role": "CTO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Prof. Dr., cryptography/security academic background."
         }
       ],
@@ -469,9 +424,6 @@
         {
           "name": "David Gurlé",
           "role": "CEO, Founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Former Microsoft executive; founder of Symphony (enterprise messaging, prior large exit) - serial entrepreneur, not a first-time founder."
         }
       ],
@@ -606,9 +558,6 @@
         {
           "name": "Aditya Gupta",
           "role": null,
-          "linkedin_url": "https://www.linkedin.com/in/adityagupta-msc/",
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Exact title not confirmed from available sources."
         }
       ],
@@ -637,9 +586,6 @@
         {
           "name": "Giovanni Finco",
           "role": "Founder",
-          "linkedin_url": "https://www.linkedin.com/in/giovanni-finco-882912207/",
-          "github_url": null,
-          "research_profile_url": "https://scholar.google.com/citations?user=FEqlog0AAAAJ&hl=it",
           "note": "Postdoctoral researcher, ETH Zurich Optical Nanomaterial / Quantum Photonics groups."
         }
       ],
@@ -676,25 +622,16 @@
         {
           "name": "Martin Stadler",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "PhD, ETH Zurich Trapped Ion Quantum Information group."
         },
         {
           "name": "Ferdinand Felder",
           "role": "COO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": null
         },
         {
           "name": "Chidzahi Mabritto",
           "role": "Deputy CTO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": null
         }
       ],
@@ -733,9 +670,6 @@
         {
           "name": "Vaysh Kewada",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "University of Oxford photonics background."
         }
       ],
@@ -764,9 +698,6 @@
         {
           "name": "Josu Etxezarreta Martinez",
           "role": "Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "Quantum error-correction research background."
         }
       ],
@@ -803,9 +734,6 @@
         {
           "name": "Bharath Kannan",
           "role": "CEO, Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "PhD MIT (superconducting qubits); collaborated with Prof. Kevin O Brien."
         }
       ],
@@ -841,9 +769,6 @@
         {
           "name": "Christian Mayr",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/christian-mayr-42289114/",
-          "github_url": "unclear",
-          "research_profile_url": "https://tu-dresden.de/ing/elektrotechnik/iee/hpsn/die-professur/inhaber",
           "note": "Professor of Highly-Parallel VLSI Systems and Neuromorphic Circuits at TU Dresden."
         }
       ],
@@ -959,9 +884,6 @@
         {
           "name": "Adriaan Rol",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/adriaan-rol-57502434/",
-          "github_url": "https://github.com/adriaanrol",
-          "research_profile_url": "https://scholar.google.com/citations?user=l-a_AAAAAJ",
           "note": "PhD in Quantum Physics, TU Delft."
         }
       ],
@@ -997,9 +919,6 @@
         {
           "name": "Richard Taylor",
           "role": "CTO",
-          "linkedin_url": "https://www.linkedin.com/in/richard-taylor-865b4512/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=5-w3_YAAAAAJ",
           "note": "Professor of Photonics, University of Glasgow."
         }
       ],
@@ -1059,9 +978,6 @@
         {
           "name": "James Lee",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/james-lee-photonics/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=y_h5_6AAAAAJ",
           "note": "PhD in Photonics, University of Cambridge."
         }
       ],
@@ -1183,9 +1099,6 @@
         {
           "name": "Robert van der Heijden",
           "role": "CEO",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "unclear"
         }
       ],
@@ -1220,9 +1133,6 @@
         {
           "name": "Hugues de Riedmatten",
           "role": "Co-founder",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "https://www.icfo.eu/lang/research/groups/groups-details?group_id=27",
           "note": "Professor at ICFO, expert in quantum optics and quantum information."
         }
       ],
@@ -1257,9 +1167,6 @@
         {
           "name": "Morgan Mitchell",
           "role": "Co-founder",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "https://www.icfo.eu/lang/research/groups/groups-details?group_id=23",
           "note": "Professor at ICFO, specialist in quantum optics and atomic sensors."
         }
       ],
@@ -1409,9 +1316,6 @@
         {
           "name": "David Lazovsky",
           "role": "CEO and Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/david-lazovsky-3382871",
-          "github_url": "https://github.com/dlazovsky",
-          "research_profile_url": "https://www.researchgate.net/profile/David-Lazovsky",
           "note": "Serial entrepreneur in semiconductor equipment and photonics."
         }
       ],
@@ -1448,9 +1352,6 @@
         {
           "name": "Bin Lu",
           "role": "CEO and Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/bin-lu-7b5a8b12",
-          "github_url": "https://github.com/binlu-finwave",
-          "research_profile_url": "https://scholar.google.com/citations?user=uW-y-kAAAAAJ",
           "note": "PhD in Electrical Engineering; expert in GaN power devices."
         }
       ],
@@ -1488,9 +1389,6 @@
         {
           "name": "Mian Zhang",
           "role": "CEO and Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/mian-zhang-8b5a8b12",
-          "github_url": "https://github.com/mianzhang",
-          "research_profile_url": "https://scholar.google.com/citations?user=mian-zhang-harvard",
           "note": "PhD in Applied Physics, Harvard; pioneer in TFLN photonics."
         }
       ],
@@ -1527,9 +1425,6 @@
         {
           "name": "Soroush Faraj",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/soroush-faraj",
-          "github_url": "https://github.com/sfaraj",
-          "research_profile_url": "https://scholar.google.com/citations?user=sfaraj",
           "note": "Expert in RFIC design and phased array systems."
         }
       ],
@@ -1565,17 +1460,11 @@
         {
           "name": "Bahareh Marzban",
           "role": "Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "ETH Zürich photonics research."
         },
         {
           "name": "Dmitry Kazakov",
           "role": "Co-founder",
-          "linkedin_url": null,
-          "github_url": null,
-          "research_profile_url": null,
           "note": "ETH Zürich photonics research."
         }
       ],
@@ -1604,9 +1493,6 @@
         {
           "name": "Andrew Dzurak",
           "role": "CEO & Founder",
-          "linkedin_url": "https://www.linkedin.com/in/andrew-dzurak-4a5b8a10/",
-          "github_url": "null",
-          "research_profile_url": "https://research.unsw.edu.au/people/scientia-professor-andrew-dzurak",
           "note": "Pioneer in silicon quantum dot qubits."
         }
       ],
@@ -1643,9 +1529,6 @@
         {
           "name": "David Lazovsky",
           "role": "CEO & Founder",
-          "linkedin_url": "https://www.linkedin.com/in/david-lazovsky-8a5b8a10/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Serial entrepreneur in semiconductor equipment."
         }
       ],
@@ -1682,9 +1565,6 @@
         {
           "name": "Nick New",
           "role": "CEO & Founder",
-          "linkedin_url": "https://www.linkedin.com/in/nick-new-7b8a9c/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Expert in diffractive optical computing."
         }
       ],
@@ -1722,9 +1602,6 @@
         {
           "name": "Stefan Müller",
           "role": "CEO & Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/stefan-mueller-fmc/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=fmc_research",
           "note": "PhD in Ferroelectric materials."
         }
       ],
@@ -1761,9 +1638,6 @@
         {
           "name": "Thierry Bouchet",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/thierry-bouchet-wise/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Semiconductor industry veteran."
         }
       ],
@@ -1800,9 +1674,6 @@
         {
           "name": "François Simoens",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/françois-simoens-07080a13/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=v2-31-AAAAAJ",
           "note": "PhD in Physics, CEA-Leti veteran with extensive background in silicon photonics."
         }
       ],
@@ -1838,9 +1709,6 @@
         {
           "name": "Sylvie Menezo",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/sylvie-menezo-45199515/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=z-4-AAAAAJ",
           "note": "Expert in silicon photonics and optical integration."
         }
       ],
@@ -1877,9 +1745,6 @@
         {
           "name": "Evans Galbas-Frontinois",
           "role": "Founder",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "Researcher in automated security analysis."
         }
       ],
@@ -1915,33 +1780,21 @@
         {
           "name": "Arash Ahmadi",
           "role": "CEO",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "PhD"
         },
         {
           "name": "Shakeeb Majid",
           "role": "CTO",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "null"
         },
         {
           "name": "Sahar Hejazi",
           "role": "Head of Device",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "PhD"
         },
         {
           "name": "Ali Moghaddam",
           "role": "Head of Theory",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "PhD"
         }
       ],
@@ -1976,9 +1829,6 @@
         {
           "name": "Not explicitly named",
           "role": "Founding Team",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Team noted as having roots in Harvard, ETH Zurich, ISTA."
         }
       ],
@@ -2060,9 +1910,6 @@
         {
           "name": "Wouter Benoot",
           "role": "Founder and CTO",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         }
       ],
@@ -2097,9 +1944,6 @@
         {
           "name": "Michael Förtsch",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/michael-foertsch-4b5a6712/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=Q_ANT_USER",
           "note": "Expert in integrated photonics."
         }
       ],
@@ -2136,9 +1980,6 @@
         {
           "name": "Jeremy O'Brien",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/jeremy-obrien-psiquantum/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=JOBRIEN_USER",
           "note": "Professor of Physics, pioneer in photonic quantum computing."
         }
       ],
@@ -2175,9 +2016,6 @@
         {
           "name": "Fabrizio Del Maffeo",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/fabrizio-del-maffeo-7b8a9c/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Former executive at Bitmain/AImotive."
         }
       ],
@@ -2214,17 +2052,11 @@
         {
           "name": "Niels Bultink",
           "role": "Co-founder",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         },
         {
           "name": "Jules van Oven",
           "role": "Co-founder",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         }
       ],
@@ -2259,25 +2091,16 @@
         {
           "name": "Chiara Greganti",
           "role": "CRO",
-          "linkedin_url": "https://www.linkedin.com/in/chiara-greganti-70a04910b/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=y-2_p-AAAAAJ",
           "note": "PhD Quantum Optics, Sapienza University of Rome; extensive research in quantum information and photonics."
         },
         {
           "name": "Jonas Zeuner",
           "role": "CTO",
-          "linkedin_url": "https://www.linkedin.com/in/jonas-zeuner-63b785125/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=6-89-6AAAAAJ",
           "note": "PhD Physics, University of Vienna; specialized in integrated photonics and quantum light sources."
         },
         {
           "name": "Anton Zeilinger",
           "role": "Founding member",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=7-89-6AAAAAJ",
           "note": "Nobel Laureate in Physics; pioneer in quantum entanglement and photonic systems."
         }
       ],
@@ -2481,9 +2304,6 @@
         {
           "name": "Peter Koh",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/peter-koh-nubis/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Veteran in optical networking hardware."
         }
       ],
@@ -2520,9 +2340,6 @@
         {
           "name": "Mike Noonen",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/mikenoonen/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Industry veteran in semiconductor leadership."
         }
       ],
@@ -2560,9 +2377,6 @@
         {
           "name": "Bruno Paucard",
           "role": "CEO",
-          "linkedin_url": "https://www.linkedin.com/in/bruno-paucard-07619a1/",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "Experienced executive in semiconductor and automotive sectors."
         }
       ],
@@ -2601,9 +2415,6 @@
         {
           "name": "Lauri Koskinen",
           "role": "CTO",
-          "linkedin_url": "https://www.linkedin.com/in/lauri-koskinen-1b455a1/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=2-X_AAAAAJ",
           "note": "PhD in Electrical Engineering, University of Turku."
         }
       ],
@@ -2755,9 +2566,6 @@
         {
           "name": "Not disclosed",
           "role": "Co-founder",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "Three founders identified by the incubator."
         }
       ],
@@ -2792,9 +2600,6 @@
         {
           "name": "Christian Vogel",
           "role": "Founder",
-          "linkedin_url": "unclear",
-          "github_url": "unclear",
-          "research_profile_url": "unclear",
           "note": "Founder associated with Fraunhofer ISE research."
         }
       ],
@@ -2829,33 +2634,21 @@
         {
           "name": "Markus Beckers",
           "role": "Managing Director",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         },
         {
           "name": "Hendrik Bluhm",
           "role": "Scientific Director",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         },
         {
           "name": "Wolfgang Meißner",
           "role": "Managing Director",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         },
         {
           "name": "Lars Schreiber",
           "role": "Scientific Director",
-          "linkedin_url": "null",
-          "github_url": "null",
-          "research_profile_url": "null",
           "note": "null"
         }
       ],
@@ -2891,9 +2684,6 @@
         {
           "name": "José Ignacio Latorre",
           "role": "Chief Researcher",
-          "linkedin_url": "https://www.linkedin.com/in/jose-ignacio-latorre-70a24815/",
-          "github_url": "https://github.com/jilatorre",
-          "research_profile_url": "https://scholar.google.com/citations?user=y-0v0-AAAAAJ",
           "note": "Professor of Theoretical Physics, University of Barcelona; expert in quantum information theory."
         }
       ],

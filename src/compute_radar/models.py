@@ -45,13 +45,6 @@ class PatentInfo(BaseModel):
 class Founder(BaseModel):
     name: str
     role: str | None = Field(default=None, description="e.g. CEO, CTO, Co-founder")
-    linkedin_url: str | None = None
-    github_url: str | None = None
-    research_profile_url: str | None = Field(
-        default=None,
-        description="Google Scholar, ORCID, ResearchGate, or an institutional faculty page - "
-        "whichever actually exists for this person.",
-    )
     note: str | None = Field(
         default=None,
         description="One line on research/technical pedigree if findable, e.g. "

@@ -419,14 +419,6 @@ function filtered(){
 
 function incubatorName(id){ return (INCUBATORS[id]||{}).name || id; }
 
-function founderLinksHtml(f){
-  const links = [];
-  if (f.linkedin_url) links.push(`<a href="${f.linkedin_url}" target="_blank" rel="noopener">in</a>`);
-  if (f.github_url) links.push(`<a href="${f.github_url}" target="_blank" rel="noopener">gh</a>`);
-  if (f.research_profile_url) links.push(`<a href="${f.research_profile_url}" target="_blank" rel="noopener">research</a>`);
-  return links.length ? `<span class="links">${links.join("")}</span>` : "";
-}
-
 function fundingLabel(key){ return (FUNDING_TYPES.find(f=>f.key===key)||{}).label || key; }
 
 function render(){
@@ -448,7 +440,7 @@ function render(){
       </div>
       ${s.architectural_differentiation_note ? `<p class="note">${s.architectural_differentiation_note}</p>` : ""}
       ${s.founders && s.founders.length ? `<div class="founders">${s.founders.map(f=>`
-        <div class="founder"><span class="fname">${f.name}</span>${f.role ? " · "+f.role : ""}${founderLinksHtml(f)}</div>
+        <div class="founder"><span class="fname">${f.name}</span>${f.role ? " · "+f.role : ""}</div>
       `).join("")}</div>` : ""}
       <div class="foot">
         <span class="stagepill">${s.stage||"stage n/a"}${s.funding_eur_m ? " · €"+s.funding_eur_m+"M" : ""}${s.team_size_estimate ? " · "+s.team_size_estimate : ""}</span>

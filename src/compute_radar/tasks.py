@@ -35,11 +35,7 @@ def build_scout_task(agent: Agent, incubator: dict, sources_line: str = "") -> T
             "List every current or recent (last ~18 months) compute-relevant company you "
             "find: name, one-line description, country if stated, funding/stage if stated, "
             "team size if stated, founder name(s)/role(s) if the page names them, and the "
-            "exact URL you found it on. If a founder's LinkedIn, GitHub, or research profile "
-            "(Google Scholar, ORCID, ResearchGate, faculty page) happens to be linked on the "
-            "page you're already reading, capture that URL too - but do not spend extra "
-            "tool calls specifically hunting for founder social profiles, that's out of "
-            "budget for this task. Do not invent companies, people, or URLs - if you can't "
+            "exact URL you found it on. Do not invent companies, people, or URLs - if you can't "
             "find any, say so explicitly rather than guessing."
         ),
         expected_output=(
@@ -89,9 +85,8 @@ def build_analyst_task(agent: Agent, incubator: dict, scout_task: Task) -> Task:
             "if you find evidence of a large team. Say so honestly in "
             "architectural_differentiation_note when a company looks more mature than its "
             "funding amount alone would suggest.\n\n"
-            "Carry over any founders the Scout found (name, role, and any LinkedIn/GitHub/"
-            "research-profile URL it happened to capture) into the founders field - do not "
-            "fabricate a profile URL that wasn't actually found. Set incubator_id to "
+            "Carry over any founders the Scout found (name and role) into the founders "
+            "field. Set incubator_id to "
             f"'{incubator['id']}'. Carry over every source URL the Scout found."
         ),
         expected_output=(
