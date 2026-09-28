@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:01:49.702845+00:00",
+  "generated_at": "2026-09-28T14:07:03.664157+00:00",
   "startups": [
     {
       "name": "SilTest",
@@ -1863,17 +1863,11 @@
         {
           "name": "Jonas Bylander",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/jonas-bylander-4177431/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=3z-t-5IAAAAJ",
           "note": "Professor at Chalmers, expert in superconducting quantum circuits."
         },
         {
           "name": "William Oliver",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/william-oliver-953b0213/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=Y191-58AAAAJ",
           "note": "Professor at MIT, leader in quantum engineering."
         }
       ],
@@ -2721,9 +2715,6 @@
         {
           "name": "Tim Bode",
           "role": "Founder/Researcher",
-          "linkedin_url": "https://www.linkedin.com/in/tim-bode-808b54149",
-          "github_url": "null",
-          "research_profile_url": "https://www.fz-juelich.de/en/pgi/pgi-12",
           "note": "Researcher at Peter Grünberg Institute (PGI-12) specializing in quantum optimization."
         }
       ],
@@ -2900,9 +2891,6 @@
         {
           "name": "Francisco Cazorla",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/francisco-cazorla-7649561/",
-          "github_url": "null",
-          "research_profile_url": "https://scholar.google.com/citations?user=d1-1z-AAAAAJ",
           "note": "Expert in real-time systems and hardware reliability at BSC."
         }
       ],
@@ -2937,9 +2925,6 @@
         {
           "name": "Per Stenström",
           "role": "Co-founder",
-          "linkedin_url": "https://www.linkedin.com/in/per-stenstrom-970104/",
-          "github_url": "https://github.com/pstenstrom",
-          "research_profile_url": "https://scholar.google.com/citations?user=2-t3-6sAAAAJ",
           "note": "Professor of Computer Engineering at Chalmers; pioneer in memory hierarchy research."
         }
       ],
